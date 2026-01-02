@@ -1,0 +1,225 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="German_B1._Step_Further.Views.ContentsPage2"
+             Background="#FFF5E6D3"
+             FontFamily="Segoe UI, Arial, Tahoma">
+    
+    <UserControl.Styles>
+        <Style Selector="TextBlock.page-title">
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="Margin" Value="0,0,0,30"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+        
+        <Style Selector="TextBlock.part-title">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#8A2BE2"/>
+            <Setter Property="Margin" Value="0,20,0,15"/>
+        </Style>
+        
+        <Style Selector="TextBlock.topic-item">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="#9370DB"/>
+            <Setter Property="Margin" Value="0,8,0,8"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        
+        <Style Selector="TextBlock.subtopic-item">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#B8A9C9"/>
+            <Setter Property="Margin" Value="20,5,0,5"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        
+        <Style Selector="TextBlock.topic-number">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#BA55D3"/>
+        </Style>
+        
+        <Style Selector="TextBlock.page-number">
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="Foreground" Value="#DDA0DD"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        
+        <Style Selector="Border.part-section">
+            <Setter Property="Background" Value="#FFFAF0E6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="0,0,0,25"/>
+            <Setter Property="BorderBrush" Value="#FFE8D5B7"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        
+        <Style Selector="TextBlock.page-footer">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#DDA0DD"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,40,0,0"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+    </UserControl.Styles>
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Margin="40,30,40,30">
+            
+            <!-- Page Title -->
+            <TextBlock Classes="page-title" Text="Зміст (продовження)"/>
+            
+            <!-- PART 3: Grammar Topics B1 -->
+            <Border Classes="part-section">
+                <StackPanel>
+                    <TextBlock Classes="part-title" Text="Частина 3: Граматичні теми B1"/>
+                    
+                    <StackPanel Margin="15,10,0,0">
+                        <!-- Topic 1: Verb Tenses -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 1:"/>
+                            <Run Text=" Часи дієслів (Zeitformen der Verben)"/>
+                            <Run Classes="page-number" Text="...... 63"/>
+                        </TextBlock>
+                        <TextBlock Classes="subtopic-item">
+                            <Run Text="1.1 Präsens (Теперішній час)"/>
+                            <Run Classes="page-number" Text="...... 63"/>
+                        </TextBlock>
+                        <TextBlock Classes="subtopic-item">
+                            <Run Text="1.2 Perfekt (Перфект)"/>
+                            <Run Classes="page-number" Text="...... 65"/>
+                        </TextBlock>
+                        <TextBlock Classes="subtopic-item">
+                            <Run Text="1.3 Präteritum (Минулий час, письмовий)"/>
+                            <Run Classes="page-number" Text="...... 67"/>
+                        </TextBlock>
+                        <TextBlock Classes="subtopic-item">
+                            <Run Text="1.4 Futur I (Майбутній час)"/>
+                            <Run Classes="page-number" Text="...... 69"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 2: Modal Verbs -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 2:"/>
+                            <Run Text=" Модальні дієслова (Modalverben)"/>
+                            <Run Classes="page-number" Text="...... 71"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 3: Subordinate Clauses -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 3:"/>
+                            <Run Text=" Підрядні речення (Nebensätze)"/>
+                            <Run Classes="page-number" Text="...... 75"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 4: Passive Voice -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 4:"/>
+                            <Run Text=" Пасивний стан (Passiv)"/>
+                            <Run Classes="page-number" Text="...... 79"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 5: Konjunktiv II -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 5:"/>
+                            <Run Text=" Умовний спосіб (Konjunktiv II)"/>
+                            <Run Classes="page-number" Text="...... 83"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 6: Infinitive with zu -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 6:"/>
+                            <Run Text=" Інфінітив з zu (Infinitiv mit zu)"/>
+                            <Run Classes="page-number" Text="...... 87"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 7: Relative Clauses -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 7:"/>
+                            <Run Text=" Означальні речення (Relativsätze)"/>
+                            <Run Classes="page-number" Text="...... 91"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 8: Prepositions -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 8:"/>
+                            <Run Text=" Прийменники + відмінки (Präpositionen + Fälle)"/>
+                            <Run Classes="page-number" Text="...... 95"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 9: Adjective Declension -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 9:"/>
+                            <Run Text=" Відмінювання прикметників (Adjektivdeklination)"/>
+                            <Run Classes="page-number" Text="...... 99"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 10: Indirect Speech -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 10:"/>
+                            <Run Text=" Непряма мова (Indirekte Rede)"/>
+                            <Run Classes="page-number" Text="...... 103"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 11: Articles and Declension -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 11:"/>
+                            <Run Text=" Артиклі та відмінювання (Artikel und Deklination)"/>
+                            <Run Classes="page-number" Text="...... 107"/>
+                        </TextBlock>
+                        
+                        <!-- Topic 12: Singular and Plural -->
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 12:"/>
+                            <Run Text=" Однина і множина (Singular und Plural)"/>
+                            <Run Classes="page-number" Text="...... 111"/>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            
+            <!-- PART 4: Letter Templates -->
+            <Border Classes="part-section">
+                <StackPanel>
+                    <TextBlock Classes="part-title" Text="Частина 4: Шаблони листів та електронних листів"/>
+                    
+                    <StackPanel Margin="15,10,0,0">
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 1:"/>
+                            <Run Text=" Формальні листи (Formelle Briefe)"/>
+                            <Run Classes="page-number" Text="...... 115"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 2:"/>
+                            <Run Text=" Неформальні листи (Informelle Briefe)"/>
+                            <Run Classes="page-number" Text="...... 119"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 3:"/>
+                            <Run Text=" Шаблони електронних листів (E-Mail-Vorlagen)"/>
+                            <Run Classes="page-number" Text="...... 123"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 4:"/>
+                            <Run Text=" Заяви та резюме (Bewerbungen und Lebensläufe)"/>
+                            <Run Classes="page-number" Text="...... 127"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 5:"/>
+                            <Run Text=" Скарги та запити (Beschwerden und Anfragen)"/>
+                            <Run Classes="page-number" Text="...... 131"/>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            
+            <!-- Page Footer -->
+            <TextBlock Classes="page-footer" Text="— Сторінка 2 —"/>
+            
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

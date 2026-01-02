@@ -1,0 +1,286 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="German_B1._Step_Further.Views.Part2Window"
+        Title="Частина 2: Словник по темах"
+        WindowStartupLocation="CenterOwner"
+        SystemDecorations="BorderOnly"
+        Background="#FFF5E6D3"
+        BorderThickness="0.5"
+        BorderBrush="#22000000"
+        Width="550"
+        Height="700"
+        CanResize="True"
+        MinWidth="400"
+        MinHeight="400"
+        Padding="8"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="40"
+        UseLayoutRounding="True"
+        FontFamily="Segoe UI, Arial, Tahoma">
+
+    <Window.Resources>
+        <!-- Gray Gradient for Title Bar -->
+        <LinearGradientBrush x:Key="GrayGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFE0E0E0" Offset="0"/>
+            <GradientStop Color="#FFD0D0D0" Offset="0.3"/>
+            <GradientStop Color="#FFC5C5C5" Offset="0.7"/>
+            <GradientStop Color="#FFC0C0C0" Offset="1"/>
+        </LinearGradientBrush>
+        
+        <!-- Icon Bitmaps -->
+        <Bitmap x:Key="CloseButtonImage">../Icons/CloseButton.png</Bitmap>
+    </Window.Resources>
+
+    <Window.Styles>
+        <!-- Window Control Button (Close) -->
+        <Style Selector="Button.window-control">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#303030"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style Selector="Button.window-control:pointerover">
+            <Setter Property="Background" Value="#40FFFFFF"/>
+        </Style>
+        <Style Selector="Button.window-control.close">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="Button.window-control.close:pointerover">
+            <Setter Property="Background" Value="#40FF5C5C"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+        </Style>
+        
+        <!-- Topic Button Style -->
+        <Style Selector="Button.topic-button">
+            <Setter Property="Background" Value="#FFFAF0E6"/>
+            <Setter Property="Foreground" Value="#228B22"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#FFE8D5B7"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="15,12"/>
+            <Setter Property="Margin" Value="0,4"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        </Style>
+        <Style Selector="Button.topic-button:pointerover">
+            <Setter Property="Background" Value="#FFF0E6DC"/>
+            <Setter Property="BorderBrush" Value="#32CD32"/>
+        </Style>
+        <Style Selector="Button.topic-button:pressed">
+            <Setter Property="Background" Value="#FFE8D5C7"/>
+        </Style>
+        
+        <!-- Page Number Style -->
+        <Style Selector="TextBlock.page-number">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="#888888"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Window.Styles>
+
+    <!-- MAIN LAYOUT -->
+    <Grid RowDefinitions="42,*">
+        
+        <!-- ROW 0: TITLE BAR -->
+        <Grid Name="TitleBarRow" Grid.Row="0" Background="{StaticResource GrayGradient}">
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                
+                <!-- Column 0: App Icon and Title -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
+                    <!-- Book Icon -->
+                    <Border Width="28" Height="28" CornerRadius="4" Background="#50000000" Margin="0,0,10,0">
+                        <Viewbox Width="18" Height="18">
+                            <Canvas Width="24" Height="24">
+                                <Path Fill="#FF505050" Data="M21,5c-1.11-0.35-2.33-0.5-3.5-0.5c-1.95,0-4.05,0.4-5.5,1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45,4.9,1,6v14.65c0,0.25,0.25,0.5,0.5,0.5c0.1,0,0.15-0.05,0.25-0.05C3.1,20.45,5.05,20,6.5,20c1.95,0,4.05,0.4,5.5,1.5c1.35-0.85,3.8-1.5,5.5-1.5c1.65,0,3.35,0.3,4.75,1.05c0.1,0.05,0.15,0.05,0.25,0.05c0.25,0,0.5-0.25,0.5-0.5V6C22.4,5.55,21.75,5.25,21,5z M21,18.5c-1.1-0.35-2.3-0.5-3.5-0.5c-1.7,0-4.15,0.65-5.5,1.5V8c1.35-0.85,3.8-1.5,5.5-1.5c1.2,0,2.4,0.15,3.5,0.5V18.5z"/>
+                            </Canvas>
+                        </Viewbox>
+                    </Border>
+                    
+                    <TextBlock Text="Частина 2: Словник по темах" 
+                               FontSize="14" 
+                               FontWeight="SemiBold" 
+                               Foreground="#FF404040" 
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+                
+                <!-- Column 1: Spacer (draggable area) -->
+                <Border Grid.Column="1" Background="Transparent"/>
+                
+                <!-- Column 2: Window Controls -->
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <!-- Close Button -->
+                    <Button Name="CloseButton" Classes="window-control close" Padding="0" BorderThickness="0">
+                        <Image Source="{StaticResource CloseButtonImage}" Stretch="UniformToFill"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <!-- ROW 1: CONTENT AREA -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="20,15,20,20">
+                
+                <!-- Header -->
+                <TextBlock Text="Словник по темах і підтемах" 
+                           FontSize="18" FontWeight="Bold" Foreground="#228B22" Margin="0,5,0,15"/>
+                
+                <!-- Тема 1 -->
+                <Button Name="Topic2_1Button" Classes="topic-button" Tag="1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 1: Persönliche Informationen (Особиста інформація)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 1-2"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 2 -->
+                <Button Name="Topic2_2Button" Classes="topic-button" Tag="2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 2: Wohnen (Житло)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 3-4"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 3 -->
+                <Button Name="Topic2_3Button" Classes="topic-button" Tag="3">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 3: Familie (Сім'я)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 5-6"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 4 -->
+                <Button Name="Topic2_4Button" Classes="topic-button" Tag="4">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 4: Reisen (Подорожі)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 7-8"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 5 -->
+                <Button Name="Topic2_5Button" Classes="topic-button" Tag="5">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 5: Essen (Їжа)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 9-10"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 6 -->
+                <Button Name="Topic2_6Button" Classes="topic-button" Tag="6">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 6: Bildung (Освіта)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 11-12"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 7 -->
+                <Button Name="Topic2_7Button" Classes="topic-button" Tag="7">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 7: Arbeit (Робота)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 13-14"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 8 -->
+                <Button Name="Topic2_8Button" Classes="topic-button" Tag="8">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 8: Einkaufen (Покупки)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 15-16"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 9 -->
+                <Button Name="Topic2_9Button" Classes="topic-button" Tag="9">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 9: Gesundheit (Здоров'я)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 17-18"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 10 -->
+                <Button Name="Topic2_10Button" Classes="topic-button" Tag="10">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 10: Umwelt (Довкілля)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 19-20"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 11 -->
+                <Button Name="Topic2_11Button" Classes="topic-button" Tag="11">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 11: Freizeit (Дозвілля)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 21-22"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 12 -->
+                <Button Name="Topic2_12Button" Classes="topic-button" Tag="12">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 12: Medien (Медіа)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 23-24"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 13 -->
+                <Button Name="Topic2_13Button" Classes="topic-button" Tag="13">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 13: Technologie (Технології)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 25-26"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 14 -->
+                <Button Name="Topic2_14Button" Classes="topic-button" Tag="14">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 14: Stadt/Land (Місто/Село)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 27-28"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 15 -->
+                <Button Name="Topic2_15Button" Classes="topic-button" Tag="15">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 15: Gesellschaft/Politik (Суспільство/Політика)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 29-30"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 16 -->
+                <Button Name="Topic2_16Button" Classes="topic-button" Tag="16">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 16: Kultur (Культура)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 31-32"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 17 -->
+                <Button Name="Topic2_17Button" Classes="topic-button" Tag="17">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 17: Tiere (Тварини)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 33-34"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Тема 18 -->
+                <Button Name="Topic2_18Button" Classes="topic-button" Tag="18">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Тема 18: Anatomie (Анатомія)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 35-36"/>
+                    </StackPanel>
+                </Button>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
+

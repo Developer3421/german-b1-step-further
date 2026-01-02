@@ -1,0 +1,12 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="German_B1._Step_Further.App"
+             RequestedThemeVariant="Default">
+
+    <Application.Styles>
+        <FluentTheme />
+        <Style Selector="Window, UserControl">
+            <Setter Property="FontFamily" Value="Segoe UI, Arial, Tahoma"/>
+        </Style>
+    </Application.Styles>
+</Application>

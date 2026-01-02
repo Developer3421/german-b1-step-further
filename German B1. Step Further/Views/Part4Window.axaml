@@ -1,0 +1,206 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="German_B1._Step_Further.Views.Part4Window"
+        Title="Частина 4: Шаблони для листів"
+        WindowStartupLocation="CenterOwner"
+        SystemDecorations="BorderOnly"
+        Background="#FFF5E6D3"
+        BorderThickness="0.5"
+        BorderBrush="#22000000"
+        Width="550"
+        Height="500"
+        CanResize="True"
+        MinWidth="400"
+        MinHeight="400"
+        Padding="8"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="40"
+        UseLayoutRounding="True"
+        FontFamily="Segoe UI, Arial, Tahoma">
+
+    <Window.Resources>
+        <!-- Gray Gradient for Title Bar -->
+        <LinearGradientBrush x:Key="GrayGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFE0E0E0" Offset="0"/>
+            <GradientStop Color="#FFD0D0D0" Offset="0.3"/>
+            <GradientStop Color="#FFC5C5C5" Offset="0.7"/>
+            <GradientStop Color="#FFC0C0C0" Offset="1"/>
+        </LinearGradientBrush>
+        
+        <!-- Icon Bitmaps -->
+        <Bitmap x:Key="CloseButtonImage">../Icons/CloseButton.png</Bitmap>
+    </Window.Resources>
+
+    <Window.Styles>
+        <!-- Window Control Button (Close) -->
+        <Style Selector="Button.window-control">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#303030"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style Selector="Button.window-control:pointerover">
+            <Setter Property="Background" Value="#40FFFFFF"/>
+        </Style>
+        <Style Selector="Button.window-control.close">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="Button.window-control.close:pointerover">
+            <Setter Property="Background" Value="#40FF5C5C"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+        </Style>
+        
+        <!-- Topic Button Style -->
+        <Style Selector="Button.topic-button">
+            <Setter Property="Background" Value="#FFFAF0E6"/>
+            <Setter Property="Foreground" Value="#4169E1"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#FFE8D5B7"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="15,12"/>
+            <Setter Property="Margin" Value="0,4"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        </Style>
+        <Style Selector="Button.topic-button:pointerover">
+            <Setter Property="Background" Value="#FFF0E6DC"/>
+            <Setter Property="BorderBrush" Value="#6495ED"/>
+        </Style>
+        <Style Selector="Button.topic-button:pressed">
+            <Setter Property="Background" Value="#FFE8D5C7"/>
+        </Style>
+        
+        <!-- Page Number Style -->
+        <Style Selector="TextBlock.page-number">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="#888888"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Window.Styles>
+
+    <!-- MAIN LAYOUT -->
+    <Grid RowDefinitions="42,*">
+        
+        <!-- ROW 0: TITLE BAR -->
+        <Grid Name="TitleBarRow" Grid.Row="0" Background="{StaticResource GrayGradient}">
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                
+                <!-- Column 0: App Icon and Title -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
+                    <!-- Book Icon -->
+                    <Border Width="28" Height="28" CornerRadius="4" Background="#50000000" Margin="0,0,10,0">
+                        <Viewbox Width="18" Height="18">
+                            <Canvas Width="24" Height="24">
+                                <Path Fill="#FF505050" Data="M21,5c-1.11-0.35-2.33-0.5-3.5-0.5c-1.95,0-4.05,0.4-5.5,1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45,4.9,1,6v14.65c0,0.25,0.25,0.5,0.5,0.5c0.1,0,0.15-0.05,0.25-0.05C3.1,20.45,5.05,20,6.5,20c1.95,0,4.05,0.4,5.5,1.5c1.35-0.85,3.8-1.5,5.5-1.5c1.65,0,3.35,0.3,4.75,1.05c0.1,0.05,0.15,0.05,0.25,0.05c0.25,0,0.5-0.25,0.5-0.5V6C22.4,5.55,21.75,5.25,21,5z M21,18.5c-1.1-0.35-2.3-0.5-3.5-0.5c-1.7,0-4.15,0.65-5.5,1.5V8c1.35-0.85,3.8-1.5,5.5-1.5c1.2,0,2.4,0.15,3.5,0.5V18.5z"/>
+                            </Canvas>
+                        </Viewbox>
+                    </Border>
+                    
+                    <TextBlock Text="Частина 4: Шаблони для листів" 
+                               FontSize="14" 
+                               FontWeight="SemiBold" 
+                               Foreground="#FF404040" 
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+                
+                <!-- Column 1: Spacer (draggable area) -->
+                <Border Grid.Column="1" Background="Transparent"/>
+                
+                <!-- Column 2: Window Controls -->
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <!-- Close Button -->
+                    <Button Name="CloseButton" Classes="window-control close" Padding="0" BorderThickness="0">
+                        <Image Source="{StaticResource CloseButtonImage}" Stretch="UniformToFill"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <!-- ROW 1: CONTENT AREA -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="20,15,20,20">
+                
+                <!-- Header -->
+                <TextBlock Text="Шаблони для листів та електронних листів" 
+                           FontSize="18" FontWeight="Bold" Foreground="#4169E1" Margin="0,5,0,15"/>
+                
+                <!-- Шаблон 1 -->
+                <Button Name="Topic4_1Button" Classes="topic-button" Tag="1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Офіційний лист (Formeller Brief)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 1-2"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Шаблон 2 -->
+                <Button Name="Topic4_2Button" Classes="topic-button" Tag="2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Неофіційний лист (Informeller Brief)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 3-4"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Шаблон 3 -->
+                <Button Name="Topic4_3Button" Classes="topic-button" Tag="3">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Скарга (Beschwerde)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 5-6"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Шаблон 4 -->
+                <Button Name="Topic4_4Button" Classes="topic-button" Tag="4">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Запит інформації (Anfrage)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 7-8"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Шаблон 5 -->
+                <Button Name="Topic4_5Button" Classes="topic-button" Tag="5">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Запрошення (Einladung)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 9-10"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Шаблон 6 -->
+                <Button Name="Topic4_6Button" Classes="topic-button" Tag="6">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Відповідь на запрошення (Antwort auf Einladung)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 11-12"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Шаблон 7 -->
+                <Button Name="Topic4_7Button" Classes="topic-button" Tag="7">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Заява/Резюме (Bewerbung)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 13-14"/>
+                    </StackPanel>
+                </Button>
+                
+                <!-- Шаблон 8 -->
+                <Button Name="Topic4_8Button" Classes="topic-button" Tag="8">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Подяка (Danksagung)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 15-16"/>
+                    </StackPanel>
+                </Button>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
+

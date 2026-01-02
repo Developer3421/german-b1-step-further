@@ -1,0 +1,249 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="German_B1._Step_Further.MainWindow"
+        Title="German B1 - Step Further"
+        WindowStartupLocation="CenterScreen"
+        SystemDecorations="BorderOnly"
+        Background="#FF8B4513"
+        BorderThickness="0.5"
+        BorderBrush="#22000000"
+        Width="1200"
+        Height="800"
+        CanResize="True"
+        MinWidth="480"
+        MinHeight="320"
+        Padding="8"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="40"
+        UseLayoutRounding="True"
+        FontFamily="Segoe UI, Arial, Tahoma">
+
+    <Window.Resources>
+        <!-- Gray Gradient for Title Bar -->
+        <LinearGradientBrush x:Key="GrayGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFE0E0E0" Offset="0"/>
+            <GradientStop Color="#FFD0D0D0" Offset="0.3"/>
+            <GradientStop Color="#FFC5C5C5" Offset="0.7"/>
+            <GradientStop Color="#FFC0C0C0" Offset="1"/>
+        </LinearGradientBrush>
+        
+        <!-- Splitter Brush -->
+        <SolidColorBrush x:Key="SplitterBrush" Color="#FFD0D0D0"/>
+        
+        <!-- Icon Bitmaps -->
+        <Bitmap x:Key="MinButtonImage">Icons/MinButton.png</Bitmap>
+        <Bitmap x:Key="MaxButtonImage">Icons/MaxButton.png</Bitmap>
+        <Bitmap x:Key="CloseButtonImage">Icons/CloseButton.png</Bitmap>
+        <Bitmap x:Key="AddTabImage">Icons/AddTab.png</Bitmap>
+        <Bitmap x:Key="InstrumentsButtonImage">Icons/InstrumensButton.png</Bitmap>
+        <Bitmap x:Key="BackButtonImage">Icons/Backbutton.png</Bitmap>
+        <Bitmap x:Key="ForwardButtonImage">Icons/ForwardButton.png</Bitmap>
+    </Window.Resources>
+
+    <Window.Styles>
+        <!-- Window Control Buttons (Min, Max, Close) -->
+        <Style Selector="Button.window-control">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#303030"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style Selector="Button.window-control:pointerover">
+            <Setter Property="Background" Value="#40FFFFFF"/>
+        </Style>
+        <Style Selector="Button.window-control.close">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="Button.window-control.close:pointerover">
+            <Setter Property="Background" Value="#40FF5C5C"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+        </Style>
+        
+        <!-- Navigation Button Style -->
+        <Style Selector="Button.nav-button">
+            <Setter Property="Width" Value="32"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Background" Value="#FFFF6D00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="CornerRadius" Value="6"/>
+        </Style>
+        <Style Selector="Button.nav-button:pointerover">
+            <Setter Property="Background" Value="#FFFF8C00"/>
+        </Style>
+        <Style Selector="Button.nav-button:pressed">
+            <Setter Property="Background" Value="#FFFF5500"/>
+        </Style>
+        
+        <!-- Part Selection Button Style -->
+        <Style Selector="Button.part-button">
+            <Setter Property="Width" Value="32"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Background" Value="#50000000"/>
+            <Setter Property="Foreground" Value="#FF404040"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="6"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style Selector="Button.part-button:pointerover">
+            <Setter Property="Background" Value="#70000000"/>
+        </Style>
+        <Style Selector="Button.part-button:pressed">
+            <Setter Property="Background" Value="#90000000"/>
+        </Style>
+        
+        <!-- Toolbar Button Style -->
+        <Style Selector="Button.toolbar-button">
+            <Setter Property="Width" Value="32"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style Selector="Button.toolbar-button:pointerover">
+            <Setter Property="Background" Value="#40000000"/>
+        </Style>
+        
+        <!-- GridSplitter Style -->
+        <Style Selector="GridSplitter">
+            <Setter Property="Background" Value="{StaticResource SplitterBrush}"/>
+        </Style>
+        <Style Selector="GridSplitter:pointerover">
+            <Setter Property="Background" Value="#FFA0A0A0"/>
+        </Style>
+    </Window.Styles>
+
+    <!-- MAIN LAYOUT -->
+    <Grid RowDefinitions="42,*">
+        
+        <!-- ROW 0: TITLE BAR (Gray with custom window controls) -->
+        <Grid Name="TitleBarRow" Grid.Row="0" Background="{StaticResource GrayGradient}">
+            <Grid ColumnDefinitions="Auto,Auto,Auto,*,Auto,Auto">
+                
+                <!-- Column 0: App Icon and Title -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
+                    <!-- Book Icon -->
+                    <Border Width="28" Height="28" CornerRadius="4" Background="#50000000" Margin="0,0,10,0">
+                        <Viewbox Width="18" Height="18">
+                            <Canvas Width="24" Height="24">
+                                <Path Fill="#FF505050" Data="M21,5c-1.11-0.35-2.33-0.5-3.5-0.5c-1.95,0-4.05,0.4-5.5,1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45,4.9,1,6v14.65c0,0.25,0.25,0.5,0.5,0.5c0.1,0,0.15-0.05,0.25-0.05C3.1,20.45,5.05,20,6.5,20c1.95,0,4.05,0.4,5.5,1.5c1.35-0.85,3.8-1.5,5.5-1.5c1.65,0,3.35,0.3,4.75,1.05c0.1,0.05,0.15,0.05,0.25,0.05c0.25,0,0.5-0.25,0.5-0.5V6C22.4,5.55,21.75,5.25,21,5z M21,18.5c-1.1-0.35-2.3-0.5-3.5-0.5c-1.7,0-4.15,0.65-5.5,1.5V8c1.35-0.85,3.8-1.5,5.5-1.5c1.2,0,2.4,0.15,3.5,0.5V18.5z"/>
+                            </Canvas>
+                        </Viewbox>
+                    </Border>
+                    
+                    <TextBlock Text="German B1 - Step Further" 
+                               FontSize="14" 
+                               FontWeight="SemiBold" 
+                               Foreground="#FF404040" 
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+                
+                <!-- Column 1: Navigation Buttons (Back/Forward) with Orange Background -->
+                <Border Grid.Column="1" Background="#FFFF8C00" CornerRadius="6" Padding="4" Margin="12,0,0,0" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Spacing="2">
+                        <!-- Back Button -->
+                        <Button Name="BackButton" Classes="nav-button">
+                            <Image Source="{StaticResource BackButtonImage}" Stretch="UniformToFill"/>
+                        </Button>
+                        <!-- Forward Button -->
+                        <Button Name="ForwardButton" Classes="nav-button">
+                            <Image Source="{StaticResource ForwardButtonImage}" Stretch="UniformToFill"/>
+                        </Button>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Column 2: Add Tab Button -->
+                <Button Name="PART_AddTabButton" Grid.Column="2" Width="32" Height="32" Margin="8,0,0,0" 
+                        Background="Transparent" Padding="0" BorderThickness="0" 
+                        Cursor="Hand" VerticalAlignment="Center">
+                    <Image Source="{StaticResource AddTabImage}" Stretch="UniformToFill"/>
+                </Button>
+                
+                <!-- Column 3: Spacer (draggable area) -->
+                <Border Grid.Column="3" Background="Transparent"/>
+                
+                <!-- Column 4: Part Selection Buttons (1-4) and Instruments -->
+                <StackPanel Grid.Column="4" Orientation="Horizontal" VerticalAlignment="Center" Spacing="4" Margin="0,0,12,0">
+                    <!-- Part 1 Button -->
+                    <Button Name="Part1Button" Classes="part-button">
+                        <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Button>
+                    <!-- Part 2 Button -->
+                    <Button Name="Part2Button" Classes="part-button">
+                        <TextBlock Text="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Button>
+                    <!-- Part 3 Button -->
+                    <Button Name="Part3Button" Classes="part-button">
+                        <TextBlock Text="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Button>
+                    <!-- Part 4 Button -->
+                    <Button Name="Part4Button" Classes="part-button">
+                        <TextBlock Text="4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Button>
+                    
+                    <!-- Separator -->
+                    <Border Width="1" Height="24" Background="#80000000" Margin="4,0"/>
+                    
+                    <!-- Instruments Button -->
+                    <Button Name="InstrumentsButton" Classes="toolbar-button">
+                        <Image Source="{StaticResource InstrumentsButtonImage}" Width="24" Height="24" Stretch="Uniform"/>
+                    </Button>
+                </StackPanel>
+                
+                <!-- Column 5: Window Controls -->
+                <StackPanel Grid.Column="5" Orientation="Horizontal" VerticalAlignment="Center">
+                    <!-- Minimize Button -->
+                    <Button Name="MinimizeButton" Classes="window-control" Padding="0">
+                        <Image Source="{StaticResource MinButtonImage}" Stretch="Uniform"/>
+                    </Button>
+                    <!-- Maximize Button -->
+                    <Button Name="MaximizeButton" Classes="window-control" Padding="0">
+                        <Image Source="{StaticResource MaxButtonImage}" Stretch="Uniform"/>
+                    </Button>
+                    <!-- Close Button -->
+                    <Button Name="CloseButton" Classes="window-control close" Padding="0" BorderThickness="0">
+                        <Image Source="{StaticResource CloseButtonImage}" Stretch="UniformToFill"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <!-- ROW 1: CONTENT AREA (Two equal panels with soft orange background) -->
+        <Grid Grid.Row="1" ColumnDefinitions="*,5,*" Background="#FFF5E6D3">
+            
+            <!-- Left Panel -->
+            <Border Grid.Column="0" Background="#FFF5E6D3">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    <StackPanel Name="LeftContentPanel" Margin="0">
+                        <!-- ContentsPage1 will be loaded here -->
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+            
+            <!-- Splitter -->
+            <GridSplitter Grid.Column="1" ResizeDirection="Columns" HorizontalAlignment="Stretch"/>
+            
+            <!-- Right Panel -->
+            <Border Grid.Column="2" Background="#FFF5E6D3">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    <StackPanel Name="RightContentPanel" Margin="0">
+                        <!-- ContentsPage2 will be loaded here -->
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

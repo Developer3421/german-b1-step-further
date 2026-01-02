@@ -1,0 +1,220 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="German_B1._Step_Further.Views.ContentsPage1"
+             Background="#FFF5E6D3"
+             FontFamily="Segoe UI, Arial, Tahoma">
+    
+    <UserControl.Styles>
+        <Style Selector="TextBlock.page-title">
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="Margin" Value="0,0,0,30"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+        
+        <Style Selector="TextBlock.part-title">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#8A2BE2"/>
+            <Setter Property="Margin" Value="0,20,0,15"/>
+        </Style>
+        
+        <Style Selector="TextBlock.topic-item">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="#9370DB"/>
+            <Setter Property="Margin" Value="0,8,0,8"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        
+        <Style Selector="TextBlock.topic-number">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#BA55D3"/>
+        </Style>
+        
+        <Style Selector="TextBlock.page-number">
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="Foreground" Value="#DDA0DD"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        
+        <Style Selector="Border.part-section">
+            <Setter Property="Background" Value="#FFFAF0E6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="0,0,0,25"/>
+            <Setter Property="BorderBrush" Value="#FFE8D5B7"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        
+        <Style Selector="TextBlock.page-footer">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#DDA0DD"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,40,0,0"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+    </UserControl.Styles>
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Margin="40,30,40,30">
+            
+            <!-- Page Title -->
+            <TextBlock Classes="page-title" Text="Зміст"/>
+            
+            <!-- PART 1: Topics for Conversation -->
+            <Border Classes="part-section">
+                <StackPanel>
+                    <TextBlock Classes="part-title" Text="Частина 1: Теми для розмови"/>
+                    
+                    <StackPanel Margin="15,10,0,0">
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 1:"/>
+                            <Run Text=" Особиста інформація (Persönliche Informationen)"/>
+                            <Run Classes="page-number" Text="...... 3"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 2:"/>
+                            <Run Text=" Житло (Wohnen)"/>
+                            <Run Classes="page-number" Text="...... 5"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 3:"/>
+                            <Run Text=" Їжа та харчування (Essen und Ernährung)"/>
+                            <Run Classes="page-number" Text="...... 7"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 4:"/>
+                            <Run Text=" Подорожі та транспорт (Reisen und Verkehr)"/>
+                            <Run Classes="page-number" Text="...... 9"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 5:"/>
+                            <Run Text=" Робота та професія (Arbeit und Beruf)"/>
+                            <Run Classes="page-number" Text="...... 11"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 6:"/>
+                            <Run Text=" Освіта та навчання (Bildung und Lernen)"/>
+                            <Run Classes="page-number" Text="...... 13"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 7:"/>
+                            <Run Text=" Здоров'я та тіло (Gesundheit und Körper)"/>
+                            <Run Classes="page-number" Text="...... 15"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 8:"/>
+                            <Run Text=" Вільний час та хобі (Freizeit und Hobbys)"/>
+                            <Run Classes="page-number" Text="...... 17"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 9:"/>
+                            <Run Text=" Медіа та технології (Medien und Technologie)"/>
+                            <Run Classes="page-number" Text="...... 19"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 10:"/>
+                            <Run Text=" Покупки (Einkaufen)"/>
+                            <Run Classes="page-number" Text="...... 21"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 11:"/>
+                            <Run Text=" Природа та довкілля (Natur und Umwelt)"/>
+                            <Run Classes="page-number" Text="...... 23"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 12:"/>
+                            <Run Text=" Культура та мистецтво (Kultur und Kunst)"/>
+                            <Run Classes="page-number" Text="...... 25"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 13:"/>
+                            <Run Text=" Відносини та спілкування (Beziehungen und Kommunikation)"/>
+                            <Run Classes="page-number" Text="...... 27"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 14:"/>
+                            <Run Text=" Свята та традиції (Feiern und Traditionen)"/>
+                            <Run Classes="page-number" Text="...... 29"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 15:"/>
+                            <Run Text=" Політика та суспільство (Politik und Gesellschaft)"/>
+                            <Run Classes="page-number" Text="...... 31"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 16:"/>
+                            <Run Text=" Економіка та фінанси (Wirtschaft und Finanzen)"/>
+                            <Run Classes="page-number" Text="...... 33"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 17:"/>
+                            <Run Text=" Тварини та домашні улюбленці (Tiere und Haustiere)"/>
+                            <Run Classes="page-number" Text="...... 35"/>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            
+            <!-- PART 2: Vocabulary by Topics -->
+            <Border Classes="part-section">
+                <StackPanel>
+                    <TextBlock Classes="part-title" Text="Частина 2: Словник по темах"/>
+                    
+                    <StackPanel Margin="15,10,0,0">
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 1:"/>
+                            <Run Text=" Словник по темам"/>
+                            <Run Classes="page-number" Text="...... 37"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 2:"/>
+                            <Run Text=" Граматика по темах"/>
+                            <Run Classes="page-number" Text="...... 42"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 3:"/>
+                            <Run Text=" Синоніми по темах"/>
+                            <Run Classes="page-number" Text="...... 47"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 4:"/>
+                            <Run Text=" Фрази та вирази"/>
+                            <Run Classes="page-number" Text="...... 52"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Розділ 5:"/>
+                            <Run Text=" Корисні фрази по темах"/>
+                            <Run Classes="page-number" Text="...... 58"/>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            
+            <!-- Page Footer -->
+            <TextBlock Classes="page-footer" Text="• Сторінка 1 •"/>
+            
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
