@@ -139,7 +139,7 @@
                 <Button Name="Topic2_1Button" Classes="topic-button" Tag="1">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 1: Persönliche Informationen (Особиста інформація)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 1-2"/>
+                        <TextBlock Classes="page-number" Text="Стор. 57-59"/>
                     </StackPanel>
                 </Button>
                 
@@ -147,7 +147,7 @@
                 <Button Name="Topic2_2Button" Classes="topic-button" Tag="2">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 2: Wohnen (Житло)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 3-4"/>
+                        <TextBlock Classes="page-number" Text="Стор. 60-62"/>
                     </StackPanel>
                 </Button>
                 
@@ -155,7 +155,7 @@
                 <Button Name="Topic2_3Button" Classes="topic-button" Tag="3">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 3: Familie (Сім'я)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 5-6"/>
+                        <TextBlock Classes="page-number" Text="Стор. 63-65"/>
                     </StackPanel>
                 </Button>
                 
@@ -163,7 +163,7 @@
                 <Button Name="Topic2_4Button" Classes="topic-button" Tag="4">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 4: Reisen (Подорожі)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 7-8"/>
+                        <TextBlock Classes="page-number" Text="Стор. 66-68"/>
                     </StackPanel>
                 </Button>
                 
@@ -171,7 +171,7 @@
                 <Button Name="Topic2_5Button" Classes="topic-button" Tag="5">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 5: Essen (Їжа)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 9-10"/>
+                        <TextBlock Classes="page-number" Text="Стор. 69-71"/>
                     </StackPanel>
                 </Button>
                 
@@ -179,7 +179,7 @@
                 <Button Name="Topic2_6Button" Classes="topic-button" Tag="6">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 6: Bildung (Освіта)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 11-12"/>
+                        <TextBlock Classes="page-number" Text="Стор. 72-74"/>
                     </StackPanel>
                 </Button>
                 
@@ -187,7 +187,7 @@
                 <Button Name="Topic2_7Button" Classes="topic-button" Tag="7">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 7: Arbeit (Робота)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 13-14"/>
+                        <TextBlock Classes="page-number" Text="Стор. 75-77"/>
                     </StackPanel>
                 </Button>
                 
@@ -195,7 +195,7 @@
                 <Button Name="Topic2_8Button" Classes="topic-button" Tag="8">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 8: Einkaufen (Покупки)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 15-16"/>
+                        <TextBlock Classes="page-number" Text="Стор. 78-80"/>
                     </StackPanel>
                 </Button>
                 
@@ -203,7 +203,7 @@
                 <Button Name="Topic2_9Button" Classes="topic-button" Tag="9">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 9: Gesundheit (Здоров'я)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 17-18"/>
+                        <TextBlock Classes="page-number" Text="Стор. 81-83"/>
                     </StackPanel>
                 </Button>
                 
@@ -211,7 +211,7 @@
                 <Button Name="Topic2_10Button" Classes="topic-button" Tag="10">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 10: Umwelt (Довкілля)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 19-20"/>
+                        <TextBlock Classes="page-number" Text="Стор. 84-86"/>
                     </StackPanel>
                 </Button>
                 
@@ -219,7 +219,7 @@
                 <Button Name="Topic2_11Button" Classes="topic-button" Tag="11">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 11: Freizeit (Дозвілля)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 21-22"/>
+                        <TextBlock Classes="page-number" Text="Стор. 87-89"/>
                     </StackPanel>
                 </Button>
                 
@@ -227,7 +227,7 @@
                 <Button Name="Topic2_12Button" Classes="topic-button" Tag="12">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 12: Medien (Медіа)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 23-24"/>
+                        <TextBlock Classes="page-number" Text="Стор. 90-92"/>
                     </StackPanel>
                 </Button>
                 
@@ -235,7 +235,7 @@
                 <Button Name="Topic2_13Button" Classes="topic-button" Tag="13">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 13: Technologie (Технології)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 25-26"/>
+                        <TextBlock Classes="page-number" Text="Стор. 93-95"/>
                     </StackPanel>
                 </Button>
                 
@@ -243,7 +243,7 @@
                 <Button Name="Topic2_14Button" Classes="topic-button" Tag="14">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 14: Stadt/Land (Місто/Село)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 27-28"/>
+                        <TextBlock Classes="page-number" Text="Стор. 96-98"/>
                     </StackPanel>
                 </Button>
                 
@@ -251,7 +251,7 @@
                 <Button Name="Topic2_15Button" Classes="topic-button" Tag="15">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 15: Gesellschaft/Politik (Суспільство/Політика)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 29-30"/>
+                        <TextBlock Classes="page-number" Text="Стор. 99-101"/>
                     </StackPanel>
                 </Button>
                 
@@ -259,7 +259,7 @@
                 <Button Name="Topic2_16Button" Classes="topic-button" Tag="16">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 16: Kultur (Культура)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 31-32"/>
+                        <TextBlock Classes="page-number" Text="Стор. 102-104"/>
                     </StackPanel>
                 </Button>
                 
@@ -267,7 +267,7 @@
                 <Button Name="Topic2_17Button" Classes="topic-button" Tag="17">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 17: Tiere (Тварини)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 33-34"/>
+                        <TextBlock Classes="page-number" Text="Стор. 105-107"/>
                     </StackPanel>
                 </Button>
                 
@@ -275,7 +275,7 @@
                 <Button Name="Topic2_18Button" Classes="topic-button" Tag="18">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 18: Anatomie (Анатомія)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 35-36"/>
+                        <TextBlock Classes="page-number" Text="Стор. 108-110"/>
                     </StackPanel>
                 </Button>
                 

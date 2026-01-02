@@ -4,8 +4,10 @@
     <option name="projectPerEditor">
       <map>
         <entry key="German B1. Step Further/App.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/MainWindow.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/ContentsPage1.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/ContentsPage2.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Views/InstrumentsWindow.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/Part1Window.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/Part2Window.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/Part3Window.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />

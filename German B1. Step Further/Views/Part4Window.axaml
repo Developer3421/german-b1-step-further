@@ -195,7 +195,7 @@
                 <Button Name="Topic4_8Button" Classes="topic-button" Tag="8">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Подяка (Danksagung)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 15-16"/>
+                        <TextBlock Classes="page-number" Text="Стор. 159"/>
                     </StackPanel>
                 </Button>
                 

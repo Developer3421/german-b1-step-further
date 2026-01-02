@@ -131,7 +131,7 @@
         
         <!-- ROW 0: TITLE BAR (Gray with custom window controls) -->
         <Grid Name="TitleBarRow" Grid.Row="0" Background="{StaticResource GrayGradient}">
-            <Grid ColumnDefinitions="Auto,Auto,Auto,*,Auto,Auto">
+            <Grid ColumnDefinitions="Auto,Auto,Auto,Auto,*,Auto,Auto">
                 
                 <!-- Column 0: App Icon and Title -->
                 <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
@@ -165,18 +165,30 @@
                     </StackPanel>
                 </Border>
                 
-                <!-- Column 2: Add Tab Button -->
-                <Button Name="PART_AddTabButton" Grid.Column="2" Width="32" Height="32" Margin="8,0,0,0" 
+                <!-- Column 2: New Window Button -->
+                <Button Name="NewWindowButton" Grid.Column="2" Width="32" Height="32" Margin="8,0,0,0" 
+                        Background="Transparent" Padding="0" BorderThickness="0" 
+                        Cursor="Hand" VerticalAlignment="Center"
+                        ToolTip.Tip="Створити нове вікно">
+                    <Viewbox Width="20" Height="20">
+                        <Canvas Width="24" Height="24">
+                            <Path Fill="#FF404040" Data="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,19H5V5H19V19M13,17V15H16L12,11L8,15H11V17H13Z"/>
+                        </Canvas>
+                    </Viewbox>
+                </Button>
+                
+                <!-- Column 3: Add Tab Button -->
+                <Button Name="PART_AddTabButton" Grid.Column="3" Width="32" Height="32" Margin="4,0,0,0" 
                         Background="Transparent" Padding="0" BorderThickness="0" 
                         Cursor="Hand" VerticalAlignment="Center">
                     <Image Source="{StaticResource AddTabImage}" Stretch="UniformToFill"/>
                 </Button>
                 
-                <!-- Column 3: Spacer (draggable area) -->
-                <Border Grid.Column="3" Background="Transparent"/>
+                <!-- Column 4: Spacer (draggable area) -->
+                <Border Grid.Column="4" Background="Transparent"/>
                 
-                <!-- Column 4: Part Selection Buttons (1-4) and Instruments -->
-                <StackPanel Grid.Column="4" Orientation="Horizontal" VerticalAlignment="Center" Spacing="4" Margin="0,0,12,0">
+                <!-- Column 5: Part Selection Buttons (1-4) and Instruments -->
+                <StackPanel Grid.Column="5" Orientation="Horizontal" VerticalAlignment="Center" Spacing="4" Margin="0,0,12,0">
                     <!-- Part 1 Button -->
                     <Button Name="Part1Button" Classes="part-button">
                         <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -203,8 +215,8 @@
                     </Button>
                 </StackPanel>
                 
-                <!-- Column 5: Window Controls -->
-                <StackPanel Grid.Column="5" Orientation="Horizontal" VerticalAlignment="Center">
+                <!-- Column 6: Window Controls -->
+                <StackPanel Grid.Column="6" Orientation="Horizontal" VerticalAlignment="Center">
                     <!-- Minimize Button -->
                     <Button Name="MinimizeButton" Classes="window-control" Padding="0">
                         <Image Source="{StaticResource MinButtonImage}" Stretch="Uniform"/>

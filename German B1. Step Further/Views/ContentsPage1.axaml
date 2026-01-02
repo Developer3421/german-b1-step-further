@@ -71,103 +71,109 @@
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 1:"/>
                             <Run Text=" Особиста інформація (Persönliche Informationen)"/>
-                            <Run Classes="page-number" Text="...... 3"/>
+                            <Run Classes="page-number" Text="...... 3-5"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 2:"/>
                             <Run Text=" Житло (Wohnen)"/>
-                            <Run Classes="page-number" Text="...... 5"/>
+                            <Run Classes="page-number" Text="...... 6-8"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 3:"/>
                             <Run Text=" Їжа та харчування (Essen und Ernährung)"/>
-                            <Run Classes="page-number" Text="...... 7"/>
+                            <Run Classes="page-number" Text="...... 9-11"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 4:"/>
                             <Run Text=" Подорожі та транспорт (Reisen und Verkehr)"/>
-                            <Run Classes="page-number" Text="...... 9"/>
+                            <Run Classes="page-number" Text="...... 12-14"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 5:"/>
                             <Run Text=" Робота та професія (Arbeit und Beruf)"/>
-                            <Run Classes="page-number" Text="...... 11"/>
+                            <Run Classes="page-number" Text="...... 15-17"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 6:"/>
                             <Run Text=" Освіта та навчання (Bildung und Lernen)"/>
-                            <Run Classes="page-number" Text="...... 13"/>
+                            <Run Classes="page-number" Text="...... 18-20"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 7:"/>
                             <Run Text=" Здоров'я та тіло (Gesundheit und Körper)"/>
-                            <Run Classes="page-number" Text="...... 15"/>
+                            <Run Classes="page-number" Text="...... 21-23"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 8:"/>
                             <Run Text=" Вільний час та хобі (Freizeit und Hobbys)"/>
-                            <Run Classes="page-number" Text="...... 17"/>
+                            <Run Classes="page-number" Text="...... 24-26"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 9:"/>
                             <Run Text=" Медіа та технології (Medien und Technologie)"/>
-                            <Run Classes="page-number" Text="...... 19"/>
+                            <Run Classes="page-number" Text="...... 27-29"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 10:"/>
                             <Run Text=" Покупки (Einkaufen)"/>
-                            <Run Classes="page-number" Text="...... 21"/>
+                            <Run Classes="page-number" Text="...... 30-32"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 11:"/>
                             <Run Text=" Природа та довкілля (Natur und Umwelt)"/>
-                            <Run Classes="page-number" Text="...... 23"/>
+                            <Run Classes="page-number" Text="...... 33-35"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 12:"/>
                             <Run Text=" Культура та мистецтво (Kultur und Kunst)"/>
-                            <Run Classes="page-number" Text="...... 25"/>
+                            <Run Classes="page-number" Text="...... 36-38"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 13:"/>
                             <Run Text=" Відносини та спілкування (Beziehungen und Kommunikation)"/>
-                            <Run Classes="page-number" Text="...... 27"/>
+                            <Run Classes="page-number" Text="...... 39-41"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 14:"/>
                             <Run Text=" Свята та традиції (Feiern und Traditionen)"/>
-                            <Run Classes="page-number" Text="...... 29"/>
+                            <Run Classes="page-number" Text="...... 42-44"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 15:"/>
                             <Run Text=" Політика та суспільство (Politik und Gesellschaft)"/>
-                            <Run Classes="page-number" Text="...... 31"/>
+                            <Run Classes="page-number" Text="...... 45-47"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 16:"/>
                             <Run Text=" Економіка та фінанси (Wirtschaft und Finanzen)"/>
-                            <Run Classes="page-number" Text="...... 33"/>
+                            <Run Classes="page-number" Text="...... 48-50"/>
                         </TextBlock>
                         
                         <TextBlock Classes="topic-item">
                             <Run Classes="topic-number" Text="Тема 17:"/>
                             <Run Text=" Тварини та домашні улюбленці (Tiere und Haustiere)"/>
-                            <Run Classes="page-number" Text="...... 35"/>
+                            <Run Classes="page-number" Text="...... 51-53"/>
+                        </TextBlock>
+                        
+                        <TextBlock Classes="topic-item">
+                            <Run Classes="topic-number" Text="Тема 18:"/>
+                            <Run Text=" Анатомія (Anatomie)"/>
+                            <Run Classes="page-number" Text="...... 54-56"/>
                         </TextBlock>
                     </StackPanel>
                 </StackPanel>
@@ -180,33 +186,9 @@
                     
                     <StackPanel Margin="15,10,0,0">
                         <TextBlock Classes="topic-item">
-                            <Run Classes="topic-number" Text="Розділ 1:"/>
-                            <Run Text=" Словник по темам"/>
-                            <Run Classes="page-number" Text="...... 37"/>
-                        </TextBlock>
-                        
-                        <TextBlock Classes="topic-item">
-                            <Run Classes="topic-number" Text="Розділ 2:"/>
-                            <Run Text=" Граматика по темах"/>
-                            <Run Classes="page-number" Text="...... 42"/>
-                        </TextBlock>
-                        
-                        <TextBlock Classes="topic-item">
-                            <Run Classes="topic-number" Text="Розділ 3:"/>
-                            <Run Text=" Синоніми по темах"/>
-                            <Run Classes="page-number" Text="...... 47"/>
-                        </TextBlock>
-                        
-                        <TextBlock Classes="topic-item">
-                            <Run Classes="topic-number" Text="Розділ 4:"/>
-                            <Run Text=" Фрази та вирази"/>
-                            <Run Classes="page-number" Text="...... 52"/>
-                        </TextBlock>
-                        
-                        <TextBlock Classes="topic-item">
-                            <Run Classes="topic-number" Text="Розділ 5:"/>
-                            <Run Text=" Корисні фрази по темах"/>
-                            <Run Classes="page-number" Text="...... 58"/>
+                            <Run Classes="topic-number" Text="Тема 1-18:"/>
+                            <Run Text=" Словник по всіх темах (18 × 3 підтеми)"/>
+                            <Run Classes="page-number" Text="...... 57-110"/>
                         </TextBlock>
                     </StackPanel>
                 </StackPanel>

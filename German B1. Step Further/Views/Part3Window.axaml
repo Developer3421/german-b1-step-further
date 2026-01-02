@@ -227,7 +227,7 @@
                 <Button Name="Topic3_12Button" Classes="topic-button" Tag="12">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Тема 12: Singular und Plural (Однина і множина)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 23-24"/>
+                        <TextBlock Classes="page-number" Text="Стор. 155-158"/>
                     </StackPanel>
                 </Button>
                 
