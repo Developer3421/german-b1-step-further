@@ -1,0 +1,89 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 11: Артиклі -->
+    <!-- Сторінки 141-143 -->
+    
+    <system:String x:Key="Page141_Title">Граматика: Тема 11</system:String>
+    <system:String x:Key="Page141_Subtitle">11.1 Артиклі (Artikel)</system:String>
+    <system:String x:Key="Page141_Content">📖 ГРАМАТИКА - Частина 3
+Тема 11: Артиклі та відмінювання
+
+📝 11.1 Означені артиклі (der, die, das)
+
+📌 Таблиця означених артиклів
+        m     f     n     pl
+Nom:   der   die   das   die
+Akk:   den   die   das   die
+Dat:   dem   der   dem   den
+Gen:   des   der   des   der
+
+📌 Приклади
+Nom: Der Mann ist groß.
+Akk: Ich sehe den Mann.
+Dat: Ich helfe dem Mann.
+Gen: Das Auto des Mannes.
+
+📌 Коли використовувати?
+• Конкретні речі
+• Вже згадані речі
+• Унікальні речі (die Sonne)</system:String>
+
+    <system:String x:Key="Page142_Title">Граматика: Тема 11</system:String>
+    <system:String x:Key="Page142_Subtitle">11.2 Неозначені артиклі</system:String>
+    <system:String x:Key="Page142_Content">📖 ГРАМАТИКА - Частина 3
+Тема 11: Артиклі та відмінювання
+
+📝 11.2 Неозначені артиклі (ein, eine)
+
+📌 Таблиця
+        m      f       n
+Nom:   ein    eine    ein
+Akk:   einen  eine    ein
+Dat:   einem  einer   einem
+Gen:   eines  einer   eines
+
+📌 Приклади
+• Das ist ein Buch.
+• Ich habe eine Frage.
+• Ich brauche einen Stift.
+
+📌 Заперечення: kein
+• Ich habe kein Auto.
+• Das ist keine gute Idee.
+
+📌 Присвійні: mein, dein...
+Відмінюються як ein/eine</system:String>
+
+    <system:String x:Key="Page143_Title">Граматика: Тема 11</system:String>
+    <system:String x:Key="Page143_Subtitle">11.3 Коли без артикля?</system:String>
+    <system:String x:Key="Page143_Content">📖 ГРАМАТИКА - Частина 3
+Тема 11: Артиклі та відмінювання
+
+📝 11.3 Коли без артикля?
+
+📌 Професії та національності
+• Ich bin Student.
+• Er ist Deutscher.
+• Sie ist Ärztin.
+
+📌 Після als (як)
+• Er arbeitet als Lehrer.
+• Ich sehe das als Problem.
+
+📌 Незлічувані іменники
+• Ich trinke Kaffee.
+• Ich brauche Hilfe.
+• Ich habe Hunger.
+
+📌 Множина (загально)
+• Ich mag Bücher.
+• Kinder spielen gern.
+
+📌 Назви міст/країн (більшість)
+• Ich wohne in Berlin.
+• Ich komme aus Deutschland.</system:String>
+
+</ResourceDictionary>
+

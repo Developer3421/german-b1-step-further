@@ -1,0 +1,88 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 5: Konjunktiv II -->
+    <!-- Сторінки 123-125 -->
+    
+    <system:String x:Key="Page123_Title">Граматика: Тема 5</system:String>
+    <system:String x:Key="Page123_Subtitle">5.1 Konjunktiv II (Умовний спосіб)</system:String>
+    <system:String x:Key="Page123_Content">📖 ГРАМАТИКА - Частина 3
+Тема 5: Konjunktiv II (Умовний спосіб)
+
+📝 5.1 Основи Konjunktiv II
+
+📌 Використання
+• Нереальні бажання
+• Ввічливі прохання
+• Умовні речення
+• Поради
+
+📌 Утворення
+würde + Infinitiv (більшість дієслів)
+
+📌 Відмінювання würde
+• ich würde    wir würden
+• du würdest   ihr würdet
+• er würde     sie würden
+
+📌 Приклади
+• Ich würde gern nach Deutschland fahren.
+• Würdest du mir helfen?
+• Er würde das nicht machen.</system:String>
+
+    <system:String x:Key="Page124_Title">Граматика: Тема 5</system:String>
+    <system:String x:Key="Page124_Subtitle">5.2 Konjunktiv II: hätte, wäre</system:String>
+    <system:String x:Key="Page124_Content">📖 ГРАМАТИКА - Частина 3
+Тема 5: Konjunktiv II (Умовний спосіб)
+
+📝 5.2 hätte, wäre
+
+📌 wäre (був би) - від sein
+• ich wäre     wir wären
+• du wärst     ihr wärt
+• er wäre      sie wären
+
+Приклад: Ich wäre gern reich.
+
+📌 hätte (мав би) - від haben
+• ich hätte    wir hätten
+• du hättest   ihr hättet
+• er hätte     sie hätten
+
+Приклад: Ich hätte gern mehr Zeit.
+
+📌 Модальні дієслова
+• könnte - міг би
+• müsste - мусив би
+• sollte - мав би (порада)
+• dürfte - міг би (дозвіл)</system:String>
+
+    <system:String x:Key="Page125_Title">Граматика: Тема 5</system:String>
+    <system:String x:Key="Page125_Subtitle">5.3 Умовні речення (Konditionalsätze)</system:String>
+    <system:String x:Key="Page125_Content">📖 ГРАМАТИКА - Частина 3
+Тема 5: Konjunktiv II (Умовний спосіб)
+
+📝 5.3 Умовні речення (Konditionalsätze)
+
+📌 Структура
+Wenn + Konjunktiv II, ... Konjunktiv II
+
+📌 Нереальні умови (теперішній час)
+• Wenn ich reich wäre, würde ich reisen.
+• Wenn ich Zeit hätte, würde ich lernen.
+
+📌 Нереальні умови (минулий час)
+• Wenn ich das gewusst hätte, hätte ich anders gehandelt.
+
+📌 Ввічливі прохання
+• Könnten Sie mir helfen?
+• Würden Sie das bitte wiederholen?
+• Hätten Sie einen Moment Zeit?
+
+📌 Поради
+• Du solltest mehr schlafen.
+• An deiner Stelle würde ich...</system:String>
+
+</ResourceDictionary>
+

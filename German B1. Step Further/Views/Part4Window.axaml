@@ -179,23 +179,7 @@
                 <Button Name="Topic4_6Button" Classes="topic-button" Tag="6">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Відповідь на запрошення (Antwort auf Einladung)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 11-12"/>
-                    </StackPanel>
-                </Button>
-                
-                <!-- Шаблон 7 -->
-                <Button Name="Topic4_7Button" Classes="topic-button" Tag="7">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Заява/Резюме (Bewerbung)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 13-14"/>
-                    </StackPanel>
-                </Button>
-                
-                <!-- Шаблон 8 -->
-                <Button Name="Topic4_8Button" Classes="topic-button" Tag="8">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Подяка (Danksagung)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 159"/>
+                        <TextBlock Classes="page-number" Text="Стор. 162-164"/>
                     </StackPanel>
                 </Button>
                 

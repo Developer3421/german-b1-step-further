@@ -1,0 +1,86 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 9: Adjektivdeklination -->
+    <!-- Сторінки 135-137 -->
+    
+    <system:String x:Key="Page135_Title">Граматика: Тема 9</system:String>
+    <system:String x:Key="Page135_Subtitle">9.1 Відмінювання прикметників</system:String>
+    <system:String x:Key="Page135_Content">📖 ГРАМАТИКА - Частина 3
+Тема 9: Adjektivdeklination
+
+📝 9.1 Основи відмінювання прикметників
+
+📌 Три типи відмінювання
+1. Після означеного артикля (der, die, das)
+2. Після неозначеного артикля (ein, eine)
+3. Без артикля
+
+📌 Після означеного артикля
+Nom: der große Mann, die kleine Frau
+Akk: den großen Mann, die kleine Frau
+Dat: dem großen Mann, der kleinen Frau
+
+📌 Закінчення після der/die/das
+Nom: -e (всі роди)
+Akk: -en (m), -e (f, n)
+Dat: -en (всі)
+Gen: -en (всі)</system:String>
+
+    <system:String x:Key="Page136_Title">Граматика: Тема 9</system:String>
+    <system:String x:Key="Page136_Subtitle">9.2 Після неозначеного артикля</system:String>
+    <system:String x:Key="Page136_Content">📖 ГРАМАТИКА - Частина 3
+Тема 9: Adjektivdeklination
+
+📝 9.2 Після неозначеного артикля
+
+📌 ein/eine/ein + прикметник
+Прикметник показує рід!
+
+📌 Таблиця
+        m         f         n
+Nom: ein großer  eine große  ein großes
+Akk: einen großen eine große ein großes
+Dat: einem großen einer großen einem großen
+
+📌 Приклади
+• Ein junger Mann kommt.
+• Ich sehe eine schöne Frau.
+• Das ist ein interessantes Buch.
+
+📌 Також після: kein, mein, dein...
+• Mein neuer Computer ist schnell.
+• Keine gute Idee!</system:String>
+
+    <system:String x:Key="Page137_Title">Граматика: Тема 9</system:String>
+    <system:String x:Key="Page137_Subtitle">9.3 Без артикля</system:String>
+    <system:String x:Key="Page137_Content">📖 ГРАМАТИКА - Частина 3
+Тема 9: Adjektivdeklination
+
+📝 9.3 Без артикля
+
+📌 Правило
+Прикметник отримує закінчення артикля
+
+📌 Таблиця
+        m          f          n
+Nom: großer     große      großes
+Akk: großen     große      großes
+Dat: großem     großer     großem
+
+📌 Приклади
+• Kalter Kaffee schmeckt nicht.
+• Frische Milch ist gesund.
+• Mit großem Interesse lese ich...
+
+📌 Множина без артикля
+Nom: große Männer
+Akk: große Männer
+Dat: großen Männern
+
+📌 Порада
+Завжди має бути показник роду!</system:String>
+
+</ResourceDictionary>
+

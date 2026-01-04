@@ -1,0 +1,82 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 3: Nebensätze -->
+    <!-- Сторінки 117-119 -->
+    
+    <system:String x:Key="Page117_Title">Граматика: Тема 3</system:String>
+    <system:String x:Key="Page117_Subtitle">3.1 Підрядні речення (Nebensätze)</system:String>
+    <system:String x:Key="Page117_Content">📖 ГРАМАТИКА - Частина 3
+Тема 3: Підрядні речення (Nebensätze)
+
+📝 3.1 Основи підрядних речень
+
+📌 Структура
+Головне речення + сполучник + підрядне
+Дієслово → в кінець підрядного!
+
+📌 Приклади
+• Ich lerne Deutsch, weil ich in Deutschland lebe.
+• Er sagt, dass er müde ist.
+• Wenn es regnet, bleibe ich zu Hause.
+
+📌 Порядок слів
+Головне: S + V + O
+Підрядне: Konj. + S + O + V
+
+📌 Важливо!
+Дієслово завжди в кінці підрядного речення!</system:String>
+
+    <system:String x:Key="Page118_Title">Граматика: Тема 3</system:String>
+    <system:String x:Key="Page118_Subtitle">3.2 Сполучники: weil, dass, wenn</system:String>
+    <system:String x:Key="Page118_Content">📖 ГРАМАТИКА - Частина 3
+Тема 3: Підрядні речення (Nebensätze)
+
+📝 3.2 Сполучники: weil, dass, wenn
+
+📌 weil (тому що) - причина
+• Ich bin müde, weil ich wenig geschlafen habe.
+• Sie lernt Deutsch, weil sie in Deutschland arbeitet.
+
+📌 dass (що) - непряма мова
+• Ich denke, dass du recht hast.
+• Er sagt, dass er kommt.
+• Ich hoffe, dass alles gut wird.
+
+📌 wenn (коли/якщо) - умова/час
+• Wenn ich Zeit habe, lese ich.
+• Wenn es regnet, nehme ich einen Regenschirm.
+• Ich rufe dich an, wenn ich ankomme.
+
+📌 Різниця weil vs. denn
+weil → дієслово в кінці
+denn → звичайний порядок слів</system:String>
+
+    <system:String x:Key="Page119_Title">Граматика: Тема 3</system:String>
+    <system:String x:Key="Page119_Subtitle">3.3 Сполучники: obwohl, damit, ob</system:String>
+    <system:String x:Key="Page119_Content">📖 ГРАМАТИКА - Частина 3
+Тема 3: Підрядні речення (Nebensätze)
+
+📝 3.3 Сполучники: obwohl, damit, ob
+
+📌 obwohl (хоча) - протиставлення
+• Obwohl es regnet, gehe ich spazieren.
+• Er arbeitet, obwohl er krank ist.
+
+📌 damit (щоб) - мета
+• Ich lerne Deutsch, damit ich Arbeit finde.
+• Er spart Geld, damit er ein Auto kaufen kann.
+
+📌 ob (чи) - непряме питання
+• Ich weiß nicht, ob er kommt.
+• Kannst du mir sagen, ob der Zug pünktlich ist?
+
+📌 als (коли) - одноразова дія в минулому
+• Als ich Kind war, lebte ich in der Ukraine.
+
+📌 während (поки) - одночасність
+• Während ich arbeite, höre ich Musik.</system:String>
+
+</ResourceDictionary>
+

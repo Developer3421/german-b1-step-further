@@ -1,0 +1,87 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 6: Infinitiv mit zu -->
+    <!-- Сторінки 126-128 -->
+    
+    <system:String x:Key="Page126_Title">Граматика: Тема 6</system:String>
+    <system:String x:Key="Page126_Subtitle">6.1 Infinitiv mit zu</system:String>
+    <system:String x:Key="Page126_Content">📖 ГРАМАТИКА - Частина 3
+Тема 6: Infinitiv mit zu
+
+📝 6.1 Основи Infinitiv mit zu
+
+📌 Структура
+zu + Infinitiv (в кінці речення)
+
+📌 Коли використовувати?
+Після певних дієслів, прикметників, іменників
+
+📌 Приклади
+• Ich versuche, Deutsch zu lernen.
+• Es ist wichtig, pünktlich zu sein.
+• Ich habe die Absicht, zu studieren.
+
+📌 Відокремлювані дієслова
+zu ставиться між префіксом і дієсловом
+• aufstehen → aufzustehen
+• anfangen → anzufangen
+• Ich versuche, früh aufzustehen.</system:String>
+
+    <system:String x:Key="Page127_Title">Граматика: Тема 6</system:String>
+    <system:String x:Key="Page127_Subtitle">6.2 Дієслова з Infinitiv mit zu</system:String>
+    <system:String x:Key="Page127_Content">📖 ГРАМАТИКА - Частина 3
+Тема 6: Infinitiv mit zu
+
+📝 6.2 Дієслова з Infinitiv mit zu
+
+📌 Дієслова + zu + Infinitiv
+• versuchen - намагатися
+• beginnen - починати
+• aufhören - припиняти
+• vergessen - забувати
+• versprechen - обіцяти
+• hoffen - сподіватися
+• planen - планувати
+
+📌 Приклади
+• Ich versuche, weniger zu essen.
+• Er beginnt, Deutsch zu lernen.
+• Sie hat vergessen, anzurufen.
+• Wir hoffen, dich zu sehen.
+
+📌 Конструкція haben + zu
+• Ich habe viel zu tun. (мушу багато робити)
+• Das hat nichts zu bedeuten.</system:String>
+
+    <system:String x:Key="Page128_Title">Граматика: Тема 6</system:String>
+    <system:String x:Key="Page128_Subtitle">6.3 Infinitiv ohne zu</system:String>
+    <system:String x:Key="Page128_Content">📖 ГРАМАТИКА - Частина 3
+Тема 6: Infinitiv mit zu
+
+📝 6.3 Infinitiv ohne zu (без zu)
+
+📌 Модальні дієслова (без zu!)
+• Ich kann schwimmen.
+• Du musst arbeiten.
+• Er will essen.
+
+📌 Дієслова руху + Infinitiv
+• Ich gehe einkaufen.
+• Wir fahren schwimmen.
+
+📌 Дієслова сприйняття
+• Ich höre ihn singen.
+• Ich sehe sie kommen.
+
+📌 lassen (без zu)
+• Ich lasse das Auto reparieren.
+• Sie lässt sich die Haare schneiden.
+
+📌 Порівняння
+З zu: Ich versuche zu lernen.
+Без zu: Ich kann lernen.</system:String>
+
+</ResourceDictionary>
+

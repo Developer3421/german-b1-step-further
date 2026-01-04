@@ -1,0 +1,95 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 11: Freizeit -->
+    <!-- Сторінки 87-89 -->
+    
+    <system:String x:Key="Page87_Title">Словник: Тема 11</system:String>
+    <system:String x:Key="Page87_Subtitle">11.1 Спорт (Sport) - Словник</system:String>
+    <system:String x:Key="Page87_Content">📚 СЛОВНИК - Частина 2
+Тема 11: Freizeit (Дозвілля)
+
+📝 11.1 Спорт (Sport)
+
+📌 Командні види спорту
+• der Fußball - футбол
+• der Basketball - баскетбол
+• der Volleyball - волейбол
+• der Handball - гандбол
+• das Eishockey - хокей
+
+📌 Індивідуальні види
+• das Schwimmen - плавання
+• das Joggen - біг
+• das Tennis - теніс
+• das Radfahren - велоспорт
+• das Yoga - йога
+• das Fitnesstraining - фітнес
+
+📌 Місця
+• das Fitnessstudio - спортзал
+• das Schwimmbad - басейн
+• der Sportplatz - спортмайданчик
+• das Stadion - стадіон</system:String>
+
+    <system:String x:Key="Page88_Title">Словник: Тема 11</system:String>
+    <system:String x:Key="Page88_Subtitle">11.2 Хобі (Hobbys) - Словник</system:String>
+    <system:String x:Key="Page88_Content">📚 СЛОВНИК - Частина 2
+Тема 11: Freizeit (Дозвілля)
+
+📝 11.2 Хобі (Hobbys)
+
+📌 Креативні хобі
+• malen - малювати
+• zeichnen - малювати
+• fotografieren - фотографувати
+• basteln - майструвати
+• nähen - шити
+• stricken - в'язати
+
+📌 Музика
+• Musik hören - слухати музику
+• Gitarre spielen - грати на гітарі
+• Klavier spielen - грати на піаніно
+• singen - співати
+• tanzen - танцювати
+
+📌 Інші
+• lesen - читати
+• kochen - готувати
+• gärtnern - садівництво
+• Computerspiele spielen - грати в ігри
+• programmieren - програмувати</system:String>
+
+    <system:String x:Key="Page89_Title">Словник: Тема 11</system:String>
+    <system:String x:Key="Page89_Subtitle">11.3 Культурні заходи (Veranstaltungen)</system:String>
+    <system:String x:Key="Page89_Content">📚 СЛОВНИК - Частина 2
+Тема 11: Freizeit (Дозвілля)
+
+📝 11.3 Культурні заходи
+
+📌 Види заходів
+• das Konzert - концерт
+• das Theater - театр
+• das Kino - кіно
+• das Museum - музей
+• die Ausstellung - виставка
+• das Festival - фестиваль
+• die Party - вечірка
+
+📌 Місця
+• die Halle - зал
+• das Stadion - стадіон
+• die Bühne - сцена
+• die Galerie - галерея
+
+📌 Квитки
+• die Eintrittskarte - вхідний квиток
+• der Eintritt - вхід
+• kostenlos - безкоштовно
+• ausverkauft - розпродано
+• reservieren - бронювати</system:String>
+
+</ResourceDictionary>
+

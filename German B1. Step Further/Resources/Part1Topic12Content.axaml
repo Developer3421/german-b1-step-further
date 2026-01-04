@@ -1,0 +1,160 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 12: Medien (Медіа) -->
+    <!-- Сторінки 36-38 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 36 ========== -->
+    <system:String x:Key="Page36_Title">Тема 12: Медіа</system:String>
+    <system:String x:Key="Page36_Subtitle">12.1 Інтернет та соцмережі (Internet)</system:String>
+    <system:String x:Key="Page36_Content">Німецька мова (Deutsche Sprache)
+Тема 12: Медіа (Medien)
+
+📝 12.1 Інтернет та соцмережі (Internet und soziale Medien)
+
+═══════════════════════════════════════════
+
+📌 Інтернет-терміни
+
+🔸 Основні слова:
+• das Internet - інтернет
+• die Website / die Webseite - веб-сайт
+• die E-Mail - електронна пошта
+• der Browser - браузер
+• die Suchmaschine - пошукова система
+• das WLAN - Wi-Fi
+• herunterladen - завантажувати
+• hochladen - вивантажувати
+
+🔸 Соціальні мережі:
+• soziale Medien/Netzwerke - соцмережі
+• der Post / der Beitrag - публікація
+• der Follower - підписник
+• liken - лайкати
+• teilen - ділитися
+• kommentieren - коментувати
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+• Ich bin oft im Internet.
+• Ich nutze soziale Medien jeden Tag.
+• Ich habe einen Account bei Instagram.
+• Ich poste selten Fotos.
+
+❓ Welche sozialen Medien nutzt du?
+✅ Ich benutze hauptsächlich YouTube und Telegram.
+
+❓ Wie viel Zeit verbringst du im Internet?
+✅ Ungefähr 3-4 Stunden pro Tag.</system:String>
+
+    <!-- ========== СТОРІНКА 37 ========== -->
+    <system:String x:Key="Page37_Title">Тема 12: Медіа</system:String>
+    <system:String x:Key="Page37_Subtitle">12.2 Телебачення та радіо (Fernsehen)</system:String>
+    <system:String x:Key="Page37_Content">Німецька мова (Deutsche Sprache)
+Тема 12: Медіа (Medien)
+
+📝 12.2 Телебачення та радіо (Fernsehen und Radio)
+
+═══════════════════════════════════════════
+
+📌 Телебачення
+
+🔸 Терміни:
+• der Fernseher - телевізор
+• das Fernsehen - телебачення
+• der Sender / der Kanal - канал
+• die Sendung - передача
+• die Nachrichten - новини
+• die Serie - серіал
+• der Film - фільм
+• die Werbung - реклама
+
+🔸 Жанри:
+• die Dokumentation - документальний фільм
+• die Komödie - комедія
+• der Krimi - детектив
+• die Talkshow - ток-шоу
+
+═══════════════════════════════════════════
+
+📌 Стрімінгові сервіси
+
+• Netflix, Amazon Prime, Disney+
+• Filme und Serien streamen
+• ein Abonnement haben
+
+═══════════════════════════════════════════
+
+📌 Діалоги
+
+❓ Was schaust du gern im Fernsehen?
+✅ Ich schaue gern Dokumentationen und Serien.
+
+❓ Hast du Netflix?
+✅ Ja, ich schaue dort oft Filme.
+
+❓ Wie findest du die Nachrichten?
+✅ Ich finde es wichtig, informiert zu sein.</system:String>
+
+    <!-- ========== СТОРІНКА 38 ========== -->
+    <system:String x:Key="Page38_Title">Тема 12: Медіа</system:String>
+    <system:String x:Key="Page38_Subtitle">12.3 Преса та новини (Presse)</system:String>
+    <system:String x:Key="Page38_Content">Німецька мова (Deutsche Sprache)
+Тема 12: Медіа (Medien)
+
+📝 12.3 Преса та новини (Presse und Nachrichten)
+
+═══════════════════════════════════════════
+
+📌 Друковані медіа
+
+🔸 Типи:
+• die Zeitung - газета
+• die Zeitschrift - журнал
+• das Magazin - журнал
+• der Artikel - стаття
+• die Schlagzeile - заголовок
+
+🔸 Німецькі газети:
+• Die Zeit, Süddeutsche Zeitung
+• Frankfurter Allgemeine Zeitung
+• Der Spiegel, Focus (журнали)
+
+═══════════════════════════════════════════
+
+📌 Новини (Nachrichten)
+
+🔸 Теми:
+• die Politik - політика
+• die Wirtschaft - економіка
+• der Sport - спорт
+• die Kultur - культура
+• das Wetter - погода
+
+🔸 Фрази:
+• Hast du die Nachrichten gehört?
+• Was ist heute passiert?
+• Es gibt einen interessanten Artikel über...
+
+═══════════════════════════════════════════
+
+📌 Медіаграмотність
+
+🔸 Важливі поняття:
+• die Fake News - фейкові новини
+• die Quelle - джерело
+• zuverlässig - надійний
+• kritisch denken - критично мислити
+
+• Man sollte verschiedene Quellen vergleichen.
+• Nicht alles im Internet ist wahr.
+• Es ist wichtig, Fake News zu erkennen.</system:String>
+
+</ResourceDictionary>
+

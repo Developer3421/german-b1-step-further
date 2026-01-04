@@ -1,0 +1,102 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 4: Шаблони листів - Тема 3: Bewerbung -->
+    <!-- Сторінки 153-155 -->
+    
+    <system:String x:Key="Page153_Title">Шаблони: Тема 3</system:String>
+    <system:String x:Key="Page153_Subtitle">3.1 Anschreiben (Супровідний лист)</system:String>
+    <system:String x:Key="Page153_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 3: Bewerbung (Заявка на роботу)
+
+📝 3.1 Anschreiben (Супровідний лист)
+
+📌 Структура Anschreiben
+1. Контактні дані
+2. Дата
+3. Betreff: Bewerbung als [посада]
+4. Звертання
+5. Вступ - чому пишете
+6. Основна частина - досвід, навички
+7. Мотивація - чому ця фірма
+8. Закінчення
+9. Підпис
+
+📌 Приклад Betreff
+Betreff: Bewerbung als Softwareentwickler
+Ihre Stellenanzeige vom 01.01.2026
+
+📌 Вступ
+Sehr geehrte Frau Müller,
+
+mit großem Interesse habe ich Ihre
+Stellenanzeige gelesen und bewerbe
+mich hiermit als Softwareentwickler.</system:String>
+
+    <system:String x:Key="Page154_Title">Шаблони: Тема 3</system:String>
+    <system:String x:Key="Page154_Subtitle">3.2 Основна частина Anschreiben</system:String>
+    <system:String x:Key="Page154_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 3: Bewerbung (Заявка на роботу)
+
+📝 3.2 Основна частина Anschreiben
+
+📌 Про досвід
+• Ich habe bereits Erfahrung in...
+• In meiner bisherigen Tätigkeit...
+• Durch meine Ausbildung habe ich...
+• Ich verfüge über Kenntnisse in...
+
+📌 Про навички
+• Zu meinen Stärken gehören...
+• Ich bin teamfähig und...
+• Ich arbeite selbstständig und...
+• Ich bringe mit: Flexibilität...
+
+📌 Мотивація
+• Ihre Firma interessiert mich, weil...
+• Ich möchte bei Ihnen arbeiten, weil...
+• Die Stelle passt zu meinen Zielen...
+
+📌 Приклад
+Ich habe Informatik studiert und
+bereits 2 Jahre Erfahrung als
+Programmierer. Ich beherrsche
+C#, Python und JavaScript.</system:String>
+
+    <system:String x:Key="Page155_Title">Шаблони: Тема 3</system:String>
+    <system:String x:Key="Page155_Subtitle">3.3 Lebenslauf (Резюме)</system:String>
+    <system:String x:Key="Page155_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 3: Bewerbung (Заявка на роботу)
+
+📝 3.3 Lebenslauf (Резюме/CV)
+
+📌 Структура
+1. Persönliche Daten
+2. Foto (справа)
+3. Berufserfahrung (антихронологічно!)
+4. Ausbildung
+5. Kenntnisse
+6. Sprachen
+7. Hobbys (опціонально)
+
+📌 Persönliche Daten
+• Name: Oleh Melnyk
+• Geburtsdatum: 01.01.2005
+• Adresse: Musterstr. 1, Berlin
+• Telefon: 0123-456789
+• E-Mail: oleh@email.de
+
+📌 Berufserfahrung
+01/2024 - heute
+Softwareentwickler, Firma ABC
+- Entwicklung von Webanwendungen
+- Programmierung in C#
+
+📌 Sprachen
+• Ukrainisch - Muttersprache
+• Deutsch - B1
+• Englisch - B2</system:String>
+
+</ResourceDictionary>
+

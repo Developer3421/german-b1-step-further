@@ -1,0 +1,94 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 13-18 -->
+    <!-- Сторінки 93-110 -->
+    
+    <!-- Тема 13: Technologie - Сторінки 93-95 -->
+    <system:String x:Key="Page93_Title">Словник: Тема 13</system:String>
+    <system:String x:Key="Page93_Subtitle">13.1 Пристрої (Geräte) - Словник</system:String>
+    <system:String x:Key="Page93_Content">📚 СЛОВНИК - Частина 2
+Тема 13: Technologie
+
+📝 13.1 Пристрої (Geräte)
+
+📌 Комп'ютер
+• der Computer - комп'ютер
+• der Laptop - ноутбук
+• der Bildschirm - монітор
+• die Tastatur - клавіатура
+• die Maus - миша
+• der Drucker - принтер
+• die Festplatte - жорсткий диск
+
+📌 Мобільні пристрої
+• das Smartphone - смартфон
+• das Tablet - планшет
+• das Ladegerät - зарядний пристрій
+• der Kopfhörer - навушники
+
+📌 Побутова техніка
+• der Kühlschrank - холодильник
+• die Waschmaschine - пральна машина
+• die Mikrowelle - мікрохвильовка
+• der Staubsauger - пилосос</system:String>
+
+    <system:String x:Key="Page94_Title">Словник: Тема 13</system:String>
+    <system:String x:Key="Page94_Subtitle">13.2 Програми (Software) - Словник</system:String>
+    <system:String x:Key="Page94_Content">📚 СЛОВНИК - Частина 2
+Тема 13: Technologie
+
+📝 13.2 Програми (Software)
+
+📌 Терміни
+• das Programm - програма
+• die Software - ПЗ
+• die App - додаток
+• das Betriebssystem - ОС
+• der Browser - браузер
+• das Update - оновлення
+
+📌 Дії
+• installieren - встановлювати
+• deinstallieren - видаляти
+• speichern - зберігати
+• laden - завантажувати
+• öffnen - відкривати
+• schließen - закривати
+
+📌 Програмування
+• programmieren - програмувати
+• der Code - код
+• der Bug - помилка
+• die Datenbank - база даних</system:String>
+
+    <system:String x:Key="Page95_Title">Словник: Тема 13</system:String>
+    <system:String x:Key="Page95_Subtitle">13.3 Нові технології - Словник</system:String>
+    <system:String x:Key="Page95_Content">📚 СЛОВНИК - Частина 2
+Тема 13: Technologie
+
+📝 13.3 Нові технології
+
+📌 Сучасні технології
+• die KI (künstl. Intelligenz) - ШІ
+• das Smart Home - розумний дім
+• die Cloud - хмара
+• das Internet der Dinge - IoT
+• die virtuelle Realität - VR
+• der 3D-Druck - 3D-друк
+
+📌 Безпека
+• der Datenschutz - захист даних
+• das Passwort - пароль
+• der Virus - вірус
+• die Firewall - брандмауер
+• verschlüsseln - шифрувати
+
+📌 Фрази
+• Die Technologie entwickelt sich schnell.
+• Ich benutze KI bei der Arbeit.
+• Datenschutz ist wichtig.</system:String>
+
+</ResourceDictionary>
+

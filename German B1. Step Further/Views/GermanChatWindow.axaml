@@ -1,0 +1,215 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="German_B1._Step_Further.Views.GermanChatWindow"
+        Title="Співрозмовник німецькою"
+        WindowStartupLocation="CenterOwner"
+        SystemDecorations="BorderOnly"
+        Background="#FFF5E6D3"
+        BorderThickness="0.5"
+        BorderBrush="#22000000"
+        Width="700"
+        Height="600"
+        CanResize="True"
+        MinWidth="450"
+        MinHeight="400"
+        Padding="8"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="40"
+        UseLayoutRounding="True"
+        FontFamily="Segoe UI, Arial, Tahoma">
+
+    <Window.Resources>
+        <!-- Gray Gradient for Title Bar -->
+        <LinearGradientBrush x:Key="GrayGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFE0E0E0" Offset="0"/>
+            <GradientStop Color="#FFD0D0D0" Offset="0.3"/>
+            <GradientStop Color="#FFC5C5C5" Offset="0.7"/>
+            <GradientStop Color="#FFC0C0C0" Offset="1"/>
+        </LinearGradientBrush>
+        
+        <!-- Icon Bitmaps -->
+        <Bitmap x:Key="CloseButtonImage">../Icons/CloseButton.png</Bitmap>
+    </Window.Resources>
+
+    <Window.Styles>
+        <!-- Window Control Button -->
+        <Style Selector="Button.window-control">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#303030"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style Selector="Button.window-control:pointerover">
+            <Setter Property="Background" Value="#40FFFFFF"/>
+        </Style>
+        <Style Selector="Button.window-control.close">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="Button.window-control.close:pointerover">
+            <Setter Property="Background" Value="#40FF5C5C"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+        </Style>
+
+        <!-- Chat Message Style (User) -->
+        <Style Selector="Border.user-message">
+            <Setter Property="Background" Value="#FFDCEDC8"/>
+            <Setter Property="CornerRadius" Value="12,12,0,12"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Margin" Value="60,4,8,4"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+        
+        <!-- Chat Message Style (AI) -->
+        <Style Selector="Border.ai-message">
+            <Setter Property="Background" Value="#FFFFFFFF"/>
+            <Setter Property="CornerRadius" Value="12,12,12,0"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Margin" Value="8,4,60,4"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+
+        <!-- Send Button -->
+        <Style Selector="Button.send-button">
+            <Setter Property="Background" Value="#FF8A2BE2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="16,8"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="Button.send-button:pointerover">
+            <Setter Property="Background" Value="#FF9932CC"/>
+        </Style>
+        <Style Selector="Button.send-button:disabled">
+            <Setter Property="Background" Value="#FFCCCCCC"/>
+            <Setter Property="Foreground" Value="#FF888888"/>
+        </Style>
+
+        <!-- ComboBox Style -->
+        <Style Selector="ComboBox.language-combo">
+            <Setter Property="Background" Value="#FFFAF0E6"/>
+            <Setter Property="CornerRadius" Value="6"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="MinWidth" Value="120"/>
+        </Style>
+    </Window.Styles>
+
+    <!-- MAIN LAYOUT -->
+    <Grid RowDefinitions="42,*,Auto">
+
+        <!-- ROW 0: TITLE BAR -->
+        <Grid Name="TitleBarRow" Grid.Row="0" Background="{StaticResource GrayGradient}">
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                
+                <!-- Column 0: Icon and Title -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
+                    <!-- Chat Icon -->
+                    <Border Width="28" Height="28" CornerRadius="4" Background="#FF8A2BE2" Margin="0,0,10,0">
+                        <Viewbox Width="18" Height="18">
+                            <Canvas Width="24" Height="24">
+                                <Path Fill="White" Data="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18"/>
+                            </Canvas>
+                        </Viewbox>
+                    </Border>
+                    
+                    <TextBlock Text="Співрозмовник німецькою" 
+                               FontSize="14" 
+                               FontWeight="SemiBold" 
+                               Foreground="#FF404040" 
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+                
+                <!-- Column 1: Spacer (draggable area) -->
+                <Border Grid.Column="1" Background="Transparent"/>
+                
+                <!-- Column 2: Window Controls -->
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Name="CloseButton" Classes="window-control close" Padding="0" BorderThickness="0">
+                        <Image Source="{StaticResource CloseButtonImage}" Stretch="UniformToFill"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <!-- ROW 1: CHAT AREA -->
+        <Grid Grid.Row="1" RowDefinitions="Auto,*">
+            
+            <!-- Loading/Status bar -->
+            <Border Grid.Row="0" Name="StatusBar" Background="#FFFFF8DC" Padding="10,8" IsVisible="True">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Name="StatusText" Text="Завантаження AI моделі..." 
+                               FontSize="13" Foreground="#FF666666" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+            
+            <!-- Chat messages -->
+            <ScrollViewer Grid.Row="1" Name="ChatScrollViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <StackPanel Name="ChatMessagesPanel" Margin="8">
+                    <!-- Messages will be added here programmatically -->
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+        <!-- ROW 2: INPUT AREA -->
+        <Border Grid.Row="2" Background="#FFECE0D0" Padding="12">
+            <Grid RowDefinitions="Auto,Auto">
+                
+                <!-- Settings row -->
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="12" Margin="0,0,0,10">
+                    <Border Background="#FFEEE8DC" CornerRadius="6" Padding="10,6">
+                        <TextBlock Text="💡 Формулюйте запит на одній мові бо змішаний режим працює слабо" 
+                                   VerticalAlignment="Center" FontSize="12" Foreground="#FF606060"/>
+                    </Border>
+                    
+                    <Border Width="1" Height="20" Background="#FFD0C0A0" Margin="8,0"/>
+
+                    <!-- Language selection (answer language) -->
+                    <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+                        <TextBlock Text="Мова відповіді:" VerticalAlignment="Center" FontSize="12" Foreground="#FF606060"/>
+                        <ComboBox Name="AnswerLanguageCombo" Classes="language-combo" SelectedIndex="0">
+                            <ComboBoxItem Content="Українська"/>
+                            <ComboBoxItem Content="Deutsch"/>
+                            <ComboBoxItem Content="Без обмежень"/>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+                
+                <!-- Input row -->
+                <Grid Grid.Row="1" ColumnDefinitions="*,Auto">
+                    <TextBox Name="MessageInput" 
+                             Grid.Column="0"
+                             Watermark="Напишіть повідомлення німецькою або українською..."
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap"
+                             MaxHeight="100"
+                             CornerRadius="8"
+                             Padding="12,8"
+                             Background="#FFFFFFFF"
+                             BorderThickness="1"
+                             BorderBrush="#FFD0D0D0"
+                             FontSize="14"/>
+                    
+                    <Button Name="SendButton" Grid.Column="1" Classes="send-button" Margin="8,0,0,0" IsEnabled="False">
+                        <StackPanel Orientation="Horizontal" Spacing="6">
+                            <Viewbox Width="16" Height="16">
+                                <Canvas Width="24" Height="24">
+                                    <Path Fill="White" Data="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
+                                </Canvas>
+                            </Viewbox>
+                            <TextBlock Text="Надіслати"/>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
+

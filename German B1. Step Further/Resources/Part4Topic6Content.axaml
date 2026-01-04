@@ -1,0 +1,108 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 4: Шаблони листів - Тема 6: Різні листи -->
+    <!-- Сторінки 162-164 -->
+    
+    <system:String x:Key="Page162_Title">Шаблони: Тема 6</system:String>
+    <system:String x:Key="Page162_Subtitle">6.1 Entschuldigung (Вибачення)</system:String>
+    <system:String x:Key="Page162_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 6: Різні листи
+
+📝 6.1 Entschuldigung (Вибачення)
+
+📌 Для школи/курсів
+Sehr geehrte Frau [Lehrerin],
+
+mein Sohn / meine Tochter [Name]
+konnte am [Datum] nicht am Unterricht
+teilnehmen, da er/sie krank war.
+
+Ich bitte, das Fehlen zu entschuldigen.
+
+Mit freundlichen Grüßen
+[Підпис]
+
+📌 Для роботи
+Sehr geehrter Herr [Chef],
+
+leider konnte ich am [Datum] nicht
+zur Arbeit kommen, da ich krank war.
+Anbei sende ich die Krankmeldung.
+
+Ich bitte um Verständnis.
+
+Mit freundlichen Grüßen</system:String>
+
+    <system:String x:Key="Page163_Title">Шаблони: Тема 6</system:String>
+    <system:String x:Key="Page163_Subtitle">6.2 Einladung (Запрошення)</system:String>
+    <system:String x:Key="Page163_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 6: Різні листи
+
+📝 6.2 Einladung (Запрошення)
+
+📌 На день народження
+Liebe Freunde,
+
+ich lade euch herzlich zu meiner
+Geburtstagsfeier ein!
+
+Wann: Samstag, 15. Januar 2026, 19 Uhr
+Wo: Bei mir zu Hause
+     Musterstraße 1, Berlin
+
+Bitte gebt mir bis zum 10. Januar
+Bescheid, ob ihr kommen könnt.
+
+Ich freue mich auf euch!
+Oleh
+
+📌 На вечірку
+Einladung zur Hauseinweihungsparty!
+
+Wir sind umgezogen und möchten das
+mit euch feiern!
+
+Datum: [...]
+Adresse: [...]
+
+Um Antwort wird gebeten.</system:String>
+
+    <system:String x:Key="Page164_Title">Шаблони: Тема 6</system:String>
+    <system:String x:Key="Page164_Subtitle">6.3 Danksagung (Подяка)</system:String>
+    <system:String x:Key="Page164_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 6: Різні листи
+
+📝 6.3 Danksagung (Подяка)
+
+📌 Після співбесіди
+Sehr geehrte Frau Müller,
+
+vielen Dank für das freundliche
+Gespräch am [Datum].
+
+Ich habe mich sehr über die Möglich-
+keit gefreut, mehr über die Stelle
+zu erfahren.
+
+Ich freue mich auf Ihre Rückmeldung.
+
+Mit freundlichen Grüßen
+
+📌 За подарунок
+Liebe Oma,
+
+vielen herzlichen Dank für das tolle
+Geschenk zum Geburtstag!
+Ich habe mich sehr darüber gefreut.
+
+Bis bald!
+Dein Oleh
+
+📌 За допомогу
+Ich möchte mich herzlich bei Ihnen
+für Ihre Unterstützung bedanken.</system:String>
+
+</ResourceDictionary>
+

@@ -1,0 +1,140 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 14: Stadt/Land (Місто/Село) -->
+    <!-- Сторінки 42-44 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 42 ========== -->
+    <system:String x:Key="Page42_Title">Тема 14: Місто/Село</system:String>
+    <system:String x:Key="Page42_Subtitle">14.1 Життя у місті (Leben in der Stadt)</system:String>
+    <system:String x:Key="Page42_Content">Німецька мова (Deutsche Sprache)
+Тема 14: Місто/Село (Stadt und Land)
+
+📝 14.1 Життя у місті (Leben in der Stadt)
+
+═══════════════════════════════════════════
+
+📌 Міська інфраструктура
+
+🔸 Місця у місті:
+• das Rathaus - ратуша
+• der Bahnhof - вокзал
+• das Krankenhaus - лікарня
+• die Bibliothek - бібліотека
+• das Museum - музей
+• das Theater - театр
+• der Park - парк
+• das Einkaufszentrum - ТЦ
+
+🔸 Транспорт:
+• die U-Bahn - метро
+• die Straßenbahn - трамвай
+• der Bus - автобус
+
+═══════════════════════════════════════════
+
+📌 Переваги міста
+
+• Viele Arbeitsmöglichkeiten.
+• Gute Verkehrsanbindung.
+• Viele kulturelle Angebote.
+• Einkaufsmöglichkeiten.
+
+🧠 Приклад:
+Ich wohne in einer großen Stadt in Deutschland. Hier gibt es viele Möglichkeiten für Ausbildung und Arbeit.</system:String>
+
+    <!-- ========== СТОРІНКА 43 ========== -->
+    <system:String x:Key="Page43_Title">Тема 14: Місто/Село</system:String>
+    <system:String x:Key="Page43_Subtitle">14.2 Життя на селі (Leben auf dem Land)</system:String>
+    <system:String x:Key="Page43_Content">Німецька мова (Deutsche Sprache)
+Тема 14: Місто/Село (Stadt und Land)
+
+📝 14.2 Життя на селі (Leben auf dem Land)
+
+═══════════════════════════════════════════
+
+📌 Сільська місцевість
+
+🔸 Місця на селі:
+• das Dorf - село
+• der Bauernhof - ферма
+• das Feld - поле
+• die Wiese - луг
+• der Wald - ліс
+• der Garten - сад
+
+🔸 Сільське господарство:
+• der Bauer - фермер
+• die Ernte - урожай
+• das Vieh - худоба
+
+═══════════════════════════════════════════
+
+📌 Переваги села
+
+• Frische Luft und Ruhe.
+• Mehr Natur und Platz.
+• Niedrigere Mieten.
+• Weniger Stress.
+
+═══════════════════════════════════════════
+
+📌 Недоліки села
+
+• Weniger Arbeitsmöglichkeiten.
+• Schlechte Verkehrsanbindung.
+• Weniger Geschäfte und Ärzte.
+
+🧠 Приклад:
+In der Ukraine habe ich in Poltawa gelebt. Das ist keine sehr große Stadt, aber auch kein Dorf. Es war ruhig und gemütlich.</system:String>
+
+    <!-- ========== СТОРІНКА 44 ========== -->
+    <system:String x:Key="Page44_Title">Тема 14: Місто/Село</system:String>
+    <system:String x:Key="Page44_Subtitle">14.3 Порівняння (Vergleich)</system:String>
+    <system:String x:Key="Page44_Content">Німецька мова (Deutsche Sprache)
+Тема 14: Місто/Село (Stadt und Land)
+
+📝 14.3 Порівняння (Vergleich Stadt und Land)
+
+═══════════════════════════════════════════
+
+📌 Порівняльні конструкції
+
+🔸 Порівняння:
+• Die Stadt ist größer als das Dorf.
+• Auf dem Land ist es ruhiger als in der Stadt.
+• Das Leben in der Stadt ist teurer.
+• Die Luft auf dem Land ist frischer.
+
+🔸 Корисні фрази:
+• Im Vergleich zu...
+• Im Gegensatz zu...
+• Einerseits... andererseits...
+• Sowohl... als auch...
+
+═══════════════════════════════════════════
+
+📌 Дискусія
+
+❓ Wo möchtest du lieber wohnen?
+✅ Ich möchte lieber in der Stadt wohnen, weil es dort mehr Arbeitsmöglichkeiten gibt.
+
+❓ Was sind die Vorteile des Landlebens?
+✅ Die Luft ist frischer und es ist ruhiger.
+
+❓ Vermisst du dein Heimatland?
+✅ Ja, manchmal. Aber Deutschland bietet mir gute Chancen.
+
+═══════════════════════════════════════════
+
+📌 Думка
+
+🧠 Приклад:
+Meiner Meinung nach hat sowohl das Stadt- als auch das Landleben Vorteile. In der Stadt gibt es mehr Möglichkeiten, aber auf dem Land lebt man ruhiger. Für mich ist die Stadt besser, weil ich im IT-Bereich arbeiten möchte.</system:String>
+
+</ResourceDictionary>
+

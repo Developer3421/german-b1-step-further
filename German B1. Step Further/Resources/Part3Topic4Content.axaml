@@ -1,0 +1,82 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 4: Passiv -->
+    <!-- Сторінки 120-122 -->
+    
+    <system:String x:Key="Page120_Title">Граматика: Тема 4</system:String>
+    <system:String x:Key="Page120_Subtitle">4.1 Пасивний стан (Passiv)</system:String>
+    <system:String x:Key="Page120_Content">📖 ГРАМАТИКА - Частина 3
+Тема 4: Пасивний стан (Passiv)
+
+📝 4.1 Основи пасиву
+
+📌 Що таке Passiv?
+Дія важливіша за виконавця
+Aktiv: Der Mann baut das Haus.
+Passiv: Das Haus wird gebaut.
+
+📌 Утворення Passiv Präsens
+werden + Partizip II
+
+📌 Відмінювання werden
+• ich werde    wir werden
+• du wirst     ihr werdet
+• er wird      sie werden
+
+📌 Приклади
+• Das Buch wird gelesen.
+• Die Tür wird geöffnet.
+• Die Briefe werden geschrieben.</system:String>
+
+    <system:String x:Key="Page121_Title">Граматика: Тема 4</system:String>
+    <system:String x:Key="Page121_Subtitle">4.2 Passiv у різних часах</system:String>
+    <system:String x:Key="Page121_Content">📖 ГРАМАТИКА - Частина 3
+Тема 4: Пасивний стан (Passiv)
+
+📝 4.2 Passiv у різних часах
+
+📌 Präsens Passiv
+werden + Partizip II
+• Das Auto wird repariert.
+
+📌 Präteritum Passiv
+wurde + Partizip II
+• Das Auto wurde repariert.
+
+📌 Perfekt Passiv
+sein + Partizip II + worden
+• Das Auto ist repariert worden.
+
+📌 Приклади
+Präsens: Die E-Mail wird geschrieben.
+Präteritum: Die E-Mail wurde geschrieben.
+Perfekt: Die E-Mail ist geschrieben worden.</system:String>
+
+    <system:String x:Key="Page122_Title">Граматика: Тема 4</system:String>
+    <system:String x:Key="Page122_Subtitle">4.3 Passiv з von/durch</system:String>
+    <system:String x:Key="Page122_Content">📖 ГРАМАТИКА - Частина 3
+Тема 4: Пасивний стан (Passiv)
+
+📝 4.3 Passiv з von/durch
+
+📌 von + Dativ (виконавець - особа)
+• Das Buch wird von dem Autor geschrieben.
+• Der Brief wurde von mir geschickt.
+
+📌 durch + Akkusativ (засіб/причина)
+• Die Stadt wurde durch den Krieg zerstört.
+• Das Problem wird durch Technik gelöst.
+
+📌 Passiv без виконавця
+• Hier wird Deutsch gesprochen.
+• Es wird viel gearbeitet.
+
+📌 Коли використовувати Passiv?
+• Виконавець невідомий
+• Виконавець неважливий
+• Офіційний/науковий стиль</system:String>
+
+</ResourceDictionary>
+

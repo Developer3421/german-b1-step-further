@@ -226,8 +226,8 @@
                 <!-- Тема 12 -->
                 <Button Name="Topic3_12Button" Classes="topic-button" Tag="12">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Тема 12: Singular und Plural (Однина і множина)"/>
-                        <TextBlock Classes="page-number" Text="Стор. 155-158"/>
+                        <TextBlock Text="Тема 12: Singular und Plural (Одинина і множина)"/>
+                        <TextBlock Classes="page-number" Text="Стор. 144-146"/>
                     </StackPanel>
                 </Button>
                 

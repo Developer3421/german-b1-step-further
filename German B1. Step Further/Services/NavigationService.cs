@@ -10,6 +10,9 @@ namespace German_B1._Step_Further.Services
         // Події для навігації
         public static event EventHandler<NavigationEventArgs>? NavigateToPage;
         
+        // Подія для оновлення поточної сторінки у всіх слухачів
+        public static event EventHandler<PageChangedEventArgs>? PageChanged;
+        
         /// <summary>
         /// Викликає подію навігації до конкретної сторінки
         /// </summary>
@@ -18,6 +21,14 @@ namespace German_B1._Step_Further.Services
         public static void RequestNavigation(int part, int pageNumber)
         {
             NavigateToPage?.Invoke(null, new NavigationEventArgs(part, pageNumber));
+        }
+        
+        /// <summary>
+        /// Сповіщає всіх слухачів про зміну поточної сторінки
+        /// </summary>
+        public static void NotifyPageChanged(int leftPage, int rightPage)
+        {
+            PageChanged?.Invoke(null, new PageChangedEventArgs(leftPage, rightPage));
         }
     }
     
@@ -30,6 +41,18 @@ namespace German_B1._Step_Further.Services
         {
             Part = part;
             PageNumber = pageNumber;
+        }
+    }
+    
+    public class PageChangedEventArgs : EventArgs
+    {
+        public int LeftPage { get; }
+        public int RightPage { get; }
+        
+        public PageChangedEventArgs(int leftPage, int rightPage)
+        {
+            LeftPage = leftPage;
+            RightPage = rightPage;
         }
     }
 }

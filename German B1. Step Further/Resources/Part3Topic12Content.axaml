@@ -1,0 +1,92 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 12: Plural -->
+    <!-- Сторінки 144-146 -->
+    
+    <system:String x:Key="Page144_Title">Граматика: Тема 12</system:String>
+    <system:String x:Key="Page144_Subtitle">12.1 Множина (Plural)</system:String>
+    <system:String x:Key="Page144_Content">📖 ГРАМАТИКА - Частина 3
+Тема 12: Singular und Plural
+
+📝 12.1 Типи множини
+
+📌 Тип 1: -e
+• der Tag → die Tage
+• der Tisch → die Tische
+• das Problem → die Probleme
+
+📌 Тип 2: -en/-n
+• die Frau → die Frauen
+• die Blume → die Blumen
+• der Student → die Studenten
+
+📌 Тип 3: -er (+ Umlaut)
+• das Kind → die Kinder
+• das Buch → die Bücher
+• der Mann → die Männer
+
+📌 Тип 4: - (без змін або Umlaut)
+• der Lehrer → die Lehrer
+• der Vater → die Väter</system:String>
+
+    <system:String x:Key="Page145_Title">Граматика: Тема 12</system:String>
+    <system:String x:Key="Page145_Subtitle">12.2 Особливі випадки</system:String>
+    <system:String x:Key="Page145_Content">📖 ГРАМАТИКА - Частина 3
+Тема 12: Singular und Plural
+
+📝 12.2 Особливі випадки
+
+📌 Тип 5: -s (іншомовні слова)
+• das Auto → die Autos
+• das Foto → die Fotos
+• das Hotel → die Hotels
+• das Handy → die Handys
+
+📌 Слова тільки в однині
+• das Geld (гроші)
+• die Milch (молоко)
+• der Hunger (голод)
+
+📌 Слова тільки у множині
+• die Eltern (батьки)
+• die Leute (люди)
+• die Ferien (канікули)
+
+📌 Різна множина = різне значення
+• das Wort → die Wörter (окремі слова)
+• das Wort → die Worte (мова, промова)</system:String>
+
+    <system:String x:Key="Page146_Title">Граматика: Тема 12</system:String>
+    <system:String x:Key="Page146_Subtitle">12.3 Підказки для множини</system:String>
+    <system:String x:Key="Page146_Content">📖 ГРАМАТИКА - Частина 3
+Тема 12: Singular und Plural
+
+📝 12.3 Підказки для множини
+
+📌 Feminine -e, -ung, -heit, -keit
+Завжди -en
+• die Lampe → die Lampen
+• die Zeitung → die Zeitungen
+
+📌 Masculine -er
+Зазвичай без змін
+• der Lehrer → die Lehrer
+• der Computer → die Computer
+
+📌 Neuter -chen, -lein
+Без змін
+• das Mädchen → die Mädchen
+• das Brötchen → die Brötchen
+
+📌 Слова на -nis → -nisse
+• das Ergebnis → die Ergebnisse
+• das Ereignis → die Ereignisse
+
+📌 Порада
+Вчіть слова з артиклем і множиною!
+das Buch, die Bücher</system:String>
+
+</ResourceDictionary>
+

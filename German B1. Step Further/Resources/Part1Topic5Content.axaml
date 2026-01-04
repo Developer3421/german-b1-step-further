@@ -1,0 +1,193 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 5: Essen (Їжа) -->
+    <!-- Сторінки 15-17 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 15 ========== -->
+    <!-- Тема 5.1: Продукти харчування (Lebensmittel) -->
+    <system:String x:Key="Page15_Title">Тема 5: Їжа</system:String>
+    <system:String x:Key="Page15_Subtitle">5.1 Продукти харчування (Lebensmittel)</system:String>
+    <system:String x:Key="Page15_Content">Німецька мова (Deutsche Sprache)
+Тема 5: Їжа (Essen)
+
+📝 5.1 Продукти харчування (Lebensmittel)
+
+═══════════════════════════════════════════
+
+📌 Основні продукти (Grundnahrungsmittel)
+
+🔸 Хліб та випічка:
+• das Brot - хліб
+• das Brötchen - булочка
+• der Kuchen - торт/пиріг
+• die Brezel - крендель
+
+🔸 Молочні продукти:
+• die Milch - молоко
+• der Käse - сир
+• der Joghurt - йогурт
+• die Butter - масло
+• die Sahne - вершки
+
+🔸 М'ясо та риба:
+• das Fleisch - м'ясо
+• das Hähnchen - курка
+• das Schweinefleisch - свинина
+• das Rindfleisch - яловичина
+• der Fisch - риба
+
+═══════════════════════════════════════════
+
+📌 Фрукти та овочі
+
+🔸 Фрукти (Obst):
+• der Apfel - яблуко
+• die Banane - банан
+• die Orange - апельсин
+• die Erdbeere - полуниця
+• die Traube - виноград
+
+🔸 Овочі (Gemüse):
+• die Kartoffel - картопля
+• die Tomate - помідор
+• die Gurke - огірок
+• die Zwiebel - цибуля
+• die Karotte - морква
+• der Salat - салат
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+🔸 Про їжу:
+• Ich esse gern Obst und Gemüse.
+• Mein Lieblingsessen ist Pizza.
+• Ich bin Vegetarier/Vegetarierin.
+• Ich habe eine Allergie gegen Nüsse.
+
+🧠 Приклад:
+Ich esse jeden Tag Obst. Am liebsten mag ich Äpfel und Bananen. Zum Frühstück esse ich meistens Brot mit Käse und trinke Kaffee.</system:String>
+
+    <!-- ========== СТОРІНКА 16 ========== -->
+    <!-- Тема 5.2: Ресторан (Restaurant) -->
+    <system:String x:Key="Page16_Title">Тема 5: Їжа</system:String>
+    <system:String x:Key="Page16_Subtitle">5.2 Ресторан (Restaurant)</system:String>
+    <system:String x:Key="Page16_Content">Німецька мова (Deutsche Sprache)
+Тема 5: Їжа (Essen)
+
+📝 5.2 У ресторані (Im Restaurant)
+
+═══════════════════════════════════════════
+
+📌 Замовлення (Bestellung)
+
+🔸 Корисні фрази:
+• Ich möchte bitte bestellen.
+• Können Sie mir die Speisekarte bringen?
+• Was können Sie empfehlen?
+• Ich hätte gern...
+• Für mich bitte...
+• Als Vorspeise nehme ich...
+• Als Hauptgericht möchte ich...
+
+🔸 Напої (Getränke):
+• das Wasser - вода
+• der Saft - сік
+• das Bier - пиво
+• der Wein - вино
+• der Kaffee - кава
+• der Tee - чай
+
+═══════════════════════════════════════════
+
+📌 Діалог у ресторані
+
+❓ Haben Sie schon gewählt?
+✅ Ja, ich nehme das Schnitzel mit Pommes.
+
+❓ Möchten Sie etwas trinken?
+✅ Ein Glas Wasser, bitte.
+
+❓ Hat es Ihnen geschmeckt?
+✅ Ja, es war sehr lecker. Danke!
+
+❓ Möchten Sie noch etwas?
+✅ Nein, danke. Die Rechnung, bitte.
+
+═══════════════════════════════════════════
+
+📌 Оплата та чайові
+
+🔸 Корисні фрази:
+• Zahlen, bitte!
+• Kann ich mit Karte zahlen?
+• Ich zahle bar.
+• Stimmt so. (Решту залиште собі)
+• Zusammen oder getrennt?
+
+🧠 Приклад:
+Gestern war ich in einem italienischen Restaurant. Ich habe Pizza Margherita bestellt und dazu ein Glas Cola getrunken. Das Essen war lecker und der Service war freundlich.</system:String>
+
+    <!-- ========== СТОРІНКА 17 ========== -->
+    <!-- Тема 5.3: Готування (Kochen) -->
+    <system:String x:Key="Page17_Title">Тема 5: Їжа</system:String>
+    <system:String x:Key="Page17_Subtitle">5.3 Готування (Kochen)</system:String>
+    <system:String x:Key="Page17_Content">Німецька мова (Deutsche Sprache)
+Тема 5: Їжа (Essen)
+
+📝 5.3 Готування (Kochen)
+
+═══════════════════════════════════════════
+
+📌 Кухонне приладдя (Küchengeräte)
+
+🔸 Посуд:
+• der Topf - каструля
+• die Pfanne - сковорода
+• das Messer - ніж
+• der Löffel - ложка
+• die Gabel - виделка
+• der Teller - тарілка
+• die Tasse - чашка
+• das Glas - склянка
+
+🔸 Техніка:
+• der Herd - плита
+• der Backofen - духовка
+• der Kühlschrank - холодильник
+• die Mikrowelle - мікрохвильовка
+• der Mixer - міксер
+
+═══════════════════════════════════════════
+
+📌 Дії при готуванні
+
+🔸 Дієслова:
+• kochen - варити
+• braten - смажити
+• backen - пекти
+• schneiden - різати
+• rühren - мішати
+• würzen - приправляти
+• schälen - чистити
+• waschen - мити
+
+═══════════════════════════════════════════
+
+📌 Рецепт (Rezept)
+
+🔸 Структура рецепту:
+• die Zutaten - інгредієнти
+• die Zubereitung - приготування
+• die Portionen - порції
+• die Zubereitungszeit - час приготування
+
+🧠 Приклад рецепту:
+Für einen einfachen Salat braucht man: Tomaten, Gurken, Zwiebeln, Öl und Salz. Zuerst wäscht man das Gemüse. Dann schneidet man alles in kleine Stücke. Am Ende gibt man Öl und Salz dazu und mischt alles gut durch.</system:String>
+
+</ResourceDictionary>

@@ -1,0 +1,180 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 8: Einkaufen (Покупки) -->
+    <!-- Сторінки 24-26 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 24 ========== -->
+    <!-- Тема 8.1: Магазини (Geschäfte) -->
+    <system:String x:Key="Page24_Title">Тема 8: Покупки</system:String>
+    <system:String x:Key="Page24_Subtitle">8.1 Магазини (Geschäfte)</system:String>
+    <system:String x:Key="Page24_Content">Німецька мова (Deutsche Sprache)
+Тема 8: Покупки (Einkaufen)
+
+📝 8.1 Магазини (Geschäfte)
+
+═══════════════════════════════════════════
+
+📌 Види магазинів
+
+🔸 Продуктові:
+• der Supermarkt - супермаркет
+• der Bioladen - магазин органічних продуктів
+• die Bäckerei - пекарня
+• die Metzgerei - м'ясний магазин
+• der Markt - ринок
+
+🔸 Інші магазини:
+• das Kaufhaus - універмаг
+• das Einkaufszentrum - торговий центр
+• die Apotheke - аптека
+• die Drogerie - магазин косметики
+• der Buchladen - книгарня
+• das Elektrogeschäft - магазин електроніки
+
+═══════════════════════════════════════════
+
+📌 Час роботи (Öffnungszeiten)
+
+🔸 Типові години:
+• Montag bis Samstag: 8:00 - 20:00
+• Am Sonntag sind die Geschäfte geschlossen.
+• Einige Supermärkte sind bis 22:00 geöffnet.
+
+🔸 Корисні фрази:
+• Wann öffnet das Geschäft?
+• Wie lange haben Sie geöffnet?
+• Haben Sie am Sonntag geöffnet?
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+🔸 Пошук товару:
+• Wo finde ich...?
+• Haben Sie...?
+• Ich suche...
+• Gibt es das auch in einer anderen Größe/Farbe?
+
+🧠 Приклад:
+Ich kaufe meistens im Supermarkt ein. Am Samstag gehe ich manchmal auf den Markt, weil das Obst und Gemüse dort frischer ist.</system:String>
+
+    <!-- ========== СТОРІНКА 25 ========== -->
+    <!-- Тема 8.2: Покупки (Einkauf) -->
+    <system:String x:Key="Page25_Title">Тема 8: Покупки</system:String>
+    <system:String x:Key="Page25_Subtitle">8.2 Процес покупки (Einkauf)</system:String>
+    <system:String x:Key="Page25_Content">Німецька мова (Deutsche Sprache)
+Тема 8: Покупки (Einkaufen)
+
+📝 8.2 Процес покупки (Einkauf)
+
+═══════════════════════════════════════════
+
+📌 Діалог у магазині
+
+🔸 Продавець:
+• Kann ich Ihnen helfen?
+• Darf es sonst noch etwas sein?
+• Das macht zusammen... Euro.
+• Möchten Sie bar oder mit Karte zahlen?
+
+🔸 Покупець:
+• Ich hätte gern...
+• Ich nehme das.
+• Das ist alles, danke.
+• Kann ich mit Karte zahlen?
+
+═══════════════════════════════════════════
+
+📌 Ціни та оплата
+
+🔸 Про ціни:
+• Was kostet das?
+• Wie viel kostet...?
+• Das ist mir zu teuer.
+• Gibt es einen Rabatt?
+• Das ist ein Sonderangebot.
+
+🔸 Оплата:
+• Ich zahle bar.
+• Ich zahle mit Karte.
+• Kann ich die Rechnung haben?
+• Der Kassenbon, bitte.
+
+═══════════════════════════════════════════
+
+📌 Повернення товару (Umtausch)
+
+🔸 Корисні фрази:
+• Ich möchte das umtauschen.
+• Kann ich das zurückgeben?
+• Ich habe den Kassenbon.
+• Das Produkt ist defekt.
+• Ich möchte mein Geld zurück.
+
+🧠 Приклад:
+Gestern habe ich ein T-Shirt gekauft, aber es war zu klein. Heute bin ich zurück zum Geschäft gegangen und habe es umgetauscht. Der Verkäufer war sehr freundlich.</system:String>
+
+    <!-- ========== СТОРІНКА 26 ========== -->
+    <!-- Тема 8.3: Онлайн-покупки (Online-Shopping) -->
+    <system:String x:Key="Page26_Title">Тема 8: Покупки</system:String>
+    <system:String x:Key="Page26_Subtitle">8.3 Онлайн-покупки (Online-Shopping)</system:String>
+    <system:String x:Key="Page26_Content">Німецька мова (Deutsche Sprache)
+Тема 8: Покупки (Einkaufen)
+
+📝 8.3 Онлайн-покупки (Online-Shopping)
+
+═══════════════════════════════════════════
+
+📌 Інтернет-магазини
+
+🔸 Важливі терміни:
+• der Warenkorb - кошик
+• die Bestellung - замовлення
+• die Lieferung - доставка
+• die Versandkosten - вартість доставки
+• die Zahlungsmethode - спосіб оплати
+• die Rücksendung - повернення
+
+🔸 Популярні сайти:
+• Amazon, eBay, Otto
+• Zalando (одяг)
+• MediaMarkt (електроніка)
+
+═══════════════════════════════════════════
+
+📌 Процес замовлення
+
+🔸 Кроки:
+1. Produkt auswählen - вибрати товар
+2. In den Warenkorb legen - додати в кошик
+3. Zur Kasse gehen - перейти до оплати
+4. Lieferadresse eingeben - ввести адресу
+5. Zahlungsmethode wählen - вибрати оплату
+6. Bestellung bestätigen - підтвердити замовлення
+
+═══════════════════════════════════════════
+
+📌 Переваги та недоліки
+
+🔸 Переваги (Vorteile):
+• Bequem von zu Hause einkaufen
+• Große Auswahl
+• Oft günstiger
+• Lieferung nach Hause
+
+🔸 Недоліки (Nachteile):
+• Man kann das Produkt nicht anfassen.
+• Versandkosten
+• Wartezeit
+• Rücksendung kann kompliziert sein.
+
+🧠 Приклад:
+Ich kaufe oft online ein, weil es bequemer ist. Letzte Woche habe ich einen Laptop bei Amazon bestellt. Die Lieferung hat nur zwei Tage gedauert.</system:String>
+
+</ResourceDictionary>
+

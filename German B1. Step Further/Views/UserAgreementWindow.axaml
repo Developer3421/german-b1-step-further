@@ -1,0 +1,130 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="German_B1._Step_Further.Views.UserAgreementWindow"
+        Title="User Agreement"
+        WindowStartupLocation="CenterOwner"
+        SystemDecorations="BorderOnly"
+        Background="#FFF5E6D3"
+        BorderThickness="0.5"
+        BorderBrush="#22000000"
+        Width="760"
+        Height="620"
+        MinWidth="520"
+        MinHeight="360"
+        Padding="8"
+        CanResize="True"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="40"
+        UseLayoutRounding="True"
+        FontFamily="Segoe UI, Arial, Tahoma">
+
+    <Window.Resources>
+        <LinearGradientBrush x:Key="GrayGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFE0E0E0" Offset="0"/>
+            <GradientStop Color="#FFD0D0D0" Offset="0.3"/>
+            <GradientStop Color="#FFC5C5C5" Offset="0.7"/>
+            <GradientStop Color="#FFC0C0C0" Offset="1"/>
+        </LinearGradientBrush>
+
+        <Bitmap x:Key="CloseButtonImage">../Icons/CloseButton.png</Bitmap>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="Button.window-control">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#303030"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style Selector="Button.window-control:pointerover">
+            <Setter Property="Background" Value="#40FFFFFF"/>
+        </Style>
+        <Style Selector="Button.window-control.close">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="Button.window-control.close:pointerover">
+            <Setter Property="Background" Value="#40FF5C5C"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+        </Style>
+
+        <Style Selector="Button.secondary-toolbar-button">
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Background" Value="#50000000"/>
+            <Setter Property="Foreground" Value="#FF404040"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="6"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style Selector="Button.secondary-toolbar-button:pointerover">
+            <Setter Property="Background" Value="#70000000"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid RowDefinitions="42,Auto,*,Auto" RowSpacing="10">
+
+        <!-- Title bar like InstrumentsWindow -->
+        <Grid Name="TitleBarRow" Grid.Row="0" Background="{StaticResource GrayGradient}">
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
+                    <Border Width="28" Height="28" CornerRadius="4" Background="#50000000" Margin="0,0,10,0">
+                        <Viewbox Width="18" Height="18">
+                            <Canvas Width="24" Height="24">
+                                <Path Fill="#FF505050" Data="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13,9V3.5L18.5,9H13"/>
+                            </Canvas>
+                        </Viewbox>
+                    </Border>
+                    <TextBlock Name="TitleText" Text="User Agreement" FontSize="14" FontWeight="SemiBold" Foreground="#FF404040" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <Border Grid.Column="1" Background="Transparent"/>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Name="CloseButton" Classes="window-control close" Padding="0" BorderThickness="0">
+                        <Image Source="{StaticResource CloseButtonImage}" Stretch="UniformToFill"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <!-- Header + language switch -->
+        <Grid Grid.Row="1" ColumnDefinitions="*,Auto" ColumnSpacing="12" VerticalAlignment="Top">
+            <StackPanel Grid.Column="0" MinWidth="260" Margin="0,0,8,0">
+                <TextBlock Name="HeaderTitleText" Text="User Agreement" FontSize="20" FontWeight="Bold" Foreground="#8A2BE2" />
+                <TextBlock Name="SubtitleText" Text="Please read this agreement. To use online AI services you must accept it." FontSize="12" Foreground="#FF404040" Margin="0,4,0,0" TextWrapping="Wrap"/>
+            </StackPanel>
+
+            <!-- Right side language buttons -->
+            <WrapPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" ItemSpacing="8" MaxWidth="420">
+                <Button Name="LangUkButton" Classes="secondary-toolbar-button">Українська версія</Button>
+                <Button Name="LangDeButton" Classes="secondary-toolbar-button">Deutsche Version</Button>
+                <Button Name="LangEnButton" Classes="secondary-toolbar-button">English version</Button>
+            </WrapPanel>
+        </Grid>
+
+        <!-- Body -->
+        <Border Grid.Row="2" Background="#FFFAF0E6" BorderBrush="#22000000" BorderThickness="1" CornerRadius="8" Padding="12">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBlock Name="BodyText" TextWrapping="Wrap"/>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Buttons (can be hidden in info-only mode) -->
+        <Grid Grid.Row="3" Name="ActionBar" ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10">
+            <TextBlock Name="TipText" VerticalAlignment="Center" Foreground="#FF404040" FontSize="12" TextWrapping="Wrap" />
+
+            <Button Grid.Column="1" Name="DeclineButton" Width="130" Height="34" Background="#50FF5C5C" BorderThickness="0" CornerRadius="6"/>
+            <Button Grid.Column="2" Name="AgreeButton" Width="130" Height="34" Background="#FF8A2BE2" Foreground="White" BorderThickness="0" CornerRadius="6"/>
+        </Grid>
+
+    </Grid>
+</Window>
+

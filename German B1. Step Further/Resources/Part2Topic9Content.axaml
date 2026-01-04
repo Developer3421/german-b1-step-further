@@ -1,0 +1,94 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 9: Gesundheit -->
+    <!-- Сторінки 81-83 -->
+    
+    <system:String x:Key="Page81_Title">Словник: Тема 9</system:String>
+    <system:String x:Key="Page81_Subtitle">9.1 Симптоми (Symptome) - Словник</system:String>
+    <system:String x:Key="Page81_Content">📚 СЛОВНИК - Частина 2
+Тема 9: Gesundheit (Здоров'я)
+
+📝 9.1 Симптоми (Symptome)
+
+📌 Біль
+• der Schmerz - біль
+• die Kopfschmerzen - головний біль
+• die Halsschmerzen - біль у горлі
+• die Bauchschmerzen - біль у животі
+• die Rückenschmerzen - біль у спині
+• die Zahnschmerzen - зубний біль
+
+📌 Інші симптоми
+• das Fieber - температура
+• der Husten - кашель
+• der Schnupfen - нежить
+• die Übelkeit - нудота
+• der Durchfall - діарея
+• der Schwindel - запаморочення
+• die Müdigkeit - втома
+
+📌 Фрази
+• Mir ist schlecht.
+• Ich habe Fieber.
+• Es tut weh.</system:String>
+
+    <system:String x:Key="Page82_Title">Словник: Тема 9</system:String>
+    <system:String x:Key="Page82_Subtitle">9.2 У лікаря (Beim Arzt) - Словник</system:String>
+    <system:String x:Key="Page82_Content">📚 СЛОВНИК - Частина 2
+Тема 9: Gesundheit (Здоров'я)
+
+📝 9.2 У лікаря (Beim Arzt)
+
+📌 Медичні установи
+• die Arztpraxis - кабінет лікаря
+• das Krankenhaus - лікарня
+• die Notaufnahme - приймальне відділення
+• die Klinik - клініка
+
+📌 Медичний персонал
+• der Arzt/die Ärztin - лікар
+• der Hausarzt - сімейний лікар
+• der Facharzt - спеціаліст
+• die Sprechstundenhilfe - асистент
+
+📌 Процедури
+• die Untersuchung - обстеження
+• die Diagnose - діагноз
+• das Rezept - рецепт
+• die Krankschreibung - лікарняний
+• der Termin - запис на прийом
+• die Sprechstunde - прийомні години</system:String>
+
+    <system:String x:Key="Page83_Title">Словник: Тема 9</system:String>
+    <system:String x:Key="Page83_Subtitle">9.3 Аптека (Apotheke) - Словник</system:String>
+    <system:String x:Key="Page83_Content">📚 СЛОВНИК - Частина 2
+Тема 9: Gesundheit (Здоров'я)
+
+📝 9.3 Аптека (Apotheke)
+
+📌 Ліки
+• das Medikament - ліки
+• die Tablette - таблетка
+• die Salbe - мазь
+• der Sirup - сироп
+• die Tropfen - краплі
+• das Pflaster - пластир
+• die Spritze - шприц/укол
+
+📌 Терміни
+• rezeptpflichtig - за рецептом
+• rezeptfrei - без рецепта
+• die Nebenwirkung - побічний ефект
+• die Dosierung - дозування
+• die Packungsbeilage - інструкція
+
+📌 Фрази
+• Ich brauche etwas gegen...
+• Wie oft muss ich das nehmen?
+• Haben Sie etwas gegen Husten?
+• Ist das rezeptfrei?</system:String>
+
+</ResourceDictionary>
+

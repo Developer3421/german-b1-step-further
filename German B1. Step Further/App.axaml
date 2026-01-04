@@ -3,6 +3,71 @@
              x:Class="German_B1._Step_Further.App"
              RequestedThemeVariant="Default">
 
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- ЧАСТИНА 1: Теми та підтеми (Сторінки 3-56) -->
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic1Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic2Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic3Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic4Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic5Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic6Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic7Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic8Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic9Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic10Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic11Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic12Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic13Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic14Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic15Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic16Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic17Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic18Content.axaml"/>
+                <!-- ЧАСТИНА 2: Словник по темах (Сторінки 57-110) -->
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic1Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic2Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic3Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic4Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic5Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic6Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic7Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic8Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic9Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic10Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic11Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic12Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic13Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic14Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic15Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic16Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic17Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part2Topic18Content.axaml"/>
+                <!-- ЧАСТИНА 3: Граматика B1 (Сторінки 111-146) -->
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic1Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic2Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic3Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic4Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic5Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic6Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic7Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic8Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic9Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic10Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic11Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part3Topic12Content.axaml"/>
+                <!-- ЧАСТИНА 4: Шаблони листів (Сторінки 147-164) -->
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part4Topic1Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part4Topic2Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part4Topic3Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part4Topic4Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part4Topic5Content.axaml"/>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part4Topic6Content.axaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
     <Application.Styles>
         <FluentTheme />
         <Style Selector="Window, UserControl">

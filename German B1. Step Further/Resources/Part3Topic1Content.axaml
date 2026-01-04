@@ -1,0 +1,95 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 1: Часові форми -->
+    <!-- Сторінки 111-113 -->
+    
+    <system:String x:Key="Page111_Title">Граматика: Тема 1</system:String>
+    <system:String x:Key="Page111_Subtitle">1.1 Präsens (Теперішній час)</system:String>
+    <system:String x:Key="Page111_Content">📖 ГРАМАТИКА - Частина 3
+Тема 1: Часові форми (Zeitformen)
+
+📝 1.1 Präsens (Теперішній час)
+
+📌 Утворення
+Основа дієслова + закінчення:
+• ich -e       wir -en
+• du -st       ihr -t
+• er/sie/es -t sie/Sie -en
+
+📌 Приклади
+• ich lerne - я вчу
+• du lernst - ти вчиш
+• er lernt - він вчить
+• wir lernen - ми вчимо
+
+📌 Неправильні дієслова
+• sein: ich bin, du bist, er ist
+• haben: ich habe, du hast, er hat
+• werden: ich werde, du wirst
+
+📌 Використання
+• Дії в теперішньому часі
+• Звички та факти
+• Заплановане майбутнє</system:String>
+
+    <system:String x:Key="Page112_Title">Граматика: Тема 1</system:String>
+    <system:String x:Key="Page112_Subtitle">1.2 Perfekt (Минулий час)</system:String>
+    <system:String x:Key="Page112_Content">📖 ГРАМАТИКА - Частина 3
+Тема 1: Часові форми (Zeitformen)
+
+📝 1.2 Perfekt (Минулий час)
+
+📌 Утворення
+haben/sein + Partizip II
+
+📌 З haben (більшість дієслів)
+• Ich habe gelernt.
+• Er hat gearbeitet.
+• Wir haben gegessen.
+
+📌 З sein (рух, зміна стану)
+• Ich bin gegangen.
+• Er ist gefahren.
+• Sie ist aufgewacht.
+
+📌 Partizip II
+Правильні: ge- + основа + -t
+• machen - gemacht
+• lernen - gelernt
+
+Неправильні: ge- + основа + -en
+• gehen - gegangen
+• fahren - gefahren</system:String>
+
+    <system:String x:Key="Page113_Title">Граматика: Тема 1</system:String>
+    <system:String x:Key="Page113_Subtitle">1.3 Präteritum (Простий минулий)</system:String>
+    <system:String x:Key="Page113_Content">📖 ГРАМАТИКА - Частина 3
+Тема 1: Часові форми (Zeitformen)
+
+📝 1.3 Präteritum (Простий минулий)
+
+📌 Використання
+• Письмова мова
+• Казки та оповідання
+• sein, haben, модальні дієслова
+
+📌 sein у Präteritum
+• ich war     wir waren
+• du warst    ihr wart
+• er war      sie waren
+
+📌 haben у Präteritum
+• ich hatte   wir hatten
+• du hattest  ihr hattet
+• er hatte    sie hatten
+
+📌 Модальні дієслова
+• können - konnte
+• müssen - musste
+• wollen - wollte
+• sollen - sollte</system:String>
+
+</ResourceDictionary>
+

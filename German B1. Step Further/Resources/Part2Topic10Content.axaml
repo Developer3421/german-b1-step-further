@@ -1,0 +1,95 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 10: Umwelt -->
+    <!-- Сторінки 84-86 -->
+    
+    <system:String x:Key="Page84_Title">Словник: Тема 10</system:String>
+    <system:String x:Key="Page84_Subtitle">10.1 Природа (Natur) - Словник</system:String>
+    <system:String x:Key="Page84_Content">📚 СЛОВНИК - Частина 2
+Тема 10: Umwelt (Довкілля)
+
+📝 10.1 Природа (Natur)
+
+📌 Ландшафт
+• der Berg - гора
+• das Gebirge - гори
+• der Wald - ліс
+• der Fluss - річка
+• der See - озеро
+• das Meer - море
+• die Wiese - луг
+• das Tal - долина
+
+📌 Тварини
+• der Bär - ведмідь
+• der Wolf - вовк
+• der Fuchs - лисиця
+• das Reh - козуля
+• der Vogel - птах
+• der Fisch - риба
+
+📌 Рослини
+• der Baum - дерево
+• die Blume - квітка
+• das Gras - трава
+• der Busch - кущ</system:String>
+
+    <system:String x:Key="Page85_Title">Словник: Тема 10</system:String>
+    <system:String x:Key="Page85_Subtitle">10.2 Екологія (Ökologie) - Словник</system:String>
+    <system:String x:Key="Page85_Content">📚 СЛОВНИК - Частина 2
+Тема 10: Umwelt (Довкілля)
+
+📝 10.2 Екологія (Ökologie)
+
+📌 Екологічні проблеми
+• der Klimawandel - зміна клімату
+• die Luftverschmutzung - забруднення повітря
+• die Wasserverschmutzung - забруднення води
+• der Müll - сміття
+• der Plastikmüll - пластикове сміття
+• die Abholzung - вирубка лісів
+
+📌 Енергія
+• die Energie - енергія
+• erneuerbare Energie - відновлювана
+• die Solarenergie - сонячна енергія
+• die Windenergie - вітрова енергія
+• das Kraftwerk - електростанція
+
+📌 Фрази
+• Die Umwelt schützen
+• Energie sparen
+• Den Müll trennen</system:String>
+
+    <system:String x:Key="Page86_Title">Словник: Тема 10</system:String>
+    <system:String x:Key="Page86_Subtitle">10.3 Захист довкілля (Umweltschutz)</system:String>
+    <system:String x:Key="Page86_Content">📚 СЛОВНИК - Частина 2
+Тема 10: Umwelt (Довкілля)
+
+📝 10.3 Захист довкілля (Umweltschutz)
+
+📌 Сортування сміття
+• die Mülltrennung - сортування
+• die Biotonne - органіка
+• die Papiertonne - папір
+• der Gelbe Sack - пластик/метал
+• die Restmülltonne - інше
+• der Glascontainer - скло
+
+📌 Дії
+• recyceln - переробляти
+• wiederverwenden - повторно використ.
+• reduzieren - зменшувати
+• vermeiden - уникати
+• schützen - захищати
+
+📌 Транспорт
+• öffentliche Verkehrsmittel - громадський
+• das Fahrrad - велосипед
+• zu Fuß gehen - пішки
+• das Elektroauto - електромобіль</system:String>
+
+</ResourceDictionary>
+

@@ -1,0 +1,111 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 13: Technologie (Технології) -->
+    <!-- Сторінки 39-41 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 39 ========== -->
+    <system:String x:Key="Page39_Title">Тема 13: Технології</system:String>
+    <system:String x:Key="Page39_Subtitle">13.1 Комп'ютер та інтернет (Computer)</system:String>
+    <system:String x:Key="Page39_Content">Німецька мова (Deutsche Sprache)
+Тема 13: Технології (Technologie)
+
+📝 13.1 Комп'ютер та інтернет
+
+📌 Комп'ютерні терміни
+
+🔸 Апаратне забезпечення:
+• der Computer - комп'ютер
+• der Laptop - ноутбук
+• der Bildschirm - монітор
+• die Tastatur - клавіатура
+• die Maus - миша
+• der Drucker - принтер
+
+🔸 Програмне забезпечення:
+• das Programm - програма
+• die Software - ПЗ
+• das Betriebssystem - ОС
+• der Browser - браузер
+• die App - додаток
+
+📌 Дії з комп'ютером
+
+• den Computer einschalten/ausschalten
+• ein Programm installieren
+• eine Datei speichern/öffnen
+• im Internet surfen</system:String>
+
+    <!-- ========== СТОРІНКА 40 ========== -->
+    <system:String x:Key="Page40_Title">Тема 13: Технології</system:String>
+    <system:String x:Key="Page40_Subtitle">13.2 Смартфон (Smartphone)</system:String>
+    <system:String x:Key="Page40_Content">Німецька мова (Deutsche Sprache)
+Тема 13: Технології (Technologie)
+
+📝 13.2 Смартфон (Smartphone)
+
+📌 Функції смартфона
+
+🔸 Основні функції:
+• telefonieren - телефонувати
+• SMS schreiben - писати СМС
+• fotografieren - фотографувати
+• Videos aufnehmen - знімати відео
+• Musik hören - слухати музику
+
+🔸 Налаштування:
+• das Display - дисплей
+• der Akku - акумулятор
+• der Speicher - пам'ять
+• die Kamera - камера
+• das WLAN - Wi-Fi
+
+📌 Проблеми з телефоном
+
+❓ Mein Handy geht nicht an.
+✅ Vielleicht ist der Akku leer.
+
+❓ Der Speicher ist voll.
+✅ Löschen Sie alte Fotos und Apps.</system:String>
+
+    <!-- ========== СТОРІНКА 41 ========== -->
+    <system:String x:Key="Page41_Title">Тема 13: Технології</system:String>
+    <system:String x:Key="Page41_Subtitle">13.3 Нові технології (Neue Technologien)</system:String>
+    <system:String x:Key="Page41_Content">Німецька мова (Deutsche Sprache)
+Тема 13: Технології (Technologie)
+
+📝 13.3 Нові технології
+
+📌 Сучасні технології
+
+🔸 Терміни:
+• die künstliche Intelligenz (KI) - ШІ
+• das Smart Home - розумний дім
+• die Cloud - хмара
+• die Datenbank - база даних
+• der Algorithmus - алгоритм
+
+🔸 Мови програмування:
+• C#, Java, Python, JavaScript
+
+📌 Переваги та недоліки
+
+🔸 Переваги (Vorteile):
+• Das Leben wird einfacher.
+• Man spart Zeit.
+
+🔸 Недоліки (Nachteile):
+• Zu viel Bildschirmzeit.
+• Datenschutzprobleme.
+
+📌 Дискусія
+
+❓ Was denkst du über neue Technologien?
+✅ Ich finde sie sehr nützlich.</system:String>
+
+</ResourceDictionary>
+

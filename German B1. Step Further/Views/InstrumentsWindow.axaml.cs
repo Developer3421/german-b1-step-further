@@ -7,6 +7,7 @@ using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using WebViewControl;
+using German_B1._Step_Further.Services;
 
 namespace German_B1._Step_Further.Views
 {
@@ -71,6 +72,9 @@ namespace German_B1._Step_Further.Views
             var copilotButton = this.FindControl<Button>("CopilotButton");
             var chatgptButton = this.FindControl<Button>("ChatGPTButton");
             var perplexityButton = this.FindControl<Button>("PerplexityButton");
+            var germanChatButton = this.FindControl<Button>("GermanChatButton");
+            var userAgreementButton = this.FindControl<Button>("UserAgreementButton");
+            var complaintButton = this.FindControl<Button>("ComplaintButton");
 
             if (geminiButton != null)
                 geminiButton.Click += AiToolButton_Click;
@@ -80,6 +84,12 @@ namespace German_B1._Step_Further.Views
                 chatgptButton.Click += AiToolButton_Click;
             if (perplexityButton != null)
                 perplexityButton.Click += AiToolButton_Click;
+            if (germanChatButton != null)
+                germanChatButton.Click += GermanChatButton_Click;
+            if (userAgreementButton != null)
+                userAgreementButton.Click += UserAgreementButton_Click;
+            if (complaintButton != null)
+                complaintButton.Click += ComplaintButton_Click;
             
             // Зберігаємо посилання на Image контроли для іконок
             _geminiIcon = this.FindControl<Image>("GeminiIcon");
@@ -228,7 +238,23 @@ namespace German_B1._Step_Further.Views
             }
         }
 
-        private void AiToolButton_Click(object? sender, RoutedEventArgs e)
+        private async void UserAgreementButton_Click(object? sender, RoutedEventArgs e)
+        {
+            var w = new UserAgreementWindow(isInteractive: false);
+            await w.ShowDialog(this);
+        }
+
+        private async Task<bool> EnsureUserAgreementAcceptedAsync()
+        {
+            if (UserSettingsService.IsUserAgreementAccepted())
+                return true;
+
+            var w = new UserAgreementWindow(isInteractive: true);
+            var result = await w.ShowDialog<bool>(this);
+            return result;
+        }
+
+        private async void AiToolButton_Click(object? sender, RoutedEventArgs e)
         {
             if (sender is not Button button)
                 return;
@@ -236,6 +262,14 @@ namespace German_B1._Step_Further.Views
             var url = button.Tag as string;
             if (string.IsNullOrWhiteSpace(url))
                 return;
+
+            // Online services are gated by the agreement.
+            if (ExternalAiServicePolicy.RequiresUserAgreement(url))
+            {
+                var accepted = await EnsureUserAgreementAcceptedAsync();
+                if (!accepted)
+                    return;
+            }
 
             var title = button.Name switch
             {
@@ -247,6 +281,18 @@ namespace German_B1._Step_Further.Views
             };
 
             ShowWebView(title, url);
+        }
+
+        private void GermanChatButton_Click(object? sender, RoutedEventArgs e)
+        {
+            var chatWindow = new GermanChatWindow();
+            chatWindow.Show();
+        }
+
+        private async void ComplaintButton_Click(object? sender, RoutedEventArgs e)
+        {
+            var complaintWindow = new ComplaintWindow();
+            await complaintWindow.ShowDialog(this);
         }
 
         private void BackToToolsButton_Click(object? sender, RoutedEventArgs e)

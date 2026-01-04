@@ -1,0 +1,107 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 4: Шаблони листів - Тема 2: E-Mail -->
+    <!-- Сторінки 150-152 -->
+    
+    <system:String x:Key="Page150_Title">Шаблони: Тема 2</system:String>
+    <system:String x:Key="Page150_Subtitle">2.1 Структура E-Mail</system:String>
+    <system:String x:Key="Page150_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 2: Електронні листи (E-Mail)
+
+📝 2.1 Структура E-Mail
+
+📌 Основні елементи
+1. An: (кому)
+2. Betreff: (тема) - коротко і ясно!
+3. Anrede (звертання)
+4. Text (текст)
+5. Grußformel (прощання)
+6. Name/Kontakt
+
+📌 Приклад офіційного E-Mail
+An: info@firma.de
+Betreff: Anfrage - Deutschkurs
+
+Sehr geehrte Damen und Herren,
+
+ich interessiere mich für Ihren 
+Deutschkurs und hätte einige Fragen.
+
+Könnten Sie mir bitte mitteilen...
+
+Mit freundlichen Grüßen
+Oleh Melnyk
+Tel: 0123-456789</system:String>
+
+    <system:String x:Key="Page151_Title">Шаблони: Тема 2</system:String>
+    <system:String x:Key="Page151_Subtitle">2.2 Напівофіційні E-Mail</system:String>
+    <system:String x:Key="Page151_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 2: Електронні листи (E-Mail)
+
+📝 2.2 Напівофіційні E-Mail
+
+📌 Звертання (Anrede)
+• Liebe Frau [Name],
+• Lieber Herr [Name],
+• Hallo Frau/Herr [Name],
+• Guten Tag,
+
+📌 Прощання (Grußformel)
+• Viele Grüße
+• Beste Grüße
+• Herzliche Grüße
+• Mit freundlichen Grüßen
+
+📌 Приклад
+Betreff: Termin am Donnerstag
+
+Liebe Frau Schmidt,
+
+vielen Dank für Ihre E-Mail.
+Der Termin am Donnerstag um 14 Uhr
+passt mir gut.
+
+Bis dann!
+Viele Grüße
+Oleh</system:String>
+
+    <system:String x:Key="Page152_Title">Шаблони: Тема 2</system:String>
+    <system:String x:Key="Page152_Subtitle">2.3 Неофіційні E-Mail</system:String>
+    <system:String x:Key="Page152_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 2: Електронні листи (E-Mail)
+
+📝 2.3 Неофіційні E-Mail (друзям)
+
+📌 Звертання
+• Liebe/Lieber [Name],
+• Hallo [Name],
+• Hi [Name],
+• Hey!
+
+📌 Прощання
+• Liebe Grüße
+• Viele Grüße
+• Bis bald!
+• Tschüss!
+• Mach's gut!
+
+📌 Приклад
+Betreff: Party am Samstag!
+
+Hey Anna!
+
+Wie geht's dir? Ich hoffe, gut!
+
+Ich mache am Samstag eine Party
+und würde mich freuen, wenn du kommst.
+Start ist um 19 Uhr bei mir.
+
+Sag Bescheid, ob du kommen kannst!
+
+Bis bald!
+Oleh</system:String>
+
+</ResourceDictionary>
+

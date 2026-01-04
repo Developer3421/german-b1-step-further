@@ -1,12 +1,16 @@
+using System;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
+using Avalonia.Media;
 using German_B1._Step_Further.Services;
 
 namespace German_B1._Step_Further.Views
 {
     public partial class Part3Window : Window
     {
+        private int _currentHighlightedTopic = -1;
+        
         public Part3Window()
         {
             InitializeComponent();
@@ -26,6 +30,64 @@ namespace German_B1._Step_Further.Views
             
             // Connect all topic buttons
             ConnectTopicButtons();
+            
+            // Підписуємося на зміну сторінки для синхронізації
+            NavigationService.PageChanged += OnPageChanged;
+        }
+        
+        private void OnPageChanged(object? sender, PageChangedEventArgs e)
+        {
+            // Визначаємо яка тема відповідає поточним сторінкам
+            // Частина 3: сторінки 111-146
+            int leftPage = e.LeftPage;
+            
+            if (leftPage >= 111 && leftPage <= 146)
+            {
+                // Тема = (сторінка - 111) / 3 + 1
+                int topicNumber = (leftPage - 111) / 3 + 1;
+                if (topicNumber > 12) topicNumber = 12;
+                HighlightTopic(topicNumber);
+            }
+            else
+            {
+                // Сторінки не з частини 3 - прибираємо підсвічування
+                ClearHighlight();
+            }
+        }
+        
+        private void HighlightTopic(int topicNumber)
+        {
+            if (_currentHighlightedTopic == topicNumber) return;
+            
+            // Прибираємо попереднє підсвічування
+            ClearHighlight();
+            
+            // Підсвічуємо нову тему
+            var button = this.FindControl<Button>($"Topic3_{topicNumber}Button");
+            if (button != null)
+            {
+                button.Background = new SolidColorBrush(Color.Parse("#B3E5FC"));
+                _currentHighlightedTopic = topicNumber;
+            }
+        }
+        
+        private void ClearHighlight()
+        {
+            if (_currentHighlightedTopic > 0)
+            {
+                var button = this.FindControl<Button>($"Topic3_{_currentHighlightedTopic}Button");
+                if (button != null)
+                {
+                    button.Background = new SolidColorBrush(Color.Parse("#E3F2FD"));
+                }
+                _currentHighlightedTopic = -1;
+            }
+        }
+        
+        protected override void OnClosed(EventArgs e)
+        {
+            NavigationService.PageChanged -= OnPageChanged;
+            base.OnClosed(e);
         }
         
         private void ConnectTopicButtons()
@@ -47,17 +109,9 @@ namespace German_B1._Step_Further.Views
             {
                 if (int.TryParse(tagString, out int topicNumber))
                 {
-                    // Part 1: 18 тем × 3 підтеми = 54 сторінки (стор. 3-56)
-                    // Part 2: 18 тем × 3 підтеми = 54 сторінки (стор. 57-110)
-                    // Part 3 починається з сторінки 111
-                    // Part 3 має 12 тем, кожна в середньому 3-4 підтеми, візьмемо 4
-                    int part1Pages = 18 * 3; // 54
-                    int part2Pages = 18 * 3; // 54
-                    int pagesPerTopic = 4; // для Part 3
-                    int pageNumber = 2 + part1Pages + part2Pages + (topicNumber - 1) * pagesPerTopic + 1;
-                    
-                    // Викликаємо навігацію для Part 3
-                    NavigationService.RequestNavigation(3, pageNumber);
+                    // Передаємо Part=3 і номер теми
+                    // MainWindow конвертує це в номер сторінки
+                    NavigationService.RequestNavigation(3, topicNumber);
                 }
             }
         }

@@ -1,0 +1,171 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 11: Freizeit (Дозвілля) -->
+    <!-- Сторінки 33-35 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 33 ========== -->
+    <system:String x:Key="Page33_Title">Тема 11: Дозвілля</system:String>
+    <system:String x:Key="Page33_Subtitle">11.1 Спорт (Sport)</system:String>
+    <system:String x:Key="Page33_Content">Німецька мова (Deutsche Sprache)
+Тема 11: Дозвілля (Freizeit)
+
+📝 11.1 Спорт (Sport)
+
+═══════════════════════════════════════════
+
+📌 Види спорту
+
+🔸 Командні види:
+• der Fußball - футбол
+• der Basketball - баскетбол
+• der Volleyball - волейбол
+• das Handball - гандбол
+
+🔸 Індивідуальні види:
+• das Schwimmen - плавання
+• das Joggen - біг
+• das Tennis - теніс
+• das Radfahren - велоспорт
+• das Yoga - йога
+• das Fitnesstraining - фітнес
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+🔸 Про спорт:
+• Ich treibe gern Sport.
+• Meine Lieblingssportart ist Fußball.
+• Ich gehe dreimal pro Woche ins Fitnessstudio.
+• Sport ist gut für die Gesundheit.
+
+❓ Treibst du Sport?
+✅ Ja, ich jogge jeden Morgen.
+
+❓ Welchen Sport machst du?
+✅ Ich spiele Fußball im Verein.
+
+═══════════════════════════════════════════
+
+📌 Місця для спорту
+
+• das Fitnessstudio - спортзал
+• das Schwimmbad - басейн
+• der Sportplatz - спортмайданчик
+• die Sporthalle - спортивний зал
+• das Stadion - стадіон</system:String>
+
+    <!-- ========== СТОРІНКА 34 ========== -->
+    <system:String x:Key="Page34_Title">Тема 11: Дозвілля</system:String>
+    <system:String x:Key="Page34_Subtitle">11.2 Хобі та розваги (Hobbys)</system:String>
+    <system:String x:Key="Page34_Content">Німецька мова (Deutsche Sprache)
+Тема 11: Дозвілля (Freizeit)
+
+📝 11.2 Хобі та розваги (Hobbys und Unterhaltung)
+
+═══════════════════════════════════════════
+
+📌 Популярні хобі
+
+🔸 Креативні:
+• malen - малювати
+• fotografieren - фотографувати
+• basteln - майструвати
+• stricken - в'язати
+• kochen - готувати
+
+🔸 Музика:
+• Musik hören - слухати музику
+• Gitarre spielen - грати на гітарі
+• Klavier spielen - грати на піаніно
+• singen - співати
+
+🔸 Інші:
+• lesen - читати
+• Computerspiele spielen - грати в ігри
+• Filme schauen - дивитися фільми
+• im Internet surfen - сидіти в інтернеті
+
+═══════════════════════════════════════════
+
+📌 Діалоги
+
+❓ Was machst du in deiner Freizeit?
+✅ Ich programmiere gern und spiele Computerspiele.
+
+❓ Hast du ein besonderes Hobby?
+✅ Ja, ich entwickle Software für Windows.
+
+❓ Wie oft machst du das?
+✅ Fast jeden Tag, wenn ich Zeit habe.
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+• In meiner Freizeit...
+• Mein Lieblingshobby ist...
+• Ich interessiere mich für...
+• Das macht mir Spaß.</system:String>
+
+    <!-- ========== СТОРІНКА 35 ========== -->
+    <system:String x:Key="Page35_Title">Тема 11: Дозвілля</system:String>
+    <system:String x:Key="Page35_Subtitle">11.3 Культурні заходи (Veranstaltungen)</system:String>
+    <system:String x:Key="Page35_Content">Німецька мова (Deutsche Sprache)
+Тема 11: Дозвілля (Freizeit)
+
+📝 11.3 Культурні заходи (Veranstaltungen)
+
+═══════════════════════════════════════════
+
+📌 Види заходів
+
+🔸 Культура:
+• das Konzert - концерт
+• das Theater - театр
+• das Kino - кіно
+• das Museum - музей
+• die Ausstellung - виставка
+• das Festival - фестиваль
+
+🔸 Інше:
+• die Party - вечірка
+• die Messe - ярмарок
+• der Flohmarkt - блошиний ринок
+
+═══════════════════════════════════════════
+
+📌 Запрошення
+
+🔸 Запросити:
+• Hast du Lust, ins Kino zu gehen?
+• Möchtest du mit mir ins Konzert gehen?
+• Am Samstag ist ein Festival. Kommst du mit?
+
+🔸 Погодитися:
+✅ Ja, gerne! Das klingt super!
+✅ Ich bin dabei!
+✅ Das ist eine gute Idee!
+
+🔸 Відмовити:
+❌ Tut mir leid, ich habe keine Zeit.
+❌ Leider kann ich nicht.
+❌ Ich habe schon etwas vor.
+
+═══════════════════════════════════════════
+
+📌 Після заходу
+
+❓ Wie war das Konzert?
+✅ Es war fantastisch! Die Musik war toll.
+
+❓ Hat dir der Film gefallen?
+✅ Ja, der Film war sehr spannend.</system:String>
+
+</ResourceDictionary>
+

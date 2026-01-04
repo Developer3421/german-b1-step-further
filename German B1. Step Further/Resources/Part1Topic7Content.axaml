@@ -1,0 +1,145 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 7: Arbeit (Робота) -->
+    <!-- Сторінки 21-23 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 21 ========== -->
+    <system:String x:Key="Page21_Title">Тема 7: Робота</system:String>
+    <system:String x:Key="Page21_Subtitle">7.1 Професії (Berufe)</system:String>
+    <system:String x:Key="Page21_Content">Німецька мова (Deutsche Sprache)
+Тема 7: Робота (Arbeit)
+
+📝 7.1 Професії (Berufe)
+
+═══════════════════════════════════════════
+
+📌 Популярні професії
+
+🔸 IT та технології:
+• der Softwareentwickler - розробник ПЗ
+• der Programmierer - програміст
+• der IT-Spezialist - IT-спеціаліст
+• der Webdesigner - веб-дизайнер
+
+🔸 Медицина:
+• der Arzt / die Ärztin - лікар
+• der Krankenpfleger - медбрат
+• die Krankenschwester - медсестра
+• der Zahnarzt - стоматолог
+
+🔸 Інші професії:
+• der Lehrer / die Lehrerin - вчитель
+• der Ingenieur - інженер
+• der Elektriker - електрик
+• der Mechaniker - механік
+• der Koch / die Köchin - кухар
+• der Verkäufer - продавець
+
+═══════════════════════════════════════════
+
+📌 Опис професії
+
+🔸 Корисні фрази:
+• Ich arbeite als Softwareentwickler.
+• Mein Traumberuf ist Programmierer.
+• Ich möchte in der IT-Branche arbeiten.
+
+❓ Was sind Sie von Beruf?
+✅ Ich bin Softwareentwickler.
+
+❓ Wo arbeiten Sie?
+✅ Ich arbeite bei einer IT-Firma.</system:String>
+
+    <!-- ========== СТОРІНКА 22 ========== -->
+    <system:String x:Key="Page22_Title">Тема 7: Робота</system:String>
+    <system:String x:Key="Page22_Subtitle">7.2 Пошук роботи (Jobsuche)</system:String>
+    <system:String x:Key="Page22_Content">Німецька мова (Deutsche Sprache)
+Тема 7: Робота (Arbeit)
+
+📝 7.2 Пошук роботи (Jobsuche)
+
+═══════════════════════════════════════════
+
+📌 Документи для заявки
+
+🔸 Важливі документи:
+• die Bewerbung - заявка на роботу
+• der Lebenslauf - резюме (CV)
+• das Anschreiben - супровідний лист
+• das Zeugnis - атестат/диплом
+• das Arbeitszeugnis - рекомендація з роботи
+• das Zertifikat - сертифікат
+
+🔸 Фрази для листа:
+• Hiermit bewerbe ich mich um die Stelle als...
+• Ich interessiere mich für die ausgeschriebene Position.
+
+═══════════════════════════════════════════
+
+📌 Співбесіда (Vorstellungsgespräch)
+
+🔸 Типові питання:
+❓ Erzählen Sie etwas über sich.
+❓ Warum möchten Sie bei uns arbeiten?
+❓ Was sind Ihre Stärken und Schwächen?
+
+🔸 Відповіді:
+✅ Ich bin motiviert und lerne schnell.
+✅ Ich arbeite gern im Team.
+✅ Ich bin zuverlässig und pünktlich.</system:String>
+
+    <!-- ========== СТОРІНКА 23 ========== -->
+    <system:String x:Key="Page23_Title">Тема 7: Робота</system:String>
+    <system:String x:Key="Page23_Subtitle">7.3 Робоче місце (Arbeitsplatz)</system:String>
+    <system:String x:Key="Page23_Content">Німецька мова (Deutsche Sprache)
+Тема 7: Робота (Arbeit)
+
+📝 7.3 Робоче місце (Arbeitsplatz)
+
+═══════════════════════════════════════════
+
+📌 Умови праці (Arbeitsbedingungen)
+
+🔸 Важливі терміни:
+• der Arbeitsvertrag - трудовий договір
+• das Gehalt / der Lohn - зарплата
+• die Arbeitszeit - робочий час
+• der Urlaub - відпустка
+• die Überstunden - понаднормові
+• die Vollzeit - повна зайнятість
+• die Teilzeit - часткова зайнятість
+• das Homeoffice - робота з дому
+
+═══════════════════════════════════════════
+
+📌 В офісі (Im Büro)
+
+🔸 Предмети:
+• der Schreibtisch - письмовий стіл
+• der Computer - комп'ютер
+• der Drucker - принтер
+• das Telefon - телефон
+
+🔸 Колеги:
+• der Chef / die Chefin - начальник
+• der Kollege / die Kollegin - колега
+• die Abteilung - відділ
+• das Team - команда
+
+═══════════════════════════════════════════
+
+📌 Діалоги на роботі
+
+❓ Können Sie mir helfen?
+✅ Ja, natürlich. Was brauchen Sie?
+
+❓ Wann ist die Besprechung?
+✅ Die Besprechung ist um 14 Uhr.</system:String>
+
+</ResourceDictionary>
+

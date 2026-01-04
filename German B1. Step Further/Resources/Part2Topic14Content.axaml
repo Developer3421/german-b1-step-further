@@ -1,0 +1,93 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 14: Stadt/Land -->
+    <!-- Сторінки 96-98 -->
+    
+    <system:String x:Key="Page96_Title">Словник: Тема 14</system:String>
+    <system:String x:Key="Page96_Subtitle">14.1 Місто (Stadt) - Словник</system:String>
+    <system:String x:Key="Page96_Content">📚 СЛОВНИК - Частина 2
+Тема 14: Stadt und Land
+
+📝 14.1 Місто (Stadt)
+
+📌 Міська інфраструктура
+• die Stadt - місто
+• das Zentrum - центр
+• der Stadtteil - район
+• die Straße - вулиця
+• der Platz - площа
+• der Park - парк
+
+📌 Будівлі
+• das Rathaus - ратуша
+• das Krankenhaus - лікарня
+• die Bibliothek - бібліотека
+• das Museum - музей
+• das Theater - театр
+• die Kirche - церква
+
+📌 Транспорт у місті
+• die U-Bahn - метро
+• die Straßenbahn - трамвай
+• der Bus - автобус
+• das Taxi - таксі</system:String>
+
+    <system:String x:Key="Page97_Title">Словник: Тема 14</system:String>
+    <system:String x:Key="Page97_Subtitle">14.2 Село (Land) - Словник</system:String>
+    <system:String x:Key="Page97_Content">📚 СЛОВНИК - Частина 2
+Тема 14: Stadt und Land
+
+📝 14.2 Село (Land)
+
+📌 Сільська місцевість
+• das Dorf - село
+• das Land - сільська місцевість
+• der Bauernhof - ферма
+• das Feld - поле
+• die Wiese - луг
+• der Wald - ліс
+
+📌 Сільське господарство
+• der Bauer - фермер
+• die Landwirtschaft - с/г
+• die Ernte - урожай
+• das Vieh - худоба
+• der Traktor - трактор
+
+📌 Природа
+• die Ruhe - спокій
+• frische Luft - свіже повітря
+• die Natur - природа
+• der Garten - сад</system:String>
+
+    <system:String x:Key="Page98_Title">Словник: Тема 14</system:String>
+    <system:String x:Key="Page98_Subtitle">14.3 Порівняння (Vergleich) - Словник</system:String>
+    <system:String x:Key="Page98_Content">📚 СЛОВНИК - Частина 2
+Тема 14: Stadt und Land
+
+📝 14.3 Порівняння
+
+📌 Порівняльні слова
+• größer - більший
+• kleiner - менший
+• lauter - гучніший
+• ruhiger - тихіший
+• teurer - дорожчий
+• billiger - дешевший
+
+📌 Переваги міста
+• Arbeitsmöglichkeiten - робота
+• kulturelle Angebote - культура
+• gute Verkehrsanbindung - транспорт
+• Einkaufsmöglichkeiten - магазини
+
+📌 Переваги села
+• frische Luft - свіже повітря
+• Ruhe - спокій
+• niedrige Mieten - низька оренда
+• mehr Platz - більше місця</system:String>
+
+</ResourceDictionary>
+

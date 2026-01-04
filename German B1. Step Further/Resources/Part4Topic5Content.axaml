@@ -1,0 +1,103 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 4: Шаблони листів - Тема 5: Kündigung -->
+    <!-- Сторінки 159-161 -->
+    
+    <system:String x:Key="Page159_Title">Шаблони: Тема 5</system:String>
+    <system:String x:Key="Page159_Subtitle">5.1 Kündigung (Розірвання договору)</system:String>
+    <system:String x:Key="Page159_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 5: Kündigung (Розірвання договору)
+
+📝 5.1 Лист про розірвання договору
+
+📌 Типи договорів
+• Mietvertrag - оренда житла
+• Arbeitsvertrag - трудовий договір
+• Handyvertrag - мобільний контракт
+• Versicherung - страхування
+• Fitnessstudio - спортзал
+• Zeitschrift - підписка
+
+📌 Betreff
+Kündigung meines Vertrags
+Kundennummer: 12345
+
+📌 Вступ
+Sehr geehrte Damen und Herren,
+
+hiermit kündige ich meinen Vertrag
+(Vertragsnummer: 12345) fristgerecht
+zum nächstmöglichen Termin.
+
+📌 Важливо!
+• Kündigungsfrist - строк повідомлення
+• fristgerecht - вчасно
+• zum [дата] - до певної дати</system:String>
+
+    <system:String x:Key="Page160_Title">Шаблони: Тема 5</system:String>
+    <system:String x:Key="Page160_Subtitle">5.2 Приклади Kündigung</system:String>
+    <system:String x:Key="Page160_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 5: Kündigung (Розірвання договору)
+
+📝 5.2 Приклади Kündigung
+
+📌 Мобільний контракт
+Betreff: Kündigung Mobilfunkvertrag
+Rufnummer: 0170-1234567
+
+hiermit kündige ich meinen Mobilfunk-
+vertrag fristgerecht zum Ende der
+Vertragslaufzeit.
+
+Bitte bestätigen Sie die Kündigung
+und das Vertragsende schriftlich.
+
+📌 Фітнес
+Betreff: Kündigung Mitgliedschaft
+Mitgliedsnummer: 9876
+
+hiermit kündige ich meine Mitglied-
+schaft in Ihrem Fitnessstudio
+fristgerecht zum [Datum].
+
+📌 Закінчення
+Bitte senden Sie mir eine
+schriftliche Bestätigung.
+
+Mit freundlichen Grüßen</system:String>
+
+    <system:String x:Key="Page161_Title">Шаблони: Тема 5</system:String>
+    <system:String x:Key="Page161_Subtitle">5.3 Wohnungskündigung (Оренда)</system:String>
+    <system:String x:Key="Page161_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 5: Kündigung (Розірвання договору)
+
+📝 5.3 Wohnungskündigung
+
+📌 Betreff
+Kündigung des Mietvertrags
+[Адреса квартири]
+
+📌 Приклад
+Sehr geehrter Herr/Frau [Name],
+
+hiermit kündige ich das Mietverhältnis
+für die Wohnung in der [Адреса]
+fristgerecht zum [Дата].
+
+Die Wohnung werde ich bis zu diesem
+Datum vollständig räumen und
+in ordnungsgemäßem Zustand übergeben.
+
+Bitte teilen Sie mir einen Termin
+für die Wohnungsübergabe mit.
+
+📌 Важливі терміни
+• die Kündigungsfrist - 3 місяці зазвичай
+• der Übergabetermin - дата передачі
+• die Kaution - застава (повернення)
+• das Übergabeprotokoll - акт передачі</system:String>
+
+</ResourceDictionary>
+

@@ -5,14 +5,68 @@
       <map>
         <entry key="German B1. Step Further/App.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/MainWindow.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic10Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic11Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic12Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic13Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic14Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic15Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic16Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic17Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic18Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic1Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic2Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic3Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic4Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic5Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic6Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic7Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic8Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part1Topic9Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic11Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic12Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic13Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic14Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic15Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic16Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic17Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic1Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic3Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic4Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic5Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic6Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic7Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic8Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part2Topic9Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic10Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic11Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic12Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic1Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic2Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic3Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic4Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic5Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic6Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic7Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic8Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part3Topic9Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part4Topic1Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part4Topic2Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part4Topic3Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part4Topic4Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part4Topic5Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Resources/Part4Topic6Content.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Views/ContentPageView.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/ContentsPage1.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/ContentsPage2.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Views/GermanChatWindow.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/InstrumentsWindow.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/Part1Window.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/Part2Window.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/Part3Window.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/Part4Window.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
         <entry key="German B1. Step Further/Views/TopicContentWindow.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
+        <entry key="German B1. Step Further/Views/UserAgreementWindow.axaml" value="German B1. Step Further/German B1. Step Further.csproj" />
       </map>
     </option>
   </component>

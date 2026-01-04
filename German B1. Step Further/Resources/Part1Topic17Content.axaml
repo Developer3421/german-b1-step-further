@@ -1,0 +1,144 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 17: Tiere (Тварини) -->
+    <!-- Сторінки 51-53 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 51 ========== -->
+    <system:String x:Key="Page51_Title">Тема 17: Тварини</system:String>
+    <system:String x:Key="Page51_Subtitle">17.1 Домашні тварини (Haustiere)</system:String>
+    <system:String x:Key="Page51_Content">Німецька мова (Deutsche Sprache)
+Тема 17: Тварини (Tiere)
+
+📝 17.1 Домашні тварини (Haustiere)
+
+═══════════════════════════════════════════
+
+📌 Види домашніх тварин
+
+🔸 Популярні тварини:
+• der Hund - собака
+• die Katze - кішка
+• der Vogel - птах
+• der Hamster - хом'як
+• das Kaninchen - кролик
+• der Fisch - рибка
+• die Schildkröte - черепаха
+• das Meerschweinchen - морська свинка
+
+🔸 Догляд:
+• füttern - годувати
+• Gassi gehen - гуляти (з собакою)
+• pflegen - доглядати
+• der Tierarzt - ветеринар
+
+═══════════════════════════════════════════
+
+📌 Про домашніх тварин
+
+❓ Hast du ein Haustier?
+✅ Nein, aber ich hätte gern einen Hund.
+
+❓ Welches Tier magst du am liebsten?
+✅ Ich mag Katzen, weil sie unabhängig sind.
+
+🧠 Приклад:
+Ich habe kein Haustier, aber in der Zukunft möchte ich vielleicht eine Katze haben. Haustiere können gute Freunde sein.</system:String>
+
+    <!-- ========== СТОРІНКА 52 ========== -->
+    <system:String x:Key="Page52_Title">Тема 17: Тварини</system:String>
+    <system:String x:Key="Page52_Subtitle">17.2 Дикі тварини (Wildtiere)</system:String>
+    <system:String x:Key="Page52_Content">Німецька мова (Deutsche Sprache)
+Тема 17: Тварини (Tiere)
+
+📝 17.2 Дикі тварини (Wildtiere)
+
+═══════════════════════════════════════════
+
+📌 Дикі тварини
+
+🔸 У лісі:
+• der Bär - ведмідь
+• der Wolf - вовк
+• der Fuchs - лисиця
+• das Reh - козуля
+• der Hirsch - олень
+• das Wildschwein - дикий кабан
+• der Hase - заєць
+• das Eichhörnchen - білка
+
+🔸 Екзотичні тварини:
+• der Löwe - лев
+• der Tiger - тигр
+• der Elefant - слон
+• die Giraffe - жирафа
+• das Krokodil - крокодил
+
+═══════════════════════════════════════════
+
+📌 Зоопарк
+
+🔸 Про зоопарк:
+• der Zoo / der Tierpark - зоопарк
+• das Gehege - вольєр
+• die Fütterung - годування
+• der Tierpfleger - доглядач тварин
+
+• Im Zoo kann man viele exotische Tiere sehen.
+• Der Berliner Zoo ist sehr bekannt.
+
+🧠 Приклад:
+Ich war noch nicht oft im Zoo, aber ich finde es interessant, wilde Tiere zu beobachten.</system:String>
+
+    <!-- ========== СТОРІНКА 53 ========== -->
+    <system:String x:Key="Page53_Title">Тема 17: Тварини</system:String>
+    <system:String x:Key="Page53_Subtitle">17.3 Захист тварин (Tierschutz)</system:String>
+    <system:String x:Key="Page53_Content">Німецька мова (Deutsche Sprache)
+Тема 17: Тварини (Tiere)
+
+📝 17.3 Захист тварин (Tierschutz)
+
+═══════════════════════════════════════════
+
+📌 Захист тварин
+
+🔸 Терміни:
+• der Tierschutz - захист тварин
+• das Tierheim - притулок для тварин
+• die artgerechte Haltung - належне утримання
+• das Tierrecht - права тварин
+• die Tierquälerei - жорстоке поводження
+
+🔸 Проблеми:
+• Viele Tiere werden ausgesetzt.
+• Manche Tierarten sind vom Aussterben bedroht.
+• Wilderei ist ein großes Problem.
+
+═══════════════════════════════════════════
+
+📌 Що можна зробити
+
+• Tiere aus dem Tierheim adoptieren.
+• Keine Produkte aus Tierquälerei kaufen.
+• Organisationen unterstützen.
+• Tiere in der Natur respektieren.
+
+═══════════════════════════════════════════
+
+📌 Дискусія
+
+❓ Was denkst du über Tierschutz?
+✅ Ich finde Tierschutz sehr wichtig. Tiere verdienen Respekt.
+
+❓ Würdest du ein Tier aus dem Tierheim nehmen?
+✅ Ja, ich würde lieber ein Tier adoptieren als kaufen.
+
+🧠 Приклад:
+Tierschutz ist mir wichtig. Ich denke, dass wir alle Verantwortung für Tiere tragen und sie gut behandeln sollten.</system:String>
+
+</ResourceDictionary>
+

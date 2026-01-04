@@ -1,0 +1,112 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 10: Umwelt (Довкілля) -->
+    <!-- Сторінки 30-32 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 30 ========== -->
+    <system:String x:Key="Page30_Title">Тема 10: Довкілля</system:String>
+    <system:String x:Key="Page30_Subtitle">10.1 Природа (Natur)</system:String>
+    <system:String x:Key="Page30_Content">Німецька мова (Deutsche Sprache)
+Тема 10: Довкілля (Umwelt)
+
+📝 10.1 Природа (Natur)
+
+═══════════════════════════════════════════
+
+📌 Природні об'єкти
+
+🔸 Ландшафт:
+• der Berg - гора
+• der Wald - ліс
+• der Fluss - річка
+• der See - озеро
+• das Meer - море
+
+🔸 Погода (Wetter):
+• die Sonne - сонце
+• der Regen - дощ
+• der Schnee - сніг
+• der Wind - вітер
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+• Die Natur ist wunderschön.
+• Ich gehe gern im Wald spazieren.
+• Das Wetter ist heute sonnig.</system:String>
+
+    <!-- ========== СТОРІНКА 31 ========== -->
+    <system:String x:Key="Page31_Title">Тема 10: Довкілля</system:String>
+    <system:String x:Key="Page31_Subtitle">10.2 Екологічні проблеми (Umweltprobleme)</system:String>
+    <system:String x:Key="Page31_Content">Німецька мова (Deutsche Sprache)
+Тема 10: Довкілля (Umwelt)
+
+📝 10.2 Екологічні проблеми (Umweltprobleme)
+
+═══════════════════════════════════════════
+
+📌 Проблеми довкілля
+
+🔸 Основні проблеми:
+• der Klimawandel - зміна клімату
+• die Luftverschmutzung - забруднення повітря
+• die Wasserverschmutzung - забруднення води
+• der Müll - сміття
+
+🔸 Причини:
+• Die Fabriken verschmutzen die Luft.
+• Es gibt zu viel Plastikmüll.
+
+═══════════════════════════════════════════
+
+📌 Дискусія
+
+❓ Was denkst du über den Klimawandel?
+✅ Ich denke, dass wir mehr für die Umwelt tun müssen.</system:String>
+
+    <!-- ========== СТОРІНКА 32 ========== -->
+    <system:String x:Key="Page32_Title">Тема 10: Довкілля</system:String>
+    <system:String x:Key="Page32_Subtitle">10.3 Захист довкілля (Umweltschutz)</system:String>
+    <system:String x:Key="Page32_Content">Німецька мова (Deutsche Sprache)
+Тема 10: Довкілля (Umwelt)
+
+📝 10.3 Захист довкілля (Umweltschutz)
+
+═══════════════════════════════════════════
+
+📌 Що можна робити
+
+🔸 Вдома:
+• Energie sparen - економити енергію
+• Wasser sparen - економити воду
+• Müll trennen - сортувати сміття
+
+🔸 Транспорт:
+• mit dem Fahrrad fahren - їздити на велосипеді
+• zu Fuß gehen - ходити пішки
+
+═══════════════════════════════════════════
+
+📌 Сортування сміття
+
+🔸 Контейнери:
+• die Biotonne - органічні відходи
+• die Papiertonne - папір
+• der Gelbe Sack - пластик та метал
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+• Ich trenne meinen Müll.
+• Ich fahre oft mit dem Fahrrad.
+• Jeder kann etwas für die Umwelt tun.</system:String>
+
+</ResourceDictionary>
+

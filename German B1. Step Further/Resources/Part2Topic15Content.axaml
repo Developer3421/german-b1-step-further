@@ -1,0 +1,91 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 15: Gesellschaft -->
+    <!-- Сторінки 99-101 -->
+    
+    <system:String x:Key="Page99_Title">Словник: Тема 15</system:String>
+    <system:String x:Key="Page99_Subtitle">15.1 Суспільство (Gesellschaft) - Словник</system:String>
+    <system:String x:Key="Page99_Content">📚 СЛОВНИК - Частина 2
+Тема 15: Gesellschaft und Politik
+
+📝 15.1 Суспільство (Gesellschaft)
+
+📌 Соціальні терміни
+• die Gesellschaft - суспільство
+• der Bürger - громадянин
+• die Bevölkerung - населення
+• die Gemeinschaft - громада
+• die Integration - інтеграція
+
+📌 Соціальні групи
+• die Familie - сім'я
+• die Jugend - молодь
+• die Senioren - пенсіонери
+• die Migranten - мігранти
+• die Flüchtlinge - біженці
+
+📌 Соціальні проблеми
+• die Armut - бідність
+• die Arbeitslosigkeit - безробіття
+• die Diskriminierung - дискримінація
+• die Gleichberechtigung - рівноправ'я</system:String>
+
+    <system:String x:Key="Page100_Title">Словник: Тема 15</system:String>
+    <system:String x:Key="Page100_Subtitle">15.2 Політика (Politik) - Словник</system:String>
+    <system:String x:Key="Page100_Content">📚 СЛОВНИК - Частина 2
+Тема 15: Gesellschaft und Politik
+
+📝 15.2 Політика (Politik)
+
+📌 Влада
+• die Regierung - уряд
+• der Bundestag - Бундестаг
+• der Bundesrat - Бундесрат
+• der Bundeskanzler - канцлер
+• der Bundespräsident - президент
+• der Minister - міністр
+
+📌 Вибори
+• die Wahl - вибори
+• wählen - голосувати
+• der Wahlzettel - бюлетень
+• die Partei - партія
+• der Kandidat - кандидат
+• die Stimme - голос
+
+📌 Закони
+• das Gesetz - закон
+• das Grundgesetz - Конституція
+• das Recht - право
+• die Pflicht - обов'язок</system:String>
+
+    <system:String x:Key="Page101_Title">Словник: Тема 15</system:String>
+    <system:String x:Key="Page101_Subtitle">15.3 Права (Rechte) - Словник</system:String>
+    <system:String x:Key="Page101_Content">📚 СЛОВНИК - Частина 2
+Тема 15: Gesellschaft und Politik
+
+📝 15.3 Права і обов'язки
+
+📌 Основні права
+• die Menschenwürde - людська гідність
+• die Meinungsfreiheit - свобода слова
+• die Religionsfreiheit - свобода віри
+• die Versammlungsfreiheit - свобода зібрань
+• das Wahlrecht - право голосу
+• das Recht auf Bildung - право на освіту
+
+📌 Обов'язки
+• Gesetze beachten - дотримуватися законів
+• Steuern zahlen - платити податки
+• Schulpflicht - обов'язкова освіта
+• Ausweis haben - мати посвідчення
+
+📌 Фрази
+• Jeder hat das Recht auf...
+• Es ist meine Pflicht...
+• Die Demokratie ist wichtig.</system:String>
+
+</ResourceDictionary>
+

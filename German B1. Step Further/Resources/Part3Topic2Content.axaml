@@ -1,0 +1,95 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 2: Modalverben -->
+    <!-- Сторінки 114-116 -->
+    
+    <system:String x:Key="Page114_Title">Граматика: Тема 2</system:String>
+    <system:String x:Key="Page114_Subtitle">2.1 Модальні дієслова (Modalverben)</system:String>
+    <system:String x:Key="Page114_Content">📖 ГРАМАТИКА - Частина 3
+Тема 2: Модальні дієслова (Modalverben)
+
+📝 2.1 Огляд модальних дієслів
+
+📌 Список модальних дієслів
+• können - могти (здатність)
+• müssen - мусити (необхідність)
+• wollen - хотіти (бажання)
+• sollen - мати (обов'язок)
+• dürfen - мати дозвіл
+• mögen - подобатися
+
+📌 Структура речення
+Модальне дієслово + Infinitiv в кінці
+• Ich kann Deutsch sprechen.
+• Er muss heute arbeiten.
+• Wir wollen ins Kino gehen.
+
+📌 Відмінювання können
+• ich kann     wir können
+• du kannst    ihr könnt
+• er kann      sie können</system:String>
+
+    <system:String x:Key="Page115_Title">Граматика: Тема 2</system:String>
+    <system:String x:Key="Page115_Subtitle">2.2 Müssen, Sollen, Wollen</system:String>
+    <system:String x:Key="Page115_Content">📖 ГРАМАТИКА - Частина 3
+Тема 2: Модальні дієслова (Modalverben)
+
+📝 2.2 Müssen, Sollen, Wollen
+
+📌 müssen (мусити)
+• ich muss     wir müssen
+• du musst     ihr müsst
+• er muss      sie müssen
+
+Приклад: Ich muss zum Arzt gehen.
+
+📌 sollen (мати обов'язок)
+• ich soll     wir sollen
+• du sollst    ihr sollt
+• er soll      sie sollen
+
+Приклад: Du sollst mehr lernen.
+
+📌 wollen (хотіти)
+• ich will     wir wollen
+• du willst    ihr wollt
+• er will      sie wollen
+
+Приклад: Ich will Programmierer werden.</system:String>
+
+    <system:String x:Key="Page116_Title">Граматика: Тема 2</system:String>
+    <system:String x:Key="Page116_Subtitle">2.3 Dürfen, Mögen</system:String>
+    <system:String x:Key="Page116_Content">📖 ГРАМАТИКА - Частина 3
+Тема 2: Модальні дієслова (Modalverben)
+
+📝 2.3 Dürfen, Mögen
+
+📌 dürfen (мати дозвіл)
+• ich darf     wir dürfen
+• du darfst    ihr dürft
+• er darf      sie dürfen
+
+Приклад: Hier darf man nicht rauchen.
+
+📌 mögen (подобатися)
+• ich mag      wir mögen
+• du magst     ihr mögt
+• er mag       sie mögen
+
+Приклад: Ich mag Kaffee.
+
+📌 möchten (хотіти - ввічливо)
+• ich möchte   wir möchten
+• du möchtest  ihr möchtet
+• er möchte    sie möchten
+
+Приклад: Ich möchte einen Tee, bitte.
+
+📌 Заперечення
+• Ich kann nicht schwimmen.
+• Du darfst hier nicht parken.</system:String>
+
+</ResourceDictionary>
+

@@ -1,0 +1,105 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 18: Anatomie -->
+    <!-- Сторінки 108-110 -->
+    
+    <system:String x:Key="Page108_Title">Словник: Тема 18</system:String>
+    <system:String x:Key="Page108_Subtitle">18.1 Тіло людини (Körper) - Словник</system:String>
+    <system:String x:Key="Page108_Content">📚 СЛОВНИК - Частина 2
+Тема 18: Anatomie (Анатомія)
+
+📝 18.1 Тіло людини (Körper)
+
+📌 Голова
+• der Kopf - голова
+• das Gesicht - обличчя
+• das Auge - око
+• die Nase - ніс
+• der Mund - рот
+• das Ohr - вухо
+• die Stirn - чоло
+• das Kinn - підборіддя
+• die Wange - щока
+
+📌 Тіло
+• der Hals - шия
+• die Schulter - плече
+• die Brust - груди
+• der Bauch - живіт
+• der Rücken - спина
+• die Hüfte - стегно
+
+📌 Кінцівки
+• der Arm - рука
+• die Hand - кисть
+• der Finger - палець
+• das Bein - нога
+• der Fuß - стопа</system:String>
+
+    <system:String x:Key="Page109_Title">Словник: Тема 18</system:String>
+    <system:String x:Key="Page109_Subtitle">18.2 Внутрішні органи (Organe)</system:String>
+    <system:String x:Key="Page109_Content">📚 СЛОВНИК - Частина 2
+Тема 18: Anatomie (Анатомія)
+
+📝 18.2 Внутрішні органи (Organe)
+
+📌 Органи
+• das Herz - серце
+• die Lunge - легеня
+• der Magen - шлунок
+• die Leber - печінка
+• die Niere - нирка
+• der Darm - кишечник
+• das Gehirn - мозок
+• die Blase - сечовий міхур
+
+📌 Системи тіла
+• das Herz-Kreislauf-System - серцево-судинна
+• das Verdauungssystem - травна
+• das Nervensystem - нервова
+• das Immunsystem - імунна
+• das Skelett - скелет
+• der Muskel - м'яз
+
+📌 Функції
+• atmen - дихати
+• verdauen - перетравлювати
+• pumpen - качати (кров)</system:String>
+
+    <system:String x:Key="Page110_Title">Словник: Тема 18</system:String>
+    <system:String x:Key="Page110_Subtitle">18.3 Зовнішність (Aussehen) - Словник</system:String>
+    <system:String x:Key="Page110_Content">📚 СЛОВНИК - Частина 2
+Тема 18: Anatomie (Анатомія)
+
+📝 18.3 Зовнішність (Aussehen)
+
+📌 Зріст та фігура
+• groß - високий
+• klein - низький
+• schlank - стрункий
+• dick - товстий
+• dünn - худий
+• sportlich - спортивний
+
+📌 Волосся
+• blond - світлий
+• braun - каштановий
+• schwarz - чорний
+• rot - рудий
+• grau - сивий
+• lang - довге
+• kurz - коротке
+• lockig - кучеряве
+• glatt - пряме
+
+📌 Очі та обличчя
+• blaue Augen - блакитні очі
+• grüne Augen - зелені очі
+• braune Augen - карі очі
+• der Bart - борода
+• die Brille - окуляри</system:String>
+
+</ResourceDictionary>
+

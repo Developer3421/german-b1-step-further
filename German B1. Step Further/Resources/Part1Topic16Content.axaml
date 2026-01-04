@@ -1,0 +1,139 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 16: Kultur (Культура) -->
+    <!-- Сторінки 48-50 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 48 ========== -->
+    <system:String x:Key="Page48_Title">Тема 16: Культура</system:String>
+    <system:String x:Key="Page48_Subtitle">16.1 Мистецтво (Kunst)</system:String>
+    <system:String x:Key="Page48_Content">Німецька мова (Deutsche Sprache)
+Тема 16: Культура (Kultur)
+
+📝 16.1 Мистецтво (Kunst)
+
+═══════════════════════════════════════════
+
+📌 Види мистецтва
+
+🔸 Терміни:
+• die Malerei - живопис
+• die Skulptur - скульптура
+• die Architektur - архітектура
+• die Musik - музика
+• die Literatur - література
+• das Theater - театр
+• der Film - кіно
+• der Tanz - танець
+
+🔸 Музеї та галереї:
+• das Museum - музей
+• die Galerie - галерея
+• die Ausstellung - виставка
+• das Kunstwerk - твір мистецтва
+
+═══════════════════════════════════════════
+
+📌 Про мистецтво
+
+❓ Interessierst du dich für Kunst?
+✅ Ja, ich besuche gern Museen.
+
+❓ Welche Kunstrichtung magst du?
+✅ Mir gefällt moderne Kunst.
+
+🧠 Приклад:
+Ich interessiere mich mehr für digitale Kunst und Design. Als Softwareentwickler finde ich auch Programmieren kreativ.</system:String>
+
+    <!-- ========== СТОРІНКА 49 ========== -->
+    <system:String x:Key="Page49_Title">Тема 16: Культура</system:String>
+    <system:String x:Key="Page49_Subtitle">16.2 Традиції та свята (Traditionen)</system:String>
+    <system:String x:Key="Page49_Content">Німецька мова (Deutsche Sprache)
+Тема 16: Культура (Kultur)
+
+📝 16.2 Традиції та свята (Traditionen und Feste)
+
+═══════════════════════════════════════════
+
+📌 Німецькі свята
+
+🔸 Важливі свята:
+• Weihnachten - Різдво (25-26 грудня)
+• Ostern - Великдень
+• Silvester - Новий рік
+• Tag der Deutschen Einheit - День єдності (3 жовтня)
+• Karneval/Fasching - карнавал
+• Oktoberfest - Октоберфест
+
+🔸 Традиції:
+• der Weihnachtsmarkt - різдвяний ярмарок
+• der Adventskranz - адвентівський вінок
+• der Osterhase - великодній заєць
+
+═══════════════════════════════════════════
+
+📌 Порівняння культур
+
+❓ Wie feiert man Weihnachten in der Ukraine?
+✅ In der Ukraine feiern wir am 7. Januar nach dem orthodoxen Kalender.
+
+❓ Welche deutschen Traditionen findest du interessant?
+✅ Mir gefallen die Weihnachtsmärkte sehr.
+
+🧠 Приклад:
+In Deutschland habe ich viele neue Traditionen kennengelernt. Besonders gefallen mir die Weihnachtsmärkte mit Glühwein und Lebkuchen.</system:String>
+
+    <!-- ========== СТОРІНКА 50 ========== -->
+    <system:String x:Key="Page50_Title">Тема 16: Культура</system:String>
+    <system:String x:Key="Page50_Subtitle">16.3 Міжкультурне спілкування (Interkulturell)</system:String>
+    <system:String x:Key="Page50_Content">Німецька мова (Deutsche Sprache)
+Тема 16: Культура (Kultur)
+
+📝 16.3 Міжкультурне спілкування (Interkulturelle Kommunikation)
+
+═══════════════════════════════════════════
+
+📌 Культурні відмінності
+
+🔸 Терміни:
+• die Kultur - культура
+• die Tradition - традиція
+• der Brauch - звичай
+• die Mentalität - менталітет
+• das Vorurteil - упередження
+• die Toleranz - толерантність
+
+🔸 Німецька культура:
+• Pünktlichkeit - пунктуальність
+• Ordnung - порядок
+• Direktheit - прямота
+
+═══════════════════════════════════════════
+
+📌 Інтеграція
+
+🔸 Корисні фрази:
+• Ich lerne die deutsche Kultur kennen.
+• Es gibt Unterschiede zwischen unseren Kulturen.
+• Ich respektiere andere Traditionen.
+• Man sollte offen für neue Erfahrungen sein.
+
+═══════════════════════════════════════════
+
+📌 Дискусія
+
+❓ Was findest du in Deutschland anders als in der Ukraine?
+✅ Die Menschen hier sind sehr pünktlich und direkt.
+
+❓ Was vermisst du aus deiner Heimat?
+✅ Ich vermisse das ukrainische Essen und meine Familie.
+
+🧠 Приклад:
+Die Integration in eine neue Kultur ist nicht einfach, aber interessant. Ich lerne jeden Tag etwas Neues über Deutschland und teile auch meine ukrainische Kultur mit meinen deutschen Freunden.</system:String>
+
+</ResourceDictionary>
+

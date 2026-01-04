@@ -1,0 +1,172 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 9: Gesundheit (Здоров'я) -->
+    <!-- Сторінки 27-29 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 27 ========== -->
+    <!-- Тема 9.1: Тіло та симптоми (Körper und Symptome) -->
+    <system:String x:Key="Page27_Title">Тема 9: Здоров'я</system:String>
+    <system:String x:Key="Page27_Subtitle">9.1 Тіло та симптоми (Körper und Symptome)</system:String>
+    <system:String x:Key="Page27_Content">Німецька мова (Deutsche Sprache)
+Тема 9: Здоров'я (Gesundheit)
+
+📝 9.1 Тіло та симптоми (Körper und Symptome)
+
+═══════════════════════════════════════════
+
+📌 Частини тіла (Körperteile)
+
+🔸 Голова:
+• der Kopf - голова
+• das Auge / die Augen - око / очі
+• das Ohr / die Ohren - вухо / вуха
+• die Nase - ніс
+• der Mund - рот
+• der Zahn / die Zähne - зуб / зуби
+
+🔸 Тіло:
+• der Hals - шия / горло
+• die Brust - груди
+• der Rücken - спина
+• der Bauch - живіт
+• der Arm / die Arme - рука / руки
+• das Bein / die Beine - нога / ноги
+• die Hand / die Hände - кисть / кисті
+• der Fuß / die Füße - стопа / стопи
+
+═══════════════════════════════════════════
+
+📌 Симптоми (Symptome)
+
+🔸 Скарги:
+• Ich habe Kopfschmerzen. - головний біль
+• Ich habe Halsschmerzen. - біль у горлі
+• Ich habe Bauchschmerzen. - біль у животі
+• Ich habe Fieber. - температура
+• Ich habe Husten. - кашель
+• Ich habe Schnupfen. - нежить
+• Mir ist schlecht. - мені погано
+• Mir ist schwindelig. - мені запаморочилося
+
+🧠 Приклад:
+Seit gestern habe ich starke Kopfschmerzen und Fieber. Ich glaube, ich habe eine Erkältung. Ich sollte zum Arzt gehen.</system:String>
+
+    <!-- ========== СТОРІНКА 28 ========== -->
+    <!-- Тема 9.2: У лікаря (Beim Arzt) -->
+    <system:String x:Key="Page28_Title">Тема 9: Здоров'я</system:String>
+    <system:String x:Key="Page28_Subtitle">9.2 У лікаря (Beim Arzt)</system:String>
+    <system:String x:Key="Page28_Content">Німецька мова (Deutsche Sprache)
+Тема 9: Здоров'я (Gesundheit)
+
+📝 9.2 У лікаря (Beim Arzt)
+
+═══════════════════════════════════════════
+
+📌 Запис на прийом (Termin vereinbaren)
+
+🔸 По телефону:
+• Ich möchte einen Termin vereinbaren.
+• Haben Sie heute noch einen Termin frei?
+• Es ist dringend.
+• Ich brauche einen Termin beim Hausarzt.
+
+🔸 Відповіді:
+✅ Können Sie morgen um 10 Uhr kommen?
+✅ Wir haben erst nächste Woche einen Termin frei.
+✅ Kommen Sie bitte in die Notaufnahme.
+
+═══════════════════════════════════════════
+
+📌 Діалог з лікарем
+
+❓ Was fehlt Ihnen? / Was kann ich für Sie tun?
+✅ Ich habe seit drei Tagen Halsschmerzen und Fieber.
+
+❓ Haben Sie noch andere Beschwerden?
+✅ Ja, ich habe auch Husten und bin sehr müde.
+
+❓ Nehmen Sie regelmäßig Medikamente?
+✅ Nein, ich nehme keine Medikamente.
+
+❓ Haben Sie Allergien?
+✅ Ja, ich bin allergisch gegen Penicillin.
+
+═══════════════════════════════════════════
+
+📌 Після огляду
+
+🔸 Лікар каже:
+• Sie haben eine Erkältung / eine Grippe.
+• Ich schreibe Ihnen ein Rezept.
+• Sie müssen im Bett bleiben.
+• Trinken Sie viel Tee und ruhen Sie sich aus.
+• Ich schreibe Sie für drei Tage krank.
+
+🧠 Приклад:
+Heute war ich beim Arzt. Er hat gesagt, dass ich eine Erkältung habe. Er hat mir ein Rezept gegeben und mich für drei Tage krankgeschrieben.</system:String>
+
+    <!-- ========== СТОРІНКА 29 ========== -->
+    <!-- Тема 9.3: Аптека та ліки (Apotheke und Medikamente) -->
+    <system:String x:Key="Page29_Title">Тема 9: Здоров'я</system:String>
+    <system:String x:Key="Page29_Subtitle">9.3 Аптека та ліки (Apotheke)</system:String>
+    <system:String x:Key="Page29_Content">Німецька мова (Deutsche Sprache)
+Тема 9: Здоров'я (Gesundheit)
+
+📝 9.3 Аптека та ліки (Apotheke und Medikamente)
+
+═══════════════════════════════════════════
+
+📌 В аптеці (In der Apotheke)
+
+🔸 Корисні фрази:
+• Ich habe ein Rezept.
+• Haben Sie etwas gegen Kopfschmerzen?
+• Ich brauche etwas gegen Erkältung.
+• Gibt es das auch rezeptfrei?
+• Wie oft muss ich das nehmen?
+
+🔸 Типи ліків:
+• die Tablette - таблетка
+• die Salbe - мазь
+• der Sirup - сироп
+• die Tropfen - краплі
+• das Pflaster - пластир
+• das Schmerzmittel - знеболювальне
+
+═══════════════════════════════════════════
+
+📌 Інструкція (Anweisung)
+
+🔸 Як приймати:
+• Nehmen Sie dreimal täglich eine Tablette.
+• Vor dem Essen / Nach dem Essen
+• Mit viel Wasser einnehmen.
+• Nicht mehr als drei Tabletten pro Tag.
+
+🔸 Попередження:
+• Nicht für Kinder unter 12 Jahren.
+• Kann Müdigkeit verursachen.
+• Nicht mit Alkohol einnehmen.
+
+═══════════════════════════════════════════
+
+📌 Медичне страхування
+
+🔸 Важливі терміни:
+• die Krankenversicherung - медичне страхування
+• die Krankenkasse - страхова компанія
+• die Versichertenkarte - страхова картка
+• der Eigenanteil - доплата пацієнта
+• rezeptpflichtig - за рецептом
+• rezeptfrei - без рецепта
+
+🧠 Приклад:
+Ich bin bei der AOK versichert. Wenn ich zum Arzt gehe, zeige ich meine Versichertenkarte. In der Apotheke zahle ich manchmal einen Eigenanteil für Medikamente.</system:String>
+
+</ResourceDictionary>
+

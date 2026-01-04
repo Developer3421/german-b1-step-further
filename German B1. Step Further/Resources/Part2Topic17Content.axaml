@@ -1,0 +1,95 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 17: Tiere -->
+    <!-- Сторінки 105-107 -->
+    
+    <system:String x:Key="Page105_Title">Словник: Тема 17</system:String>
+    <system:String x:Key="Page105_Subtitle">17.1 Домашні тварини (Haustiere)</system:String>
+    <system:String x:Key="Page105_Content">📚 СЛОВНИК - Частина 2
+Тема 17: Tiere (Тварини)
+
+📝 17.1 Домашні тварини (Haustiere)
+
+📌 Популярні домашні тварини
+• der Hund - собака
+• die Katze - кішка
+• der Vogel - птах
+• der Hamster - хом'як
+• das Kaninchen - кролик
+• der Fisch - рибка
+• die Schildkröte - черепаха
+• das Meerschweinchen - морська свинка
+
+📌 Догляд
+• füttern - годувати
+• das Futter - корм
+• Gassi gehen - гуляти з собакою
+• pflegen - доглядати
+• der Tierarzt - ветеринар
+• die Tierhandlung - зоомагазин
+
+📌 Команди для собак
+• Sitz! - Сидіти!
+• Platz! - Лежати!
+• Komm! - Йди сюди!</system:String>
+
+    <system:String x:Key="Page106_Title">Словник: Тема 17</system:String>
+    <system:String x:Key="Page106_Subtitle">17.2 Дикі тварини (Wildtiere)</system:String>
+    <system:String x:Key="Page106_Content">📚 СЛОВНИК - Частина 2
+Тема 17: Tiere (Тварини)
+
+📝 17.2 Дикі тварини (Wildtiere)
+
+📌 Лісові тварини
+• der Bär - ведмідь
+• der Wolf - вовк
+• der Fuchs - лисиця
+• das Reh - козуля
+• der Hirsch - олень
+• das Wildschwein - кабан
+• der Hase - заєць
+• das Eichhörnchen - білка
+
+📌 Екзотичні тварини
+• der Löwe - лев
+• der Tiger - тигр
+• der Elefant - слон
+• die Giraffe - жирафа
+• das Krokodil - крокодил
+• der Affe - мавпа
+• das Zebra - зебра
+
+📌 Зоопарк
+• der Zoo - зоопарк
+• das Gehege - вольєр</system:String>
+
+    <system:String x:Key="Page107_Title">Словник: Тема 17</system:String>
+    <system:String x:Key="Page107_Subtitle">17.3 Захист тварин (Tierschutz)</system:String>
+    <system:String x:Key="Page107_Content">📚 СЛОВНИК - Частина 2
+Тема 17: Tiere (Тварини)
+
+📝 17.3 Захист тварин (Tierschutz)
+
+📌 Терміни
+• der Tierschutz - захист тварин
+• das Tierheim - притулок
+• die artgerechte Haltung - належне утримання
+• die Tierquälerei - жорстоке поводження
+• aussetzen - покинути тварину
+• adoptieren - усиновити
+
+📌 Проблеми
+• bedrohte Arten - зникаючі види
+• das Aussterben - вимирання
+• die Wilderei - браконьєрство
+• der Lebensraum - середовище проживання
+
+📌 Фрази
+• Tiere brauchen Schutz.
+• Ich adoptiere lieber als kaufe.
+• Tierschutz ist wichtig.</system:String>
+
+</ResourceDictionary>
+

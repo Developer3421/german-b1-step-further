@@ -1,0 +1,139 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 1: Persönliche Informationen (Особиста інформація) -->
+    <!-- Сторінки 3-5 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 3 ========== -->
+    <!-- Тема 1.1: Біографія (Biografie) -->
+    <system:String x:Key="Page3_Title">Тема 1: Особиста інформація</system:String>
+    <system:String x:Key="Page3_Subtitle">1.1 Біографія (Biografie)</system:String>
+    <system:String x:Key="Page3_Content">Німецька мова (Deutsche Sprache)
+Тема 1: Особиста інформація (Persönliche Informationen)
+
+📝 1.1 Біографія (Biografie)
+
+📌 Обсяг:
+Для письмової частини Goethe B1 зазвичай очікують близько 80–100 слів для завдання типу «біографія / розповідь про себе».
+Текст має бути зв'язним і логічним, а не просто список фактів.
+
+═══════════════════════════════════════════
+
+📝 Biografie – Beispiel
+
+Mein Name ist Oleh Kurilo und ich bin 19 Jahre alt. Ich wurde in Kyjiw geboren, aber ich habe in Poltawa gelebt. Poltawa ist das Zentrum der Region Poltawa in der Ukraine.
+
+Mit sieben Jahren bin ich zur Schule gegangen. Von der 1. bis zur 4. Klasse habe ich die Schule SNVK 45 in Poltawa besucht. Danach war ich von der 5. bis zur 7. Klasse in der Schule Nr. 19. Die 8. und 9. Klasse habe ich in einem Jahr in der Online-Schule „Optima Bildung" abgeschlossen. Meine 10. und 11. Klasse habe ich im Fern-Lyzeum „Schule der Träume" beendet. Ich habe meine Schulausbildung mit Auszeichnung abgeschlossen.
+
+Vor etwa drei Jahren bin ich mit meiner Mutter nach Deutschland gekommen. Nur meine Mutter ist mit mir gereist, alle anderen Familienmitglieder sind in der Ukraine geblieben.
+
+Zurzeit lerne ich Deutsch. Meine Hobbys sind PC-Bau, Softwareentwicklung für Windows und Computerspiele. Ich möchte eine Ausbildung als Softwareentwickler machen. Ich habe bereits drei eigene Projekte entwickelt: einen Webbrowser, einen Notizblock und einen Timer für Windows.
+
+In der Zukunft möchte ich mein eigenes Softwareentwicklungsstudio gründen.</system:String>
+
+    <!-- ========== СТОРІНКА 4 ========== -->
+    <!-- Тема 1.2: Захоплення - Хобі (Hobbys) -->
+    <system:String x:Key="Page4_Title">Тема 1: Особиста інформація</system:String>
+    <system:String x:Key="Page4_Subtitle">1.2 Захоплення (Hobbys)</system:String>
+    <system:String x:Key="Page4_Content">Німецька мова (Deutsche Sprache)
+Тема 1: Особиста інформація (Persönliche Informationen)
+
+📝 1.2 Захоплення („Hobbys")
+
+═══════════════════════════════════════════
+
+📌 1.2.1 Вступ і опис хобі (Einleitung &amp; Beschreibung)
+
+🔸 Вступні фрази:
+• In meiner Freizeit…
+• Ich interessiere mich für…
+• Mein Lieblingshobby ist…
+• Ich mache das seit… Jahren.
+
+🔸 Опис хобі:
+• Що саме ти робиш (Ich baue PCs…)
+• Як часто (fast jeden Tag)
+• Де (zu Hause)
+• З ким (allein oder mit Freunden)
+
+🧠 Приклад:
+In meiner Freizeit entwickle ich gern Software für Windows. Ich habe schon einen Browser, einen Notizblock und einen Timer programmiert.
+
+═══════════════════════════════════════════
+
+📌 1.2.2 Діалог і відповіді (Dialog &amp; Reaktionen)
+
+❓ Was sind deine Hobbys?
+✅ Ich programmiere gern kleine Tools für Windows.
+
+❓ Wie oft machst du das?
+✅ Fast jeden Tag, wenn ich Zeit habe.
+
+❓ Warum gefällt dir das?
+✅ Weil ich kreativ sein kann und es spannend ist.
+
+❓ Mit wem machst du das?
+✅ Meistens allein, aber manchmal mit Freunden online.
+
+🧠 Додаткові фрази:
+• Ich finde das sehr interessant, weil…
+• Es hilft mir, mich zu entspannen.</system:String>
+
+    <!-- ========== СТОРІНКА 5 ========== -->
+    <!-- Тема 1.3: Характер (Charakter) + Порівняння та Взаємодія -->
+    <system:String x:Key="Page5_Title">Тема 1: Особиста інформація</system:String>
+    <system:String x:Key="Page5_Subtitle">1.3 Характер та взаємодія</system:String>
+    <system:String x:Key="Page5_Content">Німецька мова (Deutsche Sprache)
+Тема 1: Особиста інформація (Persönliche Informationen)
+
+📝 1.2.3 Порівняння і думка (Vergleich &amp; Meinung)
+
+🔸 Корисні фрази:
+• Viele Leute treiben gern Sport, aber ich finde Technik spannender.
+• Im Vergleich zu anderen Hobbys ist Programmieren sehr nützlich.
+• Meiner Meinung nach sollte jeder ein Hobby haben.
+• Ich denke, dass kreative Hobbys besonders wichtig sind.
+
+🧠 Приклад:
+Im Vergleich zu Sport ist Programmieren ruhiger, aber genauso spannend.
+
+═══════════════════════════════════════════
+
+📝 1.2.4 Запрошення і взаємодія (Einladung &amp; Interaktion)
+
+🔸 Запрошення:
+• Hast du Lust, mit mir … zu machen?
+• Ich möchte dich zu … einladen.
+• Am Samstag findet ein … statt. Kommst du mit?
+
+🔸 Відповіді:
+✅ Ja, das klingt super!
+✅ Gerne, ich bin dabei.
+❌ Leider habe ich keine Zeit.
+❌ Tut mir leid, ich habe schon etwas vor.
+
+═══════════════════════════════════════════
+
+📝 1.3 Характер (Charakter)
+
+🔸 Позитивні риси:
+• freundlich - дружній
+• hilfsbereit - готовий допомогти
+• ehrlich - чесний
+• fleißig - працьовитий
+• kreativ - креативний
+• zuverlässig - надійний
+
+🔸 Негативні риси:
+• ungeduldig - нетерплячий
+• faul - лінивий
+• schüchtern - сором'язливий
+
+🧠 Приклад:
+Ich bin eine freundliche und kreative Person. Manchmal bin ich ein bisschen ungeduldig, aber ich versuche, geduldiger zu werden.</system:String>
+
+</ResourceDictionary>

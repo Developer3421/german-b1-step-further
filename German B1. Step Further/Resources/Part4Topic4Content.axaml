@@ -1,0 +1,106 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 4: Шаблони листів - Тема 4: Reklamation -->
+    <!-- Сторінки 156-158 -->
+    
+    <system:String x:Key="Page156_Title">Шаблони: Тема 4</system:String>
+    <system:String x:Key="Page156_Subtitle">4.1 Reklamation (Скарга)</system:String>
+    <system:String x:Key="Page156_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 4: Reklamation (Скарга)
+
+📝 4.1 Лист-скарга
+
+📌 Структура
+1. Ваші дані
+2. Дані компанії
+3. Дата
+4. Betreff: Reklamation - [продукт]
+5. Опис проблеми
+6. Ваші вимоги
+7. Термін
+
+📌 Вступ
+Sehr geehrte Damen und Herren,
+
+am [дата] habe ich bei Ihnen [товар]
+gekauft (Bestellnummer: 12345).
+Leider muss ich mich beschweren.
+
+📌 Опис проблеми
+• Das Produkt ist defekt.
+• Die Ware ist beschädigt angekommen.
+• Es fehlt ein Teil.
+• Das entspricht nicht der Beschreibung.</system:String>
+
+    <system:String x:Key="Page157_Title">Шаблони: Тема 4</system:String>
+    <system:String x:Key="Page157_Subtitle">4.2 Вимоги та закінчення</system:String>
+    <system:String x:Key="Page157_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 4: Reklamation (Скарга)
+
+📝 4.2 Вимоги та закінчення
+
+📌 Ваші вимоги
+• Ich bitte um Umtausch des Produkts.
+• Ich möchte mein Geld zurück.
+• Bitte senden Sie mir Ersatz.
+• Ich erwarte eine Reparatur.
+• Ich fordere eine Erstattung.
+
+📌 Термін
+• Ich bitte um Antwort bis zum...
+• Bitte reagieren Sie innerhalb von 14 Tagen.
+• Ich erwarte Ihre Stellungnahme bis...
+
+📌 Закінчення
+Ich hoffe auf eine schnelle Lösung
+des Problems.
+
+Mit freundlichen Grüßen
+[Підпис]
+
+📌 Додатки
+Anlage: Kopie der Rechnung
+        Fotos des Schadens</system:String>
+
+    <system:String x:Key="Page158_Title">Шаблони: Тема 4</system:String>
+    <system:String x:Key="Page158_Subtitle">4.3 Приклад Reklamation</system:String>
+    <system:String x:Key="Page158_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 4: Reklamation (Скарга)
+
+📝 4.3 Повний приклад
+
+Oleh Melnyk
+Musterstraße 1
+12345 Berlin
+
+Online-Shop XYZ
+Kundenservice
+Hauptstraße 10
+54321 Hamburg
+
+Berlin, 04.01.2026
+
+Betreff: Reklamation - Laptop
+Bestellnummer: 98765
+
+Sehr geehrte Damen und Herren,
+
+am 20.12.2025 habe ich bei Ihnen
+einen Laptop bestellt. Leider muss
+ich feststellen, dass das Display
+defekt ist - es zeigt bunte Streifen.
+
+Ich bitte um Umtausch oder Erstattung
+des Kaufpreises.
+
+Bitte antworten Sie bis zum 18.01.2026.
+
+Mit freundlichen Grüßen
+Oleh Melnyk
+
+Anlage: Rechnung, Fotos</system:String>
+
+</ResourceDictionary>
+

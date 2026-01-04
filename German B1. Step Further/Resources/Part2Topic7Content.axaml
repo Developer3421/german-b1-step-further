@@ -1,0 +1,86 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 7: Arbeit -->
+    <!-- Сторінки 75-77 -->
+    
+    <system:String x:Key="Page75_Title">Словник: Тема 7</system:String>
+    <system:String x:Key="Page75_Subtitle">7.1 Професії (Berufe) - Словник</system:String>
+    <system:String x:Key="Page75_Content">📚 СЛОВНИК - Частина 2
+Тема 7: Arbeit (Робота)
+
+📝 7.1 Професії (Berufe)
+
+📌 IT-професії
+• der Programmierer - програміст
+• der Softwareentwickler - розробник ПЗ
+• der IT-Spezialist - IT-спеціаліст
+• der Webdesigner - веб-дизайнер
+
+📌 Медичні професії
+• der Arzt - лікар
+• die Krankenschwester - медсестра
+• der Zahnarzt - стоматолог
+• der Apotheker - фармацевт
+
+📌 Інші професії
+• der Lehrer - вчитель
+• der Ingenieur - інженер
+• der Verkäufer - продавець
+• der Koch - кухар
+• der Polizist - поліцейський</system:String>
+
+    <system:String x:Key="Page76_Title">Словник: Тема 7</system:String>
+    <system:String x:Key="Page76_Subtitle">7.2 Заявка на роботу (Bewerbung)</system:String>
+    <system:String x:Key="Page76_Content">📚 СЛОВНИК - Частина 2
+Тема 7: Arbeit (Робота)
+
+📝 7.2 Заявка на роботу (Bewerbung)
+
+📌 Документи
+• die Bewerbung - заявка
+• der Lebenslauf - резюме (CV)
+• das Anschreiben - супровідний лист
+• das Zeugnis - атестат/диплом
+• das Arbeitszeugnis - рекомендація
+
+📌 Терміни
+• die Stellenanzeige - оголошення
+• sich bewerben - подавати заявку
+• die Qualifikation - кваліфікація
+• die Berufserfahrung - досвід роботи
+
+📌 Фрази
+• Hiermit bewerbe ich mich um...
+• Mit freundlichen Grüßen
+• Ich freue mich auf Ihre Antwort.</system:String>
+
+    <system:String x:Key="Page77_Title">Словник: Тема 7</system:String>
+    <system:String x:Key="Page77_Subtitle">7.3 Співбесіда (Vorstellungsgespräch)</system:String>
+    <system:String x:Key="Page77_Content">📚 СЛОВНИК - Частина 2
+Тема 7: Arbeit (Робота)
+
+📝 7.3 Співбесіда (Vorstellungsgespräch)
+
+📌 Терміни
+• das Vorstellungsgespräch - співбесіда
+• der Personaler - HR-менеджер
+• die Einladung - запрошення
+• die Absage - відмова
+• die Zusage - згода
+• der Arbeitsvertrag - трудовий договір
+
+📌 Питання на співбесіді
+• Erzählen Sie über sich.
+• Warum möchten Sie bei uns arbeiten?
+• Was sind Ihre Stärken?
+• Wo sehen Sie sich in 5 Jahren?
+
+📌 Відповіді
+• Ich bin motiviert und lerne schnell.
+• Ich arbeite gern im Team.
+• Ich bin zuverlässig und pünktlich.</system:String>
+
+</ResourceDictionary>
+

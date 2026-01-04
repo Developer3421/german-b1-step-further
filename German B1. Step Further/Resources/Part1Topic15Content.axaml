@@ -1,0 +1,133 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 15: Gesellschaft/Politik (Суспільство/Політика) -->
+    <!-- Сторінки 45-47 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 45 ========== -->
+    <system:String x:Key="Page45_Title">Тема 15: Суспільство</system:String>
+    <system:String x:Key="Page45_Subtitle">15.1 Суспільство (Gesellschaft)</system:String>
+    <system:String x:Key="Page45_Content">Німецька мова (Deutsche Sprache)
+Тема 15: Суспільство та політика (Gesellschaft und Politik)
+
+📝 15.1 Суспільство (Gesellschaft)
+
+═══════════════════════════════════════════
+
+📌 Соціальні теми
+
+🔸 Терміни:
+• die Gesellschaft - суспільство
+• der Bürger - громадянин
+• die Gleichberechtigung - рівноправ'я
+• die Integration - інтеграція
+• die Migration - міграція
+• der Flüchtling - біженець
+• das Ehrenamt - волонтерство
+
+🔸 Соціальні проблеми:
+• die Armut - бідність
+• die Arbeitslosigkeit - безробіття
+• die Obdachlosigkeit - безхатченство
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+• In Deutschland gibt es viele Möglichkeiten für Integration.
+• Jeder Bürger hat Rechte und Pflichten.
+• Ehrenamtliche Arbeit ist sehr wichtig.
+
+🧠 Приклад:
+Als Flüchtling aus der Ukraine lerne ich Deutsch und integriere mich in die deutsche Gesellschaft. Die Integrationskurse helfen mir sehr.</system:String>
+
+    <!-- ========== СТОРІНКА 46 ========== -->
+    <system:String x:Key="Page46_Title">Тема 15: Суспільство</system:String>
+    <system:String x:Key="Page46_Subtitle">15.2 Політика (Politik)</system:String>
+    <system:String x:Key="Page46_Content">Німецька мова (Deutsche Sprache)
+Тема 15: Суспільство та політика (Gesellschaft und Politik)
+
+📝 15.2 Політика (Politik)
+
+═══════════════════════════════════════════
+
+📌 Політичні терміни
+
+🔸 Влада:
+• die Regierung - уряд
+• der Bundestag - Бундестаг
+• der Bundeskanzler - канцлер
+• der Bundespräsident - президент
+• das Gesetz - закон
+• die Wahl - вибори
+• die Partei - партія
+
+🔸 Політична система Німеччини:
+• Deutschland ist eine Bundesrepublik.
+• Es gibt 16 Bundesländer.
+• Der Bundestag wird alle 4 Jahre gewählt.
+
+═══════════════════════════════════════════
+
+📌 Вибори
+
+🔸 Про вибори:
+• wählen - голосувати
+• der Wahlzettel - бюлетень
+• das Wahlrecht - право голосу
+• der Kandidat - кандидат
+
+• Jeder Bürger ab 18 Jahren darf wählen.
+• Die Wahl ist frei und geheim.
+
+🧠 Приклад:
+Ich interessiere mich für Politik, besonders für Themen wie Bildung und Technologie. In der Zukunft möchte ich auch aktiv an der Gesellschaft teilnehmen.</system:String>
+
+    <!-- ========== СТОРІНКА 47 ========== -->
+    <system:String x:Key="Page47_Title">Тема 15: Суспільство</system:String>
+    <system:String x:Key="Page47_Subtitle">15.3 Права та обов'язки (Rechte und Pflichten)</system:String>
+    <system:String x:Key="Page47_Content">Німецька мова (Deutsche Sprache)
+Тема 15: Суспільство та політика (Gesellschaft und Politik)
+
+📝 15.3 Права та обов'язки (Rechte und Pflichten)
+
+═══════════════════════════════════════════
+
+📌 Основні права (Grundrechte)
+
+🔸 Права людини:
+• die Menschenwürde - людська гідність
+• die Meinungsfreiheit - свобода слова
+• die Religionsfreiheit - свобода віросповідання
+• die Versammlungsfreiheit - свобода зібрань
+• das Recht auf Bildung - право на освіту
+
+═══════════════════════════════════════════
+
+📌 Обов'язки громадян
+
+🔸 Pflichten:
+• Gesetze beachten - дотримуватися законів
+• Steuern zahlen - платити податки
+• Kinder in die Schule schicken
+• einen Ausweis haben
+
+═══════════════════════════════════════════
+
+📌 Дискусія
+
+❓ Welche Rechte sind dir am wichtigsten?
+✅ Für mich ist die Meinungsfreiheit sehr wichtig.
+
+❓ Was sind deine Pflichten als Einwohner?
+✅ Ich muss die Gesetze beachten und Deutsch lernen.
+
+🧠 Приклад:
+In Deutschland habe ich das Recht auf Bildung und Arbeit. Meine Pflicht ist es, die deutsche Sprache zu lernen und mich an die Gesetze zu halten.</system:String>
+
+</ResourceDictionary>
+

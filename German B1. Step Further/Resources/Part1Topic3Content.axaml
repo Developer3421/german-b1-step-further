@@ -1,0 +1,179 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 3: Familie (Сім'я) -->
+    <!-- Сторінки 9-11 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 9 ========== -->
+    <!-- Тема 3.1: Члени родини (Mitglieder) -->
+    <system:String x:Key="Page9_Title">Тема 3: Сім'я</system:String>
+    <system:String x:Key="Page9_Subtitle">3.1 Члени родини (Mitglieder)</system:String>
+    <system:String x:Key="Page9_Content">Німецька мова (Deutsche Sprache)
+Тема 3: Сім'я (Familie)
+
+📝 3.1 Члени родини (Familienmitglieder)
+
+═══════════════════════════════════════════
+
+📌 Близькі родичі (Nahe Verwandte)
+
+🔸 Батьки та діти:
+• die Mutter / die Mama - мама
+• der Vater / der Papa - тато
+• die Eltern - батьки
+• der Sohn - син
+• die Tochter - дочка
+• das Kind / die Kinder - дитина / діти
+
+🔸 Брати і сестри:
+• der Bruder - брат
+• die Schwester - сестра
+• die Geschwister - брати і сестри
+• der Zwilling - близнюк
+
+═══════════════════════════════════════════
+
+📌 Далекі родичі (Weitere Verwandte)
+
+🔸 Бабусі та дідусі:
+• die Großmutter / die Oma - бабуся
+• der Großvater / der Opa - дідусь
+• die Großeltern - бабуся і дідусь
+
+🔸 Інші родичі:
+• die Tante - тітка
+• der Onkel - дядько
+• der Cousin - двоюрідний брат
+• die Cousine - двоюрідна сестра
+• der Neffe - племінник
+• die Nichte - племінниця
+
+═══════════════════════════════════════════
+
+📌 Опис родини
+
+🔸 Корисні фрази:
+• Ich habe eine große / kleine Familie.
+• Meine Familie besteht aus vier Personen.
+• Ich bin das einzige Kind.
+• Ich habe zwei ältere Brüder.
+
+🧠 Приклад:
+Meine Familie ist nicht sehr groß. Ich lebe mit meiner Mutter zusammen. Mein Vater und meine Großeltern sind in der Ukraine geblieben. Ich habe keine Geschwister, ich bin Einzelkind.</system:String>
+
+    <!-- ========== СТОРІНКА 10 ========== -->
+    <!-- Тема 3.2: Традиції (Traditionen) -->
+    <system:String x:Key="Page10_Title">Тема 3: Сім'я</system:String>
+    <system:String x:Key="Page10_Subtitle">3.2 Традиції (Traditionen)</system:String>
+    <system:String x:Key="Page10_Content">Німецька мова (Deutsche Sprache)
+Тема 3: Сім'я (Familie)
+
+📝 3.2 Сімейні традиції (Familientraditionen)
+
+═══════════════════════════════════════════
+
+📌 Свята (Feiertage)
+
+🔸 Німецькі свята:
+• Weihnachten - Різдво
+• Ostern - Великдень
+• Silvester - Новий рік
+• der Geburtstag - день народження
+• die Hochzeit - весілля
+
+🔸 Фрази про свята:
+• Wir feiern Weihnachten zusammen.
+• An Ostern besuchen wir die Großeltern.
+• Zum Geburtstag bekomme ich Geschenke.
+
+═══════════════════════════════════════════
+
+📌 Сімейні звичаї
+
+🔸 Типові традиції:
+• das Familienessen - сімейна вечеря
+• der Sonntagsbrunch - недільний бранч
+• der Familienausflug - сімейна прогулянка
+• das Familienfoto - сімейне фото
+
+🔸 Корисні фрази:
+• Jeden Sonntag essen wir zusammen.
+• Wir haben eine Tradition: Am Heiligabend...
+• In meiner Familie ist es üblich, dass...
+• Diese Tradition gibt es seit Generationen.
+
+═══════════════════════════════════════════
+
+📌 Порівняння традицій
+
+❓ Welche Traditionen habt ihr in der Familie?
+✅ Bei uns ist es Tradition, dass wir Weihnachten zusammen verbringen.
+
+❓ Wie feiert man in der Ukraine?
+✅ In der Ukraine feiern wir Weihnachten am 7. Januar.
+
+🧠 Приклад:
+In meiner Familie haben wir eine schöne Tradition. Jeden Sonntag telefonieren wir mit den Verwandten in der Ukraine. An Weihnachten kochen wir traditionelle ukrainische Gerichte wie Borschtsch und Warenyky.</system:String>
+
+    <!-- ========== СТОРІНКА 11 ========== -->
+    <!-- Тема 3.3: Стосунки (Beziehungen) -->
+    <system:String x:Key="Page11_Title">Тема 3: Сім'я</system:String>
+    <system:String x:Key="Page11_Subtitle">3.3 Стосунки (Beziehungen)</system:String>
+    <system:String x:Key="Page11_Content">Німецька мова (Deutsche Sprache)
+Тема 3: Сім'я (Familie)
+
+📝 3.3 Сімейні стосунки (Familienbeziehungen)
+
+═══════════════════════════════════════════
+
+📌 Типи стосунків
+
+🔸 Сімейний стан:
+• ledig - неодружений/незаміжня
+• verheiratet - одружений/заміжня
+• geschieden - розлучений/а
+• verwitwet - вдівець/вдова
+• verlobt - заручений/а
+
+🔸 Партнерство:
+• der Freund / die Freundin - хлопець / дівчина
+• der Partner / die Partnerin - партнер/ка
+• der Ehemann / die Ehefrau - чоловік / дружина
+
+═══════════════════════════════════════════
+
+📌 Опис стосунків
+
+🔸 Позитивні:
+• Wir verstehen uns gut.
+• Ich habe ein gutes Verhältnis zu meinen Eltern.
+• Wir verbringen viel Zeit zusammen.
+• Meine Familie unterstützt mich immer.
+
+🔸 Складні:
+• Manchmal haben wir Streit.
+• Wir haben unterschiedliche Meinungen.
+• Die Beziehung ist kompliziert.
+
+═══════════════════════════════════════════
+
+📌 Діалоги про стосунки
+
+❓ Wie ist dein Verhältnis zu deiner Familie?
+✅ Ich verstehe mich sehr gut mit meiner Mutter. Wir reden über alles.
+
+❓ Hast du Geschwister?
+✅ Nein, ich bin Einzelkind, aber ich habe Cousins.
+
+❓ Vermisst du deine Familie in der Ukraine?
+✅ Ja, sehr. Wir telefonieren aber regelmäßig.
+
+🧠 Приклад:
+Ich habe eine enge Beziehung zu meiner Mutter. Wir verstehen uns sehr gut und helfen einander. Meinen Vater vermisse ich sehr, weil er in der Ukraine ist. Wir telefonieren jede Woche miteinander.</system:String>
+
+</ResourceDictionary>
+

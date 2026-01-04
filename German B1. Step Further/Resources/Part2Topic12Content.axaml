@@ -1,0 +1,99 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 12: Medien -->
+    <!-- Сторінки 90-92 -->
+    
+    <system:String x:Key="Page90_Title">Словник: Тема 12</system:String>
+    <system:String x:Key="Page90_Subtitle">12.1 Інтернет (Internet) - Словник</system:String>
+    <system:String x:Key="Page90_Content">📚 СЛОВНИК - Частина 2
+Тема 12: Medien (Медіа)
+
+📝 12.1 Інтернет (Internet)
+
+📌 Основні терміни
+• das Internet - інтернет
+• die Website - веб-сайт
+• die E-Mail - ел. пошта
+• der Browser - браузер
+• die Suchmaschine - пошуковик
+• das WLAN - Wi-Fi
+• das Passwort - пароль
+• der Account - акаунт
+
+📌 Дії
+• surfen - сидіти в інтернеті
+• herunterladen - завантажувати
+• hochladen - вивантажувати
+• klicken - клікати
+• einloggen - входити
+• ausloggen - виходити
+
+📌 Соцмережі
+• soziale Netzwerke - соцмережі
+• posten - публікувати
+• teilen - ділитися
+• liken - лайкати</system:String>
+
+    <system:String x:Key="Page91_Title">Словник: Тема 12</system:String>
+    <system:String x:Key="Page91_Subtitle">12.2 ТБ і радіо (Fernsehen) - Словник</system:String>
+    <system:String x:Key="Page91_Content">📚 СЛОВНИК - Частина 2
+Тема 12: Medien (Медіа)
+
+📝 12.2 Телебачення і радіо
+
+📌 ТБ терміни
+• der Fernseher - телевізор
+• das Fernsehen - ТБ
+• der Sender - канал
+• die Sendung - передача
+• die Nachrichten - новини
+• die Serie - серіал
+• der Film - фільм
+• die Werbung - реклама
+
+📌 Жанри
+• die Dokumentation - документальний
+• die Komödie - комедія
+• der Krimi - детектив
+• die Talkshow - ток-шоу
+• die Reality-Show - реаліті-шоу
+
+📌 Радіо
+• das Radio - радіо
+• der Radiosender - радіостанція
+• die Musik - музика
+• der Moderator - ведучий</system:String>
+
+    <system:String x:Key="Page92_Title">Словник: Тема 12</system:String>
+    <system:String x:Key="Page92_Subtitle">12.3 Преса (Presse) - Словник</system:String>
+    <system:String x:Key="Page92_Content">📚 СЛОВНИК - Частина 2
+Тема 12: Medien (Медіа)
+
+📝 12.3 Преса (Presse)
+
+📌 Друковані ЗМІ
+• die Zeitung - газета
+• die Zeitschrift - журнал
+• das Magazin - журнал
+• der Artikel - стаття
+• die Schlagzeile - заголовок
+• der Journalist - журналіст
+
+📌 Рубрики
+• die Politik - політика
+• die Wirtschaft - економіка
+• der Sport - спорт
+• die Kultur - культура
+• das Wetter - погода
+
+📌 Інформація
+• die Nachricht - новина
+• der Bericht - репортаж
+• die Quelle - джерело
+• die Fake News - фейкові новини
+• zuverlässig - надійний</system:String>
+
+</ResourceDictionary>
+

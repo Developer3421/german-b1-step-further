@@ -1,0 +1,97 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 4: Шаблони листів - Тема 1: Офіційні листи -->
+    <!-- Сторінки 147-149 -->
+    
+    <system:String x:Key="Page147_Title">Шаблони: Тема 1</system:String>
+    <system:String x:Key="Page147_Subtitle">1.1 Структура офіційного листа</system:String>
+    <system:String x:Key="Page147_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 1: Офіційні листи (Formelle Briefe)
+
+📝 1.1 Структура офіційного листа
+
+📌 Основні елементи
+1. Absender (відправник) - зверху зліва
+2. Empfänger (одержувач) - під відправником
+3. Ort, Datum (місце, дата) - справа
+4. Betreff (тема) - жирним
+5. Anrede (звертання)
+6. Text (текст)
+7. Grußformel (прощання)
+8. Unterschrift (підпис)
+
+📌 Приклад структури
+Max Mustermann
+Musterstraße 1
+12345 Musterstadt
+
+Firma ABC, Herr Schmidt
+Hauptstraße 10, 54321 Berlin
+
+Berlin, 04.01.2026
+
+Betreff: Bewerbung als Programmierer
+
+Sehr geehrter Herr Schmidt,
+...</system:String>
+
+    <system:String x:Key="Page148_Title">Шаблони: Тема 1</system:String>
+    <system:String x:Key="Page148_Subtitle">1.2 Звертання та прощання</system:String>
+    <system:String x:Key="Page148_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 1: Офіційні листи (Formelle Briefe)
+
+📝 1.2 Звертання та прощання
+
+📌 Офіційні звертання (Anrede)
+• Sehr geehrte Damen und Herren,
+• Sehr geehrter Herr [Name],
+• Sehr geehrte Frau [Name],
+
+📌 Офіційні прощання (Grußformel)
+• Mit freundlichen Grüßen
+• Mit besten Grüßen
+• Hochachtungsvoll
+
+📌 Важливо!
+• Після звертання - КОМА
+• Текст з маленької літери
+• Після прощання - БЕЗ коми
+
+📌 Приклад
+Sehr geehrte Frau Müller,
+
+ich schreibe Ihnen, weil...
+
+Mit freundlichen Grüßen
+Max Mustermann</system:String>
+
+    <system:String x:Key="Page149_Title">Шаблони: Тема 1</system:String>
+    <system:String x:Key="Page149_Subtitle">1.3 Корисні фрази для листів</system:String>
+    <system:String x:Key="Page149_Content">📝 ШАБЛОНИ ЛИСТІВ - Частина 4
+Тема 1: Офіційні листи (Formelle Briefe)
+
+📝 1.3 Корисні фрази
+
+📌 Початок листа
+• Ich schreibe Ihnen, weil...
+• Bezugnehmend auf Ihr Schreiben...
+• Hiermit möchte ich...
+
+📌 Прохання
+• Ich bitte Sie höflich um...
+• Könnten Sie mir bitte...
+• Ich wäre Ihnen dankbar, wenn...
+
+📌 Скарга
+• Leider muss ich mich beschweren...
+• Ich bin mit ... nicht zufrieden.
+
+📌 Закінчення
+• Ich freue mich auf Ihre Antwort.
+• Für Rückfragen stehe ich zur Verfügung.
+• Vielen Dank im Voraus.</system:String>
+
+</ResourceDictionary>
+

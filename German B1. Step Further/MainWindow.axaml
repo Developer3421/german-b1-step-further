@@ -39,6 +39,17 @@
         <Bitmap x:Key="InstrumentsButtonImage">Icons/InstrumensButton.png</Bitmap>
         <Bitmap x:Key="BackButtonImage">Icons/Backbutton.png</Bitmap>
         <Bitmap x:Key="ForwardButtonImage">Icons/ForwardButton.png</Bitmap>
+        
+        <!-- Tab gradients (from BrowserTemplate) -->
+        <LinearGradientBrush x:Key="ActiveTabGradient" StartPoint="0%,0%" EndPoint="0%,100%">
+            <GradientStop Color="#DDD6FE" Offset="0" />
+            <GradientStop Color="#C4B5FD" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="InactiveTabGradient" StartPoint="0%,0%" EndPoint="0%,100%">
+            <GradientStop Color="#F3F4F6" Offset="0" />
+            <GradientStop Color="#E5E7EB" Offset="1" />
+        </LinearGradientBrush>
     </Window.Resources>
 
     <Window.Styles>
@@ -124,6 +135,53 @@
         <Style Selector="GridSplitter:pointerover">
             <Setter Property="Background" Value="#FFA0A0A0"/>
         </Style>
+        
+        <!-- Tab Styles (from BrowserTemplate) -->
+        <Style Selector="Border.tab">
+            <Setter Property="CornerRadius" Value="8,8,0,0"/>
+            <Setter Property="Padding" Value="12,0,8,0"/>
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="MaxWidth" Value="240"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Background" Value="{StaticResource InactiveTabGradient}"/>
+            <Setter Property="Opacity" Value="0.7"/>
+        </Style>
+        <Style Selector="Border.tab.active">
+            <Setter Property="Background" Value="{StaticResource ActiveTabGradient}"/>
+            <Setter Property="BorderThickness" Value="1,1,1,0"/>
+            <Setter Property="BorderBrush" Value="#A78BFA"/>
+            <Setter Property="Opacity" Value="1"/>
+        </Style>
+        <Style Selector="Border.tab:pointerover">
+            <Setter Property="Opacity" Value="1"/>
+        </Style>
+        <Style Selector="Border.tab TextBlock.tab-title">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="Foreground" Value="#D84315"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+            <Setter Property="Margin" Value="0,0,8,0"/>
+        </Style>
+        <Style Selector="Border.tab.active TextBlock.tab-title">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style Selector="Button.tab-close">
+            <Setter Property="Width" Value="24"/>
+            <Setter Property="Height" Value="24"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+        <Style Selector="Button.tab-close:pointerover">
+            <Setter Property="Background" Value="#DDD6FE"/>
+        </Style>
+        <Style Selector="Button.tab-close:pressed">
+            <Setter Property="Background" Value="#C4B5FD"/>
+        </Style>
     </Window.Styles>
 
     <!-- MAIN LAYOUT -->
@@ -131,7 +189,7 @@
         
         <!-- ROW 0: TITLE BAR (Gray with custom window controls) -->
         <Grid Name="TitleBarRow" Grid.Row="0" Background="{StaticResource GrayGradient}">
-            <Grid ColumnDefinitions="Auto,Auto,Auto,Auto,*,Auto,Auto">
+            <Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,*,Auto,Auto">
                 
                 <!-- Column 0: App Icon and Title -->
                 <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
@@ -180,15 +238,37 @@
                 <!-- Column 3: Add Tab Button -->
                 <Button Name="PART_AddTabButton" Grid.Column="3" Width="32" Height="32" Margin="4,0,0,0" 
                         Background="Transparent" Padding="0" BorderThickness="0" 
-                        Cursor="Hand" VerticalAlignment="Center">
+                        Cursor="Hand" VerticalAlignment="Center"
+                        ToolTip.Tip="Додати вкладку (введіть номер сторінки)">
                     <Image Source="{StaticResource AddTabImage}" Stretch="UniformToFill"/>
                 </Button>
-                
-                <!-- Column 4: Spacer (draggable area) -->
-                <Border Grid.Column="4" Background="Transparent"/>
-                
-                <!-- Column 5: Part Selection Buttons (1-4) and Instruments -->
-                <StackPanel Grid.Column="5" Orientation="Horizontal" VerticalAlignment="Center" Spacing="4" Margin="0,0,12,0">
+
+                <!-- Column 4: Tabs Container -->
+                <StackPanel Name="TabsContainer" Grid.Column="4" Orientation="Horizontal" VerticalAlignment="Top" Margin="6,4,0,0">
+                    <!-- First Tab (always visible, not closable) -->
+                    <Border Name="Tab_0" Classes="tab active" Tag="0" 
+                            PointerPressed="Tab_PointerPressed"
+                            PointerMoved="Tab_PointerMoved"
+                            PointerReleased="Tab_PointerReleased">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Border Grid.Column="0" Width="18" Height="18" Margin="0,0,8,0" CornerRadius="3" Background="#A78BFA" VerticalAlignment="Center">
+                                <Viewbox Width="12" Height="12">
+                                    <Canvas Width="24" Height="24">
+                                        <Path Fill="White" Data="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                    </Canvas>
+                                </Viewbox>
+                            </Border>
+                            <TextBlock Grid.Column="1" Classes="tab-title" Text="Ч1 СТ1-2"/>
+                            <Border Grid.Column="2" Width="12"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+                <!-- Column 5: Spacer (draggable area) -->
+                <Border Grid.Column="5" Background="Transparent"/>
+
+                <!-- Column 6: Part Selection Buttons (1-4) and Instruments -->
+                <StackPanel Grid.Column="6" Orientation="Horizontal" VerticalAlignment="Center" Spacing="4" Margin="0,0,12,0">
                     <!-- Part 1 Button -->
                     <Button Name="Part1Button" Classes="part-button">
                         <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -215,8 +295,8 @@
                     </Button>
                 </StackPanel>
                 
-                <!-- Column 6: Window Controls -->
-                <StackPanel Grid.Column="6" Orientation="Horizontal" VerticalAlignment="Center">
+                <!-- Column 7: Window Controls -->
+                <StackPanel Grid.Column="7" Orientation="Horizontal" VerticalAlignment="Center">
                     <!-- Minimize Button -->
                     <Button Name="MinimizeButton" Classes="window-control" Padding="0">
                         <Image Source="{StaticResource MinButtonImage}" Stretch="Uniform"/>

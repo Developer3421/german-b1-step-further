@@ -1,12 +1,16 @@
+using System;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
+using Avalonia.Media;
 using German_B1._Step_Further.Services;
 
 namespace German_B1._Step_Further.Views
 {
     public partial class Part4Window : Window
     {
+        private int _currentHighlightedTopic = -1;
+        
         public Part4Window()
         {
             InitializeComponent();
@@ -26,12 +30,70 @@ namespace German_B1._Step_Further.Views
             
             // Connect all topic buttons
             ConnectTopicButtons();
+            
+            // Підписуємося на зміну сторінки для синхронізації
+            NavigationService.PageChanged += OnPageChanged;
+        }
+        
+        private void OnPageChanged(object? sender, PageChangedEventArgs e)
+        {
+            // Визначаємо яка тема відповідає поточним сторінкам
+            // Частина 4: сторінки 147-164
+            int leftPage = e.LeftPage;
+            
+            if (leftPage >= 147 && leftPage <= 164)
+            {
+                // Тема = (сторінка - 147) / 3 + 1
+                // Частина 4 має рівно 6 тем (147-164).
+                int topicNumber = (leftPage - 147) / 3 + 1;
+                HighlightTopic(topicNumber);
+            }
+            else
+            {
+                // Сторінки не з частини 4 - прибираємо підсвічування
+                ClearHighlight();
+            }
+        }
+        
+        private void HighlightTopic(int topicNumber)
+        {
+            if (_currentHighlightedTopic == topicNumber) return;
+            
+            // Прибираємо попереднє підсвічування
+            ClearHighlight();
+            
+            // Підсвічуємо нову тему
+            var button = this.FindControl<Button>($"Topic4_{topicNumber}Button");
+            if (button != null)
+            {
+                button.Background = new SolidColorBrush(Color.Parse("#CE93D8"));
+                _currentHighlightedTopic = topicNumber;
+            }
+        }
+        
+        private void ClearHighlight()
+        {
+            if (_currentHighlightedTopic > 0)
+            {
+                var button = this.FindControl<Button>($"Topic4_{_currentHighlightedTopic}Button");
+                if (button != null)
+                {
+                    button.Background = new SolidColorBrush(Color.Parse("#F3E5F5"));
+                }
+                _currentHighlightedTopic = -1;
+            }
+        }
+        
+        protected override void OnClosed(EventArgs e)
+        {
+            NavigationService.PageChanged -= OnPageChanged;
+            base.OnClosed(e);
         }
         
         private void ConnectTopicButtons()
         {
-            // Підключаємо обробники для всіх 8 тем Part 4
-            for (int i = 1; i <= 8; i++)
+            // Підключаємо обробники для всіх 6 тем Part 4
+            for (int i = 1; i <= 6; i++)
             {
                 var button = this.FindControl<Button>($"Topic4_{i}Button");
                 if (button != null)
@@ -43,20 +105,14 @@ namespace German_B1._Step_Further.Views
         
         private void TopicButton_Click(object? sender, RoutedEventArgs e)
         {
-            if (sender is Button button && button.Tag is string)
+            if (sender is Button button && button.Tag is string tagString)
             {
-                // Part 1: 18 × 3 = 54 стор (стор. 3-56)
-                // Part 2: 18 × 3 = 54 стор (стор. 57-110)
-                // Part 3: 12 × 4 = 48 стор (стор. 111-158)
-                // Part 4: 1 файл = 1 сторінка (стор. 159)
-                // Оскільки Part 4 має тільки 1 файл, всі теми вказують на ту саму сторінку
-                int part1Pages = 18 * 3; // 54
-                int part2Pages = 18 * 3; // 54
-                int part3Pages = 12 * 4; // 48
-                int pageNumber = 2 + part1Pages + part2Pages + part3Pages + 1; // сторінка 159
-                
-                // Викликаємо навігацію для Part 4
-                NavigationService.RequestNavigation(4, pageNumber);
+                if (int.TryParse(tagString, out int topicNumber))
+                {
+                    // Передаємо Part=4 і номер теми
+                    // MainWindow конвертує це в номер сторінки
+                    NavigationService.RequestNavigation(4, topicNumber);
+                }
             }
         }
 
@@ -74,4 +130,3 @@ namespace German_B1._Step_Further.Views
         }
     }
 }
-

@@ -1,0 +1,181 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 6: Bildung (Освіта) -->
+    <!-- Сторінки 18-20 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 18 ========== -->
+    <!-- Тема 6.1: Школа (Schule) -->
+    <system:String x:Key="Page18_Title">Тема 6: Освіта</system:String>
+    <system:String x:Key="Page18_Subtitle">6.1 Школа (Schule)</system:String>
+    <system:String x:Key="Page18_Content">Німецька мова (Deutsche Sprache)
+Тема 6: Освіта (Bildung)
+
+📝 6.1 Школа (Schule)
+
+═══════════════════════════════════════════
+
+📌 Система освіти в Німеччині
+
+🔸 Типи шкіл:
+• die Grundschule - початкова школа (1-4 клас)
+• die Hauptschule - основна школа
+• die Realschule - реальна школа
+• das Gymnasium - гімназія
+• die Gesamtschule - загальноосвітня школа
+
+🔸 Атестати:
+• der Hauptschulabschluss - атестат основної школи
+• der Realschulabschluss - атестат реальної школи
+• das Abitur - атестат гімназії (для вступу в університет)
+
+═══════════════════════════════════════════
+
+📌 Шкільні предмети (Schulfächer)
+
+🔸 Основні предмети:
+• Deutsch - німецька мова
+• Mathematik (Mathe) - математика
+• Englisch - англійська мова
+• Geschichte - історія
+• Biologie (Bio) - біологія
+• Physik - фізика
+• Chemie - хімія
+• Sport - фізкультура
+• Kunst - мистецтво
+• Musik - музика
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+🔸 Про школу:
+• Ich gehe in die 10. Klasse.
+• Mein Lieblingsfach ist Informatik.
+• Ich habe die Schule mit Auszeichnung abgeschlossen.
+• Nach der Schule möchte ich studieren.
+
+🧠 Приклад:
+Ich habe meine Schulausbildung in der Ukraine abgeschlossen. Dort habe ich 11 Jahre lang gelernt. Meine Lieblingsfächer waren Informatik und Mathematik. Jetzt lerne ich Deutsch in Deutschland.</system:String>
+
+    <!-- ========== СТОРІНКА 19 ========== -->
+    <!-- Тема 6.2: Навчання та курси (Ausbildung) -->
+    <system:String x:Key="Page19_Title">Тема 6: Освіта</system:String>
+    <system:String x:Key="Page19_Subtitle">6.2 Навчання та курси (Ausbildung)</system:String>
+    <system:String x:Key="Page19_Content">Німецька мова (Deutsche Sprache)
+Тема 6: Освіта (Bildung)
+
+📝 6.2 Професійне навчання (Ausbildung)
+
+═══════════════════════════════════════════
+
+📌 Дуальна система навчання
+
+🔸 Що це таке:
+• die Ausbildung - професійне навчання
+• der Azubi (Auszubildende) - учень/практикант
+• der Betrieb - підприємство
+• die Berufsschule - професійна школа
+• der Ausbildungsvertrag - договір про навчання
+
+🔸 Тривалість:
+• Die Ausbildung dauert meistens 2-3,5 Jahre.
+• Man lernt im Betrieb und in der Berufsschule.
+
+═══════════════════════════════════════════
+
+📌 Мовні курси (Sprachkurse)
+
+🔸 Рівні мови:
+• A1, A2 - початковий рівень
+• B1, B2 - середній рівень
+• C1, C2 - просунутий рівень
+
+🔸 Типи курсів:
+• der Integrationskurs - інтеграційний курс
+• der Intensivkurs - інтенсивний курс
+• der Abendkurs - вечірній курс
+• der Onlinekurs - онлайн-курс
+
+═══════════════════════════════════════════
+
+📌 Діалоги про навчання
+
+❓ Was machst du beruflich?
+✅ Ich mache gerade eine Ausbildung als Softwareentwickler.
+
+❓ Wo lernst du Deutsch?
+✅ Ich besuche einen Sprachkurs an der Volkshochschule.
+
+❓ Welches Niveau hast du?
+✅ Ich habe B1 und lerne jetzt für B2.
+
+🧠 Приклад:
+Ich möchte eine Ausbildung als Fachinformatiker machen. Dafür brauche ich mindestens B2-Niveau in Deutsch. Zurzeit besuche ich einen B1-Kurs und bereite mich auf die Prüfung vor.</system:String>
+
+    <!-- ========== СТОРІНКА 20 ========== -->
+    <!-- Тема 6.3: Університет (Universität) -->
+    <system:String x:Key="Page20_Title">Тема 6: Освіта</system:String>
+    <system:String x:Key="Page20_Subtitle">6.3 Університет (Universität)</system:String>
+    <system:String x:Key="Page20_Content">Німецька мова (Deutsche Sprache)
+Тема 6: Освіта (Bildung)
+
+📝 6.3 Університет (Universität/Hochschule)
+
+═══════════════════════════════════════════
+
+📌 Вища освіта в Німеччині
+
+🔸 Типи закладів:
+• die Universität (Uni) - університет
+• die Fachhochschule (FH) - прикладний університет
+• die Hochschule - вищий навчальний заклад
+
+🔸 Ступені освіти:
+• der Bachelor - бакалавр (3-4 роки)
+• der Master - магістр (1-2 роки)
+• der Doktor - доктор (PhD)
+
+═══════════════════════════════════════════
+
+📌 Навчальний процес
+
+🔸 Важливі терміни:
+• das Semester - семестр
+• die Vorlesung - лекція
+• das Seminar - семінар
+• die Prüfung - іспит
+• die Klausur - контрольна робота
+• das Praktikum - практика
+• die Studiengebühren - плата за навчання
+
+🔸 Фрази:
+• Ich studiere Informatik.
+• Ich bin im dritten Semester.
+• Die Prüfungsphase ist stressig.
+• Ich schreibe meine Bachelorarbeit.
+
+═══════════════════════════════════════════
+
+📌 Вступ до університету
+
+🔸 Вимоги:
+• das Abitur / die Hochschulzugangsberechtigung
+• Sprachkenntnisse (DSH oder TestDaF)
+• die Bewerbung - заявка на вступ
+
+❓ Was studierst du?
+✅ Ich möchte Informatik studieren.
+
+❓ An welcher Uni möchtest du studieren?
+✅ Ich möchte an der TU München studieren.
+
+🧠 Приклад:
+In Zukunft möchte ich vielleicht an einer deutschen Universität studieren. Aber zuerst mache ich eine Ausbildung, um praktische Erfahrung zu sammeln.</system:String>
+
+</ResourceDictionary>
+

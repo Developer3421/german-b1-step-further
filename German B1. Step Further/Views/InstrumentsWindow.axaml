@@ -185,6 +185,58 @@
                         </StackPanel>
                     </Button>
                     
+                    <!-- Separator -->
+                    <Border Height="1" Background="#FFD0C0A0" Margin="0,15,0,15"/>
+                    
+                    <!-- Local AI Chat Header -->
+                    <TextBlock Text="Локальний AI (без інтернету)"
+                               FontSize="16" FontWeight="Bold" Foreground="#FF8A2BE2" Margin="0,0,0,10"/>
+                    
+                    <!-- German Chat Bot (Local LLM) -->
+                    <Button Name="GermanChatButton" Classes="ai-tool-button">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <!-- Abstract chat icon -->
+                            <Border Width="24" Height="24" Background="#FF8A2BE2" CornerRadius="4" Margin="0,0,12,0">
+                                <Viewbox Width="16" Height="16">
+                                    <Canvas Width="24" Height="24">
+                                        <Path Fill="White" Data="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18"/>
+                                    </Canvas>
+                                </Viewbox>
+                            </Border>
+                            <TextBlock Text="Співрозмовник німецькою (Gemma 3)" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <!-- User Agreement -->
+                    <Button Name="UserAgreementButton" Classes="ai-tool-button">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <!-- Document icon -->
+                            <Border Width="24" Height="24" Background="#FF6A5ACD" CornerRadius="4" Margin="0,0,12,0">
+                                <Viewbox Width="16" Height="16">
+                                    <Canvas Width="24" Height="24">
+                                        <Path Fill="White" Data="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13,9V3.5L18.5,9H13M7,12H17V14H7V12M7,16H17V18H7V16"/>
+                                    </Canvas>
+                                </Viewbox>
+                            </Border>
+                            <TextBlock Text="User Agreement" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <!-- AI Content Complaint Button -->
+                    <Button Name="ComplaintButton" Classes="ai-tool-button">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <!-- Warning icon -->
+                            <Border Width="24" Height="24" Background="#FFFFA07A" CornerRadius="4" Margin="0,0,12,0">
+                                <Viewbox Width="16" Height="16">
+                                    <Canvas Width="24" Height="24">
+                                        <Path Fill="#FF800000" Data="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"/>
+                                    </Canvas>
+                                </Viewbox>
+                            </Border>
+                            <TextBlock Text="Скарга на контент створений Ai" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
                 </StackPanel>
             </ScrollViewer>
 

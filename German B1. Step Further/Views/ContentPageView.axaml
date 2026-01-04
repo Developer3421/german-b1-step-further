@@ -1,0 +1,103 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="German_B1._Step_Further.Views.ContentPageView"
+             Background="#FFF5E6D3"
+             FontFamily="Segoe UI, Arial, Tahoma">
+    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceInclude Source="avares://German B1. Step Further/Resources/Part1Topic1Content.axaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <UserControl.Styles>
+        <!-- Page Title Style -->
+        <Style Selector="TextBlock.page-title">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#7B68EE"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        
+        <!-- Page Subtitle Style -->
+        <Style Selector="TextBlock.page-subtitle">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#9370DB"/>
+            <Setter Property="Margin" Value="0,0,0,20"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        
+        <!-- Content Text Style -->
+        <Style Selector="TextBlock.content-text">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style>
+        
+        <!-- Content Section Style -->
+        <Style Selector="Border.content-section">
+            <Setter Property="Background" Value="#FFFAF0E6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="BorderBrush" Value="#FFE8D5B7"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        
+        <!-- Page Number Style -->
+        <Style Selector="TextBlock.page-number">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="#888888"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+        </Style>
+    </UserControl.Styles>
+    
+    <Grid RowDefinitions="*,Auto">
+        
+        <!-- ROW 0: Content Area -->
+        <ScrollViewer Grid.Row="0" 
+                      VerticalScrollBarVisibility="Auto" 
+                      HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="20,15,20,15">
+                
+                <!-- Page Header -->
+                <Border Classes="content-section">
+                    <StackPanel>
+                        <!-- Title -->
+                        <TextBlock Name="PageTitle" 
+                                   Classes="page-title" 
+                                   Text="Заголовок сторінки"/>
+                        
+                        <!-- Subtitle -->
+                        <TextBlock Name="PageSubtitle" 
+                                   Classes="page-subtitle" 
+                                   Text="Підзаголовок"/>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Main Content -->
+                <Border Classes="content-section">
+                    <TextBlock Name="PageContent" 
+                               Classes="content-text"
+                               Text="Тут буде контент сторінки..."/>
+                </Border>
+                
+            </StackPanel>
+        </ScrollViewer>
+        
+        <!-- ROW 1: Page Number -->
+        <TextBlock Name="PageNumber" 
+                   Grid.Row="1" 
+                   Classes="page-number"
+                   Text="— 1 —"/>
+        
+    </Grid>
+    
+</UserControl>
+

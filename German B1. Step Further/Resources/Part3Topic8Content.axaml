@@ -1,0 +1,90 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 8: Präpositionen -->
+    <!-- Сторінки 132-134 -->
+    
+    <system:String x:Key="Page132_Title">Граматика: Тема 8</system:String>
+    <system:String x:Key="Page132_Subtitle">8.1 Прийменники + Akkusativ</system:String>
+    <system:String x:Key="Page132_Content">📖 ГРАМАТИКА - Частина 3
+Тема 8: Präpositionen (Прийменники)
+
+📝 8.1 Прийменники + Akkusativ
+
+📌 Список (завжди Akkusativ)
+• durch - через
+• für - для
+• gegen - проти
+• ohne - без
+• um - навколо, о (час)
+• bis - до
+• entlang - вздовж
+
+📌 Приклади
+• Ich gehe durch den Park.
+• Das Geschenk ist für dich.
+• Wir sind gegen den Plan.
+• Ich trinke Kaffee ohne Zucker.
+• Der Unterricht beginnt um 9 Uhr.
+
+📌 Запам'ятай: FUDGEOB
+für, um, durch, gegen, entlang, ohne, bis</system:String>
+
+    <system:String x:Key="Page133_Title">Граматика: Тема 8</system:String>
+    <system:String x:Key="Page133_Subtitle">8.2 Прийменники + Dativ</system:String>
+    <system:String x:Key="Page133_Content">📖 ГРАМАТИКА - Частина 3
+Тема 8: Präpositionen (Прийменники)
+
+📝 8.2 Прийменники + Dativ
+
+📌 Список (завжди Dativ)
+• aus - з (звідки)
+• bei - у, біля
+• mit - з (разом)
+• nach - після, до (міста)
+• seit - з (часу)
+• von - від
+• zu - до
+• außer - крім
+• gegenüber - навпроти
+
+📌 Приклади
+• Ich komme aus der Ukraine.
+• Ich wohne bei meinen Eltern.
+• Ich fahre mit dem Bus.
+• Nach dem Unterricht gehe ich nach Hause.
+• Seit einem Jahr lerne ich Deutsch.
+
+📌 Запам'ятай: AUSBEIVONNACHSEITZU</system:String>
+
+    <system:String x:Key="Page134_Title">Граматика: Тема 8</system:String>
+    <system:String x:Key="Page134_Subtitle">8.3 Wechselpräpositionen</system:String>
+    <system:String x:Key="Page134_Content">📖 ГРАМАТИКА - Частина 3
+Тема 8: Präpositionen (Прийменники)
+
+📝 8.3 Wechselpräpositionen (Змінні)
+
+📌 Список
+an, auf, hinter, in, neben,
+über, unter, vor, zwischen
+
+📌 Правило
+Wohin? (рух) → Akkusativ
+Wo? (місце) → Dativ
+
+📌 Приклади
+Wohin? (Akk)
+• Ich gehe in die Schule.
+• Ich lege das Buch auf den Tisch.
+
+Wo? (Dat)
+• Ich bin in der Schule.
+• Das Buch liegt auf dem Tisch.
+
+📌 Підказка
+stellen/legen/setzen → Akk (рух)
+stehen/liegen/sitzen → Dat (місце)</system:String>
+
+</ResourceDictionary>
+

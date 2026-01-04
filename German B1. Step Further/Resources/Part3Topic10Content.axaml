@@ -1,0 +1,82 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 10: Indirekte Rede -->
+    <!-- Сторінки 138-140 -->
+    
+    <system:String x:Key="Page138_Title">Граматика: Тема 10</system:String>
+    <system:String x:Key="Page138_Subtitle">10.1 Непряма мова (Indirekte Rede)</system:String>
+    <system:String x:Key="Page138_Content">📖 ГРАМАТИКА - Частина 3
+Тема 10: Indirekte Rede (Непряма мова)
+
+📝 10.1 Основи непрямої мови
+
+📌 Пряма vs Непряма
+Пряма: Er sagt: "Ich bin müde."
+Непряма: Er sagt, dass er müde ist.
+
+📌 Структура
+Головне + dass + підрядне (V в кінці)
+
+📌 Приклади
+• Sie sagt, dass sie Deutsch lernt.
+• Er meint, dass es regnen wird.
+• Ich denke, dass du recht hast.
+
+📌 Зміна займенників
+"Ich bin" → er/sie ist
+"mein" → sein/ihr</system:String>
+
+    <system:String x:Key="Page139_Title">Граматика: Тема 10</system:String>
+    <system:String x:Key="Page139_Subtitle">10.2 Непрямі питання</system:String>
+    <system:String x:Key="Page139_Content">📖 ГРАМАТИКА - Частина 3
+Тема 10: Indirekte Rede (Непряма мова)
+
+📝 10.2 Непрямі питання
+
+📌 Питання з питальним словом
+Пряме: Wo wohnst du?
+Непряме: Er fragt, wo ich wohne.
+
+📌 Так/Ні питання → ob
+Пряме: Kommst du?
+Непряме: Er fragt, ob ich komme.
+
+📌 Приклади
+• Ich weiß nicht, wann er kommt.
+• Kannst du mir sagen, wo der Bahnhof ist?
+• Ich frage mich, ob das richtig ist.
+
+📌 Порядок слів
+Питальне слово/ob + S + O + V</system:String>
+
+    <system:String x:Key="Page140_Title">Граматика: Тема 10</system:String>
+    <system:String x:Key="Page140_Subtitle">10.3 Konjunktiv I (офіційний стиль)</system:String>
+    <system:String x:Key="Page140_Content">📖 ГРАМАТИКА - Частина 3
+Тема 10: Indirekte Rede (Непряма мова)
+
+📝 10.3 Konjunktiv I (офіційний стиль)
+
+📌 Використання
+Офіційні тексти, новини, преса
+
+📌 Утворення
+Основа Infinitiv + закінчення
+• ich -e      wir -en
+• er/sie -e   sie -en
+
+📌 sein у Konjunktiv I
+• ich sei     wir seien
+• er sei      sie seien
+
+📌 Приклади
+• Der Minister sagte, er sei zufrieden.
+• Sie behauptet, sie habe nichts gewusst.
+
+📌 У розмовній мові
+Частіше dass + Indikativ
+• Er sagt, dass er müde ist.</system:String>
+
+</ResourceDictionary>
+

@@ -1,0 +1,94 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 8: Einkaufen -->
+    <!-- Сторінки 78-80 -->
+    
+    <system:String x:Key="Page78_Title">Словник: Тема 8</system:String>
+    <system:String x:Key="Page78_Subtitle">8.1 Магазини (Geschäfte) - Словник</system:String>
+    <system:String x:Key="Page78_Content">📚 СЛОВНИК - Частина 2
+Тема 8: Einkaufen (Покупки)
+
+📝 8.1 Магазини (Geschäfte)
+
+📌 Типи магазинів
+• der Supermarkt - супермаркет
+• das Kaufhaus - універмаг
+• das Einkaufszentrum - ТЦ
+• die Bäckerei - пекарня
+• die Metzgerei - м'ясна крамниця
+• die Apotheke - аптека
+• die Drogerie - косметика
+• der Buchladen - книгарня
+• der Markt - ринок
+
+📌 Відділи
+• die Obstabteilung - відділ фруктів
+• die Fleischabteilung - м'ясний відділ
+• die Kasse - каса
+• der Einkaufswagen - візок
+• der Korb - кошик</system:String>
+
+    <system:String x:Key="Page79_Title">Словник: Тема 8</system:String>
+    <system:String x:Key="Page79_Subtitle">8.2 Ціни (Preise) - Словник</system:String>
+    <system:String x:Key="Page79_Content">📚 СЛОВНИК - Частина 2
+Тема 8: Einkaufen (Покупки)
+
+📝 8.2 Ціни (Preise)
+
+📌 Гроші та оплата
+• der Preis - ціна
+• das Geld - гроші
+• der Euro - євро
+• der Cent - цент
+• bar zahlen - платити готівкою
+• mit Karte zahlen - карткою
+• die Rechnung - рахунок
+• das Wechselgeld - решта
+
+📌 Знижки
+• der Rabatt - знижка
+• das Sonderangebot - спецпропозиція
+• der Ausverkauf - розпродаж
+• günstig - дешевий
+• teuer - дорогий
+• billig - дешевий
+• kostenlos - безкоштовно
+
+📌 Фрази
+• Was kostet das?
+• Das ist zu teuer.
+• Haben Sie das günstiger?</system:String>
+
+    <system:String x:Key="Page80_Title">Словник: Тема 8</system:String>
+    <system:String x:Key="Page80_Subtitle">8.3 Скарга (Reklamation) - Словник</system:String>
+    <system:String x:Key="Page80_Content">📚 СЛОВНИК - Частина 2
+Тема 8: Einkaufen (Покупки)
+
+📝 8.3 Скарга (Reklamation)
+
+📌 Проблеми з товаром
+• defekt - несправний
+• kaputt - зламаний
+• beschädigt - пошкоджений
+• falsch - неправильний
+• zu klein/groß - замалий/завеликий
+• die falsche Farbe - неправильний колір
+
+📌 Дії
+• umtauschen - обмінювати
+• zurückgeben - повертати
+• reklamieren - скаржитися
+• erstatten - повертати гроші
+• reparieren - ремонтувати
+• der Kassenbon - чек
+
+📌 Фрази
+• Ich möchte das umtauschen.
+• Das Produkt ist defekt.
+• Ich möchte mein Geld zurück.
+• Haben Sie den Kassenbon?</system:String>
+
+</ResourceDictionary>
+

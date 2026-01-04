@@ -1,0 +1,157 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 18: Anatomie (Анатомія) -->
+    <!-- Сторінки 54-56 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 54 ========== -->
+    <system:String x:Key="Page54_Title">Тема 18: Анатомія</system:String>
+    <system:String x:Key="Page54_Subtitle">18.1 Тіло людини (Der menschliche Körper)</system:String>
+    <system:String x:Key="Page54_Content">Німецька мова (Deutsche Sprache)
+Тема 18: Анатомія (Anatomie)
+
+📝 18.1 Тіло людини (Der menschliche Körper)
+
+═══════════════════════════════════════════
+
+📌 Частини тіла
+
+🔸 Голова (der Kopf):
+• das Gesicht - обличчя
+• die Stirn - чоло
+• das Auge (die Augen) - око (очі)
+• die Nase - ніс
+• der Mund - рот
+• das Ohr (die Ohren) - вухо (вуха)
+• das Kinn - підборіддя
+• die Wange - щока
+
+🔸 Тіло:
+• der Hals - шия
+• die Schulter - плече
+• die Brust - груди
+• der Bauch - живіт
+• der Rücken - спина
+• die Hüfte - стегно
+
+═══════════════════════════════════════════
+
+📌 Кінцівки
+
+🔸 Руки:
+• der Arm - рука (від плеча)
+• der Ellbogen - лікоть
+• das Handgelenk - зап'ясток
+• die Hand - кисть
+• der Finger - палець
+
+🔸 Ноги:
+• das Bein - нога
+• das Knie - коліно
+• der Fuß - стопа
+• die Zehe - палець ноги</system:String>
+
+    <!-- ========== СТОРІНКА 55 ========== -->
+    <system:String x:Key="Page55_Title">Тема 18: Анатомія</system:String>
+    <system:String x:Key="Page55_Subtitle">18.2 Внутрішні органи (Innere Organe)</system:String>
+    <system:String x:Key="Page55_Content">Німецька мова (Deutsche Sprache)
+Тема 18: Анатомія (Anatomie)
+
+📝 18.2 Внутрішні органи (Innere Organe)
+
+═══════════════════════════════════════════
+
+📌 Основні органи
+
+🔸 Органи:
+• das Herz - серце
+• die Lunge - легеня
+• der Magen - шлунок
+• die Leber - печінка
+• die Niere - нирка
+• der Darm - кишечник
+• das Gehirn - мозок
+• die Blase - сечовий міхур
+
+🔸 Системи тіла:
+• das Herz-Kreislauf-System - серцево-судинна система
+• das Verdauungssystem - травна система
+• das Nervensystem - нервова система
+• das Immunsystem - імунна система
+
+═══════════════════════════════════════════
+
+📌 Функції органів
+
+• Das Herz pumpt Blut durch den Körper.
+• Die Lunge ist für die Atmung zuständig.
+• Der Magen verdaut das Essen.
+• Das Gehirn kontrolliert alle Körperfunktionen.
+
+🧠 Приклад:
+Es ist wichtig, seinen Körper zu kennen. So kann man besser verstehen, wie man gesund bleibt.</system:String>
+
+    <!-- ========== СТОРІНКА 56 ========== -->
+    <system:String x:Key="Page56_Title">Тема 18: Анатомія</system:String>
+    <system:String x:Key="Page56_Subtitle">18.3 Опис зовнішності (Aussehen)</system:String>
+    <system:String x:Key="Page56_Content">Німецька мова (Deutsche Sprache)
+Тема 18: Анатомія (Anatomie)
+
+📝 18.3 Опис зовнішності (Aussehen beschreiben)
+
+═══════════════════════════════════════════
+
+📌 Зовнішність
+
+🔸 Зріст та фігура:
+• groß - високий
+• klein - низький
+• schlank - стрункий
+• dick - товстий
+• dünn - худий
+• sportlich - спортивний
+
+🔸 Волосся (die Haare):
+• blond - світлий
+• braun - каштановий
+• schwarz - чорний
+• rot - рудий
+• grau - сивий
+• lang - довге
+• kurz - коротке
+• lockig - кучеряве
+• glatt - пряме
+
+═══════════════════════════════════════════
+
+📌 Очі та обличчя
+
+🔸 Очі:
+• blaue Augen - блакитні очі
+• grüne Augen - зелені очі
+• braune Augen - карі очі
+
+🔸 Обличчя:
+• der Bart - борода
+• der Schnurrbart - вуса
+• die Brille - окуляри
+
+═══════════════════════════════════════════
+
+📌 Опис людини
+
+❓ Wie siehst du aus?
+✅ Ich bin mittelgroß und schlank. Ich habe kurze braune Haare und braune Augen.
+
+❓ Beschreibe deinen Freund.
+✅ Er ist groß und hat blonde lockige Haare.
+
+🧠 Приклад:
+Ich bin 19 Jahre alt, mittelgroß und habe kurze dunkle Haare. Ich trage manchmal eine Brille, wenn ich am Computer arbeite.</system:String>
+
+</ResourceDictionary>
+

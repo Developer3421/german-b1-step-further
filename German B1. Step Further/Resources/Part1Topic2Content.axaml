@@ -1,0 +1,185 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 2: Wohnen (Житло) -->
+    <!-- Сторінки 6-8 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 6 ========== -->
+    <!-- Тема 2.1: Квартира (Wohnung) -->
+    <system:String x:Key="Page6_Title">Тема 2: Житло</system:String>
+    <system:String x:Key="Page6_Subtitle">2.1 Квартира (Wohnung)</system:String>
+    <system:String x:Key="Page6_Content">Німецька мова (Deutsche Sprache)
+Тема 2: Житло (Wohnen)
+
+📝 2.1 Квартира (Wohnung) – Типові фрази та відповіді
+
+═══════════════════════════════════════════
+
+📌 Опис житла (Beschreibung der Wohnung)
+
+🔸 Основні фрази:
+• Ich wohne in einer Wohnung / in einem Haus.
+• Meine Wohnung hat drei Zimmer.
+• Die Wohnung liegt im zweiten Stock.
+• Ich habe ein Wohnzimmer, ein Schlafzimmer und eine Küche.
+
+🔸 Кімнати (Zimmer):
+• das Wohnzimmer - вітальня
+• das Schlafzimmer - спальня
+• die Küche - кухня
+• das Badezimmer - ванна кімната
+• der Flur - коридор
+• der Balkon - балкон
+
+═══════════════════════════════════════════
+
+📌 Меблі та обладнання (Möbel und Ausstattung)
+
+🔸 У вітальні:
+• das Sofa - диван
+• der Sessel - крісло
+• der Fernseher - телевізор
+• der Tisch - стіл
+• der Schrank - шафа
+
+🔸 У спальні:
+• das Bett - ліжко
+• der Kleiderschrank - шафа для одягу
+• die Kommode - комод
+• der Nachttisch - тумбочка
+
+🔸 На кухні:
+• der Kühlschrank - холодильник
+• der Herd - плита
+• die Spülmaschine - посудомийна машина
+• der Backofen - духовка
+
+🧠 Приклад:
+Meine Wohnung ist gemütlich. Im Wohnzimmer habe ich ein großes Sofa und einen Fernseher. Die Küche ist modern mit einem neuen Kühlschrank.</system:String>
+
+    <!-- ========== СТОРІНКА 7 ========== -->
+    <!-- Тема 2.2: Оренда житла (Miete) -->
+    <system:String x:Key="Page7_Title">Тема 2: Житло</system:String>
+    <system:String x:Key="Page7_Subtitle">2.2 Оренда житла (Miete)</system:String>
+    <system:String x:Key="Page7_Content">Німецька мова (Deutsche Sprache)
+Тема 2: Житло (Wohnen)
+
+📝 2.2 Оренда житла (Miete)
+
+═══════════════════════════════════════════
+
+📌 Пошук житла (Wohnungssuche)
+
+🔸 Оголошення (Anzeigen):
+• Ich suche eine 2-Zimmer-Wohnung.
+• Die Wohnung sollte zentral liegen.
+• Ich möchte maximal 800 Euro Miete zahlen.
+• Haustiere sollten erlaubt sein.
+
+🔸 Важливі терміни:
+• die Kaltmiete - оренда без комунальних
+• die Warmmiete - оренда з комунальними
+• die Nebenkosten - комунальні витрати
+• die Kaution - застава
+• der Mietvertrag - договір оренди
+
+═══════════════════════════════════════════
+
+📌 Діалог з орендодавцем
+
+❓ Wie hoch ist die Miete?
+✅ Die Warmmiete beträgt 750 Euro pro Monat.
+
+❓ Sind die Nebenkosten inklusive?
+✅ Ja, Heizung und Wasser sind inklusive.
+
+❓ Wann kann ich einziehen?
+✅ Die Wohnung ist ab dem 1. März verfügbar.
+
+❓ Wie lange ist die Kündigungsfrist?
+✅ Die Kündigungsfrist beträgt drei Monate.
+
+═══════════════════════════════════════════
+
+📌 Корисні фрази
+
+🔸 При огляді:
+• Kann ich die Wohnung besichtigen?
+• Ist die Wohnung renoviert?
+• Wie ist die Verkehrsanbindung?
+• Gibt es einen Keller / eine Garage?
+
+🧠 Приклад:
+Ich habe eine Anzeige für eine 3-Zimmer-Wohnung gesehen. Die Kaltmiete ist 600 Euro plus 150 Euro Nebenkosten. Ich möchte einen Besichtigungstermin vereinbaren.</system:String>
+
+    <!-- ========== СТОРІНКА 8 ========== -->
+    <!-- Тема 2.3: Домашнє господарство (Haushalt) -->
+    <system:String x:Key="Page8_Title">Тема 2: Житло</system:String>
+    <system:String x:Key="Page8_Subtitle">2.3 Домашнє господарство (Haushalt)</system:String>
+    <system:String x:Key="Page8_Content">Німецька мова (Deutsche Sprache)
+Тема 2: Житло (Wohnen)
+
+📝 2.3 Домашнє господарство (Haushalt)
+
+═══════════════════════════════════════════
+
+📌 Домашні справи (Hausarbeiten)
+
+🔸 Прибирання:
+• putzen - прибирати
+• staubsaugen - пилососити
+• wischen - мити підлогу
+• aufräumen - прибирати (наводити лад)
+• Staub wischen - витирати пил
+
+🔸 Прання та прасування:
+• die Wäsche waschen - прати білизну
+• die Wäsche aufhängen - вішати білизну
+• bügeln - прасувати
+• die Waschmaschine - пральна машина
+
+🔸 Готування:
+• kochen - готувати
+• abwaschen / spülen - мити посуд
+• einkaufen - купувати продукти
+• den Tisch decken - накривати стіл
+
+═══════════════════════════════════════════
+
+📌 Розподіл обов'язків
+
+🔸 Корисні фрази:
+• Wer macht heute sauber?
+• Ich bin dran mit Kochen.
+• Kannst du bitte den Müll rausbringen?
+• Wir teilen uns die Hausarbeit.
+
+❓ Was machst du im Haushalt?
+✅ Ich koche meistens und räume mein Zimmer auf.
+
+❓ Wie oft putzt du?
+✅ Ich putze einmal pro Woche.
+
+═══════════════════════════════════════════
+
+📌 Проблеми в будинку
+
+🔸 Типові проблеми:
+• Die Heizung funktioniert nicht.
+• Der Wasserhahn tropft.
+• Die Toilette ist verstopft.
+• Das Licht geht nicht.
+
+🔸 Звернення до власника:
+• Ich möchte einen Schaden melden.
+• Können Sie bitte einen Handwerker schicken?
+
+🧠 Приклад:
+Jeden Samstag mache ich Hausarbeit. Ich staubsauge, wische den Boden und wasche die Wäsche. Meine Mutter kocht meistens, aber manchmal helfe ich ihr.</system:String>
+
+</ResourceDictionary>
+

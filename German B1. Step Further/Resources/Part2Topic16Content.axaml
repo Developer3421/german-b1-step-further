@@ -1,0 +1,92 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 2: Словник - Тема 16: Kultur -->
+    <!-- Сторінки 102-104 -->
+    
+    <system:String x:Key="Page102_Title">Словник: Тема 16</system:String>
+    <system:String x:Key="Page102_Subtitle">16.1 Традиції (Traditionen) - Словник</system:String>
+    <system:String x:Key="Page102_Content">📚 СЛОВНИК - Частина 2
+Тема 16: Kultur (Культура)
+
+📝 16.1 Традиції (Traditionen)
+
+📌 Німецькі свята
+• Weihnachten - Різдво
+• Ostern - Великдень
+• Silvester - Новий рік
+• Karneval - карнавал
+• Oktoberfest - Октоберфест
+• Tag der Deutschen Einheit - День єдності
+
+📌 Традиції
+• der Weihnachtsmarkt - різдвяний ярмарок
+• der Adventskranz - адвентівський вінок
+• der Osterhase - великодній заєць
+• das Osterei - великоднє яйце
+• der Nikolaus - Миколай
+
+📌 Фрази
+• Frohe Weihnachten!
+• Frohe Ostern!
+• Frohes neues Jahr!</system:String>
+
+    <system:String x:Key="Page103_Title">Словник: Тема 16</system:String>
+    <system:String x:Key="Page103_Subtitle">16.2 Мистецтво (Kunst) - Словник</system:String>
+    <system:String x:Key="Page103_Content">📚 СЛОВНИК - Частина 2
+Тема 16: Kultur (Культура)
+
+📝 16.2 Мистецтво (Kunst)
+
+📌 Види мистецтва
+• die Malerei - живопис
+• die Skulptur - скульптура
+• die Architektur - архітектура
+• die Musik - музика
+• die Literatur - література
+• das Theater - театр
+• der Film - кіно
+
+📌 Музеї
+• das Museum - музей
+• die Galerie - галерея
+• die Ausstellung - виставка
+• das Kunstwerk - твір мистецтва
+• der Künstler - художник
+
+📌 Музика
+• das Konzert - концерт
+• die Oper - опера
+• das Orchester - оркестр
+• der Komponist - композитор</system:String>
+
+    <system:String x:Key="Page104_Title">Словник: Тема 16</system:String>
+    <system:String x:Key="Page104_Subtitle">16.3 Міжкультурне (Interkulturell)</system:String>
+    <system:String x:Key="Page104_Content">📚 СЛОВНИК - Частина 2
+Тема 16: Kultur (Культура)
+
+📝 16.3 Міжкультурне спілкування
+
+📌 Культура
+• die Kultur - культура
+• die Tradition - традиція
+• der Brauch - звичай
+• die Mentalität - менталітет
+• die Sitten - звичаї
+
+📌 Інтеграція
+• integrieren - інтегруватися
+• anpassen - пристосовуватися
+• respektieren - поважати
+• tolerieren - толерувати
+• akzeptieren - приймати
+
+📌 Німецька культура
+• Pünktlichkeit - пунктуальність
+• Ordnung - порядок
+• Direktheit - прямота
+• Zuverlässigkeit - надійність</system:String>
+
+</ResourceDictionary>
+

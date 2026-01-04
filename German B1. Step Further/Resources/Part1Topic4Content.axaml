@@ -1,0 +1,200 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ================================================== -->
+    <!-- КНИЖКА: German B1 - Step Further -->
+    <!-- Тема 4: Reisen (Подорожі) -->
+    <!-- Сторінки 12-14 -->
+    <!-- ================================================== -->
+    
+    <!-- ========== СТОРІНКА 12 ========== -->
+    <!-- Тема 4.1: Транспорт (Verkehr) -->
+    <system:String x:Key="Page12_Title">Тема 4: Подорожі</system:String>
+    <system:String x:Key="Page12_Subtitle">4.1 Транспорт (Verkehr)</system:String>
+    <system:String x:Key="Page12_Content">Німецька мова (Deutsche Sprache)
+Тема 4: Подорожі (Reisen)
+
+📝 4.1 Транспорт (Verkehr)
+
+═══════════════════════════════════════════
+
+📌 Види транспорту (Verkehrsmittel)
+
+🔸 Громадський транспорт:
+• der Bus - автобус
+• die Straßenbahn - трамвай
+• die U-Bahn - метро
+• die S-Bahn - приміська електричка
+• der Zug - поїзд
+• das Flugzeug - літак
+
+🔸 Приватний транспорт:
+• das Auto - автомобіль
+• das Fahrrad - велосипед
+• das Motorrad - мотоцикл
+• zu Fuß gehen - йти пішки
+
+═══════════════════════════════════════════
+
+📌 На вокзалі (Am Bahnhof)
+
+🔸 Корисні фрази:
+• Wann fährt der nächste Zug nach Berlin?
+• Von welchem Gleis fährt der Zug ab?
+• Ich möchte eine Fahrkarte nach München.
+• Einfach oder hin und zurück?
+
+🔸 Важливі слова:
+• die Fahrkarte - квиток
+• der Fahrplan - розклад
+• das Gleis - платформа/колія
+• die Abfahrt - відправлення
+• die Ankunft - прибуття
+• umsteigen - пересідати
+
+═══════════════════════════════════════════
+
+📌 Діалог на вокзалі
+
+❓ Ich möchte nach Hamburg fahren. Was kostet das?
+✅ Eine einfache Fahrt kostet 45 Euro, hin und zurück 80 Euro.
+
+❓ Muss ich umsteigen?
+✅ Ja, Sie müssen in Hannover umsteigen.
+
+❓ Wann kommt der Zug an?
+✅ Der Zug kommt um 14:30 Uhr an.
+
+🧠 Приклад:
+Ich fahre oft mit dem Zug. Das ist bequem und umweltfreundlich. Eine Fahrt von meiner Stadt nach Berlin dauert etwa drei Stunden. Ich kaufe meine Fahrkarten online, das ist günstiger.</system:String>
+
+    <!-- ========== СТОРІНКА 13 ========== -->
+    <!-- Тема 4.2: Житло під час подорожі (Unterkunft) -->
+    <system:String x:Key="Page13_Title">Тема 4: Подорожі</system:String>
+    <system:String x:Key="Page13_Subtitle">4.2 Житло під час подорожі (Unterkunft)</system:String>
+    <system:String x:Key="Page13_Content">Німецька мова (Deutsche Sprache)
+Тема 4: Подорожі (Reisen)
+
+📝 4.2 Житло під час подорожі (Unterkunft)
+
+═══════════════════════════════════════════
+
+📌 Види житла (Arten der Unterkunft)
+
+🔸 Готелі та хостели:
+• das Hotel - готель
+• das Hostel - хостел
+• die Pension - пансіон
+• die Jugendherberge - молодіжний хостел
+• das Apartment - апартаменти
+• die Ferienwohnung - квартира для відпочинку
+
+🔸 Типи кімнат:
+• das Einzelzimmer - одномісний номер
+• das Doppelzimmer - двомісний номер
+• das Familienzimmer - сімейний номер
+• mit Frühstück - зі сніданком
+• Halbpension - напівпансіон
+• Vollpension - повний пансіон
+
+═══════════════════════════════════════════
+
+📌 Бронювання (Reservierung)
+
+🔸 Корисні фрази:
+• Ich möchte ein Zimmer reservieren.
+• Haben Sie noch freie Zimmer?
+• Für wie viele Nächte?
+• Was kostet das Zimmer pro Nacht?
+• Ist das Frühstück inklusive?
+
+🔸 При заселенні:
+• Ich habe eine Reservierung auf den Namen...
+• Hier ist mein Ausweis.
+• Um wie viel Uhr ist der Check-out?
+• Wo kann ich frühstücken?
+
+═══════════════════════════════════════════
+
+📌 Діалог у готелі
+
+❓ Guten Tag, haben Sie noch ein Doppelzimmer frei?
+✅ Ja, für welches Datum?
+
+❓ Vom 15. bis zum 18. Juli. Was kostet das?
+✅ Das Zimmer kostet 89 Euro pro Nacht mit Frühstück.
+
+❓ Gibt es WLAN im Zimmer?
+✅ Ja, WLAN ist kostenlos.
+
+🧠 Приклад:
+Letztes Jahr habe ich ein Hotel in Berlin gebucht. Ich hatte ein Einzelzimmer mit Frühstück. Das Hotel war sehr zentral und hatte kostenloses WLAN. Ich war drei Nächte dort.</system:String>
+
+    <!-- ========== СТОРІНКА 14 ========== -->
+    <!-- Тема 4.3: Відпустка (Urlaub) -->
+    <system:String x:Key="Page14_Title">Тема 4: Подорожі</system:String>
+    <system:String x:Key="Page14_Subtitle">4.3 Відпустка (Urlaub)</system:String>
+    <system:String x:Key="Page14_Content">Німецька мова (Deutsche Sprache)
+Тема 4: Подорожі (Reisen)
+
+📝 4.3 Відпустка (Urlaub)
+
+═══════════════════════════════════════════
+
+📌 Види відпочинку (Arten des Urlaubs)
+
+🔸 Типи відпустки:
+• der Strandurlaub - пляжний відпочинок
+• der Städteurlaub - міський відпочинок
+• der Wanderurlaub - піший туризм
+• der Skiurlaub - лижний відпочинок
+• der Wellnessurlaub - оздоровчий відпочинок
+• die Kreuzfahrt - круїз
+
+🔸 Активності:
+• Sehenswürdigkeiten besichtigen - оглядати визначні місця
+• am Strand liegen - лежати на пляжі
+• wandern gehen - ходити в походи
+• Fotos machen - робити фото
+• Souvenirs kaufen - купувати сувеніри
+
+═══════════════════════════════════════════
+
+📌 Планування відпустки
+
+🔸 Корисні фрази:
+• Wohin möchtest du in Urlaub fahren?
+• Ich plane eine Reise nach Italien.
+• Wie lange bleibst du dort?
+• Was nimmst du mit?
+
+🔸 Речі для подорожі:
+• der Koffer - валіза
+• der Reisepass - закордонний паспорт
+• die Sonnencreme - сонцезахисний крем
+• die Kamera - фотоапарат
+• der Reiseführer - путівник
+
+═══════════════════════════════════════════
+
+📌 Розповідь про відпустку
+
+🔸 У минулому часі:
+• Letzten Sommer war ich in Spanien.
+• Wir sind ans Meer gefahren.
+• Das Wetter war fantastisch.
+• Ich habe viele Fotos gemacht.
+• Es hat mir sehr gut gefallen.
+
+❓ Wie war dein Urlaub?
+✅ Der Urlaub war wunderbar! Ich war zwei Wochen in Griechenland.
+
+❓ Was hast du dort gemacht?
+✅ Ich bin viel geschwommen und habe alte Tempel besichtigt.
+
+🧠 Приклад:
+Im letzten Sommer bin ich mit meiner Mutter ans Meer gefahren. Wir waren eine Woche in Kroatien. Das Wetter war sonnig und warm. Wir haben viel gebadet und leckeres Essen probiert. Es war ein toller Urlaub!</system:String>
+
+</ResourceDictionary>
+

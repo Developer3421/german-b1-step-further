@@ -1,0 +1,85 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- ЧАСТИНА 3: Граматика - Тема 7: Relativsätze -->
+    <!-- Сторінки 129-131 -->
+    
+    <system:String x:Key="Page129_Title">Граматика: Тема 7</system:String>
+    <system:String x:Key="Page129_Subtitle">7.1 Relativsätze (Означальні речення)</system:String>
+    <system:String x:Key="Page129_Content">📖 ГРАМАТИКА - Частина 3
+Тема 7: Relativsätze (Означальні речення)
+
+📝 7.1 Основи Relativsätze
+
+📌 Що таке Relativsatz?
+Речення, що описує іменник
+Der Mann, der dort steht, ist mein Lehrer.
+
+📌 Структура
+Іменник + Relativpronomen + ... + Verb
+
+📌 Relativpronomen (Nominativ)
+• der (m) - який
+• die (f) - яка
+• das (n) - яке
+• die (pl) - які
+
+📌 Приклади
+• Der Mann, der Deutsch spricht, ist Lehrer.
+• Die Frau, die dort wohnt, ist Ärztin.
+• Das Kind, das spielt, ist mein Neffe.</system:String>
+
+    <system:String x:Key="Page130_Title">Граматика: Тема 7</system:String>
+    <system:String x:Key="Page130_Subtitle">7.2 Relativpronomen у відмінках</system:String>
+    <system:String x:Key="Page130_Content">📖 ГРАМАТИКА - Частина 3
+Тема 7: Relativsätze (Означальні речення)
+
+📝 7.2 Relativpronomen у відмінках
+
+📌 Таблиця Relativpronomen
+        m      f      n      pl
+Nom:   der    die    das    die
+Akk:   den    die    das    die
+Dat:   dem    der    dem    denen
+Gen:   dessen deren  dessen deren
+
+📌 Akkusativ
+• Der Film, den ich gesehen habe, war gut.
+• Die Frau, die ich kenne, ist nett.
+
+📌 Dativ
+• Der Mann, dem ich geholfen habe...
+• Die Frau, der ich das Buch gegeben habe...
+
+📌 Genitiv
+• Der Mann, dessen Auto rot ist...
+• Die Frau, deren Tochter studiert...</system:String>
+
+    <system:String x:Key="Page131_Title">Граматика: Тема 7</system:String>
+    <system:String x:Key="Page131_Subtitle">7.3 Relativsätze з прийменниками</system:String>
+    <system:String x:Key="Page131_Content">📖 ГРАМАТИКА - Частина 3
+Тема 7: Relativsätze (Означальні речення)
+
+📝 7.3 Relativsätze з прийменниками
+
+📌 Структура
+Прийменник + Relativpronomen
+
+📌 Приклади
+• Der Mann, mit dem ich spreche, ist nett.
+• Die Stadt, in der ich wohne, ist groß.
+• Das Buch, über das wir sprechen, ist interessant.
+
+📌 wo/wohin/woher (для місць)
+• Die Stadt, wo ich wohne...
+• Das Land, wohin ich fahre...
+• Die Stadt, woher ich komme...
+
+📌 was (після невизначених)
+• Alles, was ich brauche...
+• Nichts, was ich weiß...
+• Das Beste, was passieren kann...</system:String>
+
+</ResourceDictionary>
+
