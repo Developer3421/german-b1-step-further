@@ -22,7 +22,7 @@ namespace German_B1._Step_Further.Views
             if (closeButton != null)
                 closeButton.Click += CloseButton_Click;
 
-            // Enable window dragging from title bar
+            // Enable window dragging from the title bar
             if (titleBarRow != null)
             {
                 titleBarRow.PointerPressed += TitleBar_PointerPressed;
@@ -44,7 +44,7 @@ namespace German_B1._Step_Further.Views
             for (int topicNumber = 1; topicNumber <= 6; topicNumber++)
             {
                 var button = this.FindControl<Button>($"Topic4_{topicNumber}Button");
-                if (button?.Content is StackPanel sp && sp.Children.Count >= 2 && sp.Children[1] is TextBlock pageTb)
+                if (button?.Content is StackPanel { Children: [_, TextBlock pageTb, ..] })
                 {
                     pageTb.Text = BookNavigationMap.GetTopicPageRangeLabel(4, topicNumber);
                 }
@@ -116,7 +116,7 @@ namespace German_B1._Step_Further.Views
 
         private void TopicButton_Click(object? sender, RoutedEventArgs e)
         {
-            if (sender is Button button && button.Tag is string tagString)
+            if (sender is Button { Tag: string tagString })
             {
                 if (int.TryParse(tagString, out int topicNumber))
                 {
