@@ -1,7 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="German_B1._Step_Further.Views.UserAgreementWindow"
-        Title="User Agreement"
+        Title="Угода користувача"
         WindowStartupLocation="CenterOwner"
         SystemDecorations="BorderOnly"
         Background="#FFF5E6D3"
@@ -82,7 +82,7 @@
                             </Canvas>
                         </Viewbox>
                     </Border>
-                    <TextBlock Name="TitleText" Text="User Agreement" FontSize="14" FontWeight="SemiBold" Foreground="#FF404040" VerticalAlignment="Center"/>
+                    <TextBlock Name="TitleText" Text="Угода користувача" FontSize="14" FontWeight="SemiBold" Foreground="#FF404040" VerticalAlignment="Center"/>
                 </StackPanel>
 
                 <Border Grid.Column="1" Background="Transparent"/>
@@ -98,7 +98,7 @@
         <!-- Header + language switch -->
         <Grid Grid.Row="1" ColumnDefinitions="*,Auto" ColumnSpacing="12" VerticalAlignment="Top">
             <StackPanel Grid.Column="0" MinWidth="260" Margin="0,0,8,0">
-                <TextBlock Name="HeaderTitleText" Text="User Agreement" FontSize="20" FontWeight="Bold" Foreground="#8A2BE2" />
+                <TextBlock Name="HeaderTitleText" Text="Угода користувача" FontSize="20" FontWeight="Bold" Foreground="#8A2BE2" />
                 <TextBlock Name="SubtitleText" Text="Please read this agreement. To use online AI services you must accept it." FontSize="12" Foreground="#FF404040" Margin="0,4,0,0" TextWrapping="Wrap"/>
             </StackPanel>
 

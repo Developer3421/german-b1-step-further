@@ -218,7 +218,7 @@
                                     </Canvas>
                                 </Viewbox>
                             </Border>
-                            <TextBlock Text="User Agreement" VerticalAlignment="Center"/>
+                            <TextBlock Text="Угода користувача" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Button>
 

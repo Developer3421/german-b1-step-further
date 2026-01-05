@@ -1,5 +1,3 @@
-using System;
-
 namespace German_B1._Step_Further.Services
 {
     public enum UserAgreementLanguage
@@ -11,8 +9,8 @@ namespace German_B1._Step_Further.Services
 
     public sealed class UserAgreementText
     {
-        public string WindowTitle { get; init; } = "User Agreement";
-        public string HeaderTitle { get; init; } = "User Agreement";
+        public string WindowTitle { get; init; } = "Угода користувача";
+        public string HeaderTitle { get; init; } = "Угода користувача";
         public string Subtitle { get; init; } = "Please read this agreement. To use online AI services you must accept it.";
         public string Body { get; init; } = string.Empty;
         public string Tip { get; init; } = "Tip: you can re-open this dialog from the Instruments window.";
@@ -129,4 +127,3 @@ namespace German_B1._Step_Further.Services
         };
     }
 }
-

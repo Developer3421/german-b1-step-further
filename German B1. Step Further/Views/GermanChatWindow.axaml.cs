@@ -49,9 +49,23 @@ namespace German_B1._Step_Further.Views
         private const int MaxAiAnswerCharacters = 1024;
 
         // Мінімальні system prompts: тільки мова відповіді.
-        private const string SystemPromptUkrainian = "Відповідай українською мовою.";
+        private const string SystemPromptUkrainian =
+            "Ти — професійний викладач німецької мови рівня B1. Відповідай ВИКЛЮЧНО українською мовою. " +
+            "Навіть якщо запит містить німецькі слова або речення — німецькі приклади/цитати залишай німецькою (без перекладу, якщо користувач не просив). " +
+            "Пиши чітко, без сленгу, без зайвих вибачень. " +
+            "Форматуй відповідь структуровано: коротке пояснення → правило/схема → 2–4 приклади німецькою → типові помилки (за потреби). " +
+            "Не повторюй запит користувача і не додавай службових фраз.";
 
         private const string SystemPromptGerman = "Antworte auf Deutsch.";
+
+        // Окремий, максимально стабільний системний промпт для команд по граматичних темах.
+        private const string SystemPromptUkrainianGrammar =
+            "Ти — професійний викладач німецької мови (B1). Відповідай ВИКЛЮЧНО українською. " +
+            "Використовуй німецькі слова тільки всередині прикладів. " +
+            "Дотримуйся СТАЛОЇ структури і не відхиляйся: " +
+            "1) Назва теми. 2) Ключове правило (1–3 речення). 3) Схема/формула (коротко). " +
+            "4) Приклади (рівно 4, німецькою). 5) Типові помилки (2 пункти). " +
+            "Без вступів, без висновків, без повторення питання.";
 
         // Словник граматичних тем для спеціальних запитів
         private static readonly System.Collections.Generic.Dictionary<int, string> GrammarTopics = new()
@@ -314,13 +328,13 @@ namespace German_B1._Step_Further.Views
 
             // Перевіряємо чи це запит на граматичну тему
             var (isGrammarTopic, specialPrompt, specialSystem) = TryGetGrammarTopicPrompt(userMessage);
-            
+
             string systemPrompt;
             string actualUserMessage;
-            
+
             if (isGrammarTopic && specialPrompt != null && specialSystem != null)
             {
-                // Спеціальний режим для граматичних тем — завжди українською
+                // Спеціальний режим для граматичних тем — професійна українська та стабільний формат.
                 systemPrompt = specialSystem;
                 actualUserMessage = specialPrompt;
             }
@@ -349,14 +363,16 @@ namespace German_B1._Step_Further.Views
 
                 var inferenceParams = new InferenceParams
                 {
-                    MaxTokens = 512,
+                    // Для граматичних тем даємо трохи більше токенів, але тримаємо структуру.
+                    MaxTokens = isGrammarTopic ? 650 : 512,
                     AntiPrompts = new[] { "<end_of_turn>", "</s>", "User:", "<start_of_turn>" }
                 };
 
+                // Для стабільності шаблонних відповідей зменшуємо температуру.
                 inferenceParams.SamplingPipeline = new LLama.Sampling.DefaultSamplingPipeline
                 {
-                    Temperature = 0.60f,
-                    TopP = 0.9f,
+                    Temperature = isGrammarTopic ? 0.25f : 0.60f,
+                    TopP = isGrammarTopic ? 0.85f : 0.9f,
                     RepeatPenalty = 1.15f
                 };
 
@@ -518,10 +534,10 @@ namespace German_B1._Step_Further.Views
         private static (bool isGrammarTopic, string? specialPrompt, string? specialSystem) TryGetGrammarTopicPrompt(string userMessage)
         {
             var lower = userMessage.ToLowerInvariant().Trim();
-            
+
             // Патерни: "граматична тема 1", "тема 1", "grammar topic 1" тощо
             var patterns = new[] { "граматична тема", "тема", "grammar topic", "grammatik thema" };
-            
+
             foreach (var pattern in patterns)
             {
                 if (lower.StartsWith(pattern))
@@ -529,11 +545,19 @@ namespace German_B1._Step_Further.Views
                     var rest = lower.Substring(pattern.Length).Trim();
                     if (int.TryParse(rest, out var topicNum) && GrammarTopics.TryGetValue(topicNum, out var topicName))
                     {
-                        return (true, topicName, SystemPromptUkrainian);
+                        // Детермінований шаблон запиту під граматичну тему.
+                        // Це підвищує стабільність і зменшує "творчі" відхилення моделі.
+                        var prompt =
+                            "ТЕМА: " + topicName + "\n" +
+                            "ЗАВДАННЯ: Поясни тему для рівня B1 за заданою структурою.\n" +
+                            "ВИМОГИ: Відповідь українською. Приклади тільки німецькою.\n" +
+                            "ФОРМАТ: 1) Назва теми. 2) Ключове правило. 3) Схема/формула. 4) Приклади (4). 5) Типові помилки (2).";
+
+                        return (true, prompt, SystemPromptUkrainianGrammar);
                     }
                 }
             }
-            
+
             return (false, null, null);
         }
 

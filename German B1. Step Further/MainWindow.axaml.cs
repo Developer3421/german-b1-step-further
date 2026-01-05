@@ -238,45 +238,8 @@ namespace German_B1._Step_Further
         {
             int part = e.Part;
             int topicNumber = e.PageNumber;
-            int startPage;
-            
-            if (part == 1)
-            {
-                // Частина 1: Теми та підтеми
-                // Зміст: сторінки 1-2
-                // Тема 1: сторінки 3-5, Тема 2: сторінки 6-8, і т.д.
-                startPage = 2 + (topicNumber - 1) * 3 + 1;
-            }
-            else if (part == 2)
-            {
-                // Частина 2: Словник по темах
-                // Починається з сторінки 57
-                // Тема 1: сторінки 57-59, Тема 2: сторінки 60-62, і т.д.
-                startPage = 56 + (topicNumber - 1) * 3 + 1;
-            }
-            else if (part == 3)
-            {
-                // Частина 3: Граматика B1
-                // Починається з сторінки 111
-                // Тема 1: сторінки 111-113, Тема 2: сторінки 114-116, і т.д.
-                startPage = 110 + (topicNumber - 1) * 3 + 1;
-            }
-            else if (part == 4)
-            {
-                // Частина 4: Шаблони листів
-                // Починається з сторінки 147
-                // Тема 1: сторінки 147-149, Тема 2: сторінки 150-152, і т.д.
-                startPage = 146 + (topicNumber - 1) * 3 + 1;
-            }
-            else
-            {
-                startPage = 1;
-            }
-            
-            // Робимо startPage непарним (ліва сторінка)
-            if (startPage % 2 == 0)
-                startPage--;
-            
+
+            int startPage = BookNavigationMap.GetAbsoluteLeftPageForTopic(part, topicNumber);
             LoadBookPages(startPage);
         }
         
@@ -371,18 +334,7 @@ namespace German_B1._Step_Further
         /// </summary>
         private int GetPartNumber(int pageNumber)
         {
-            // Частина 1: сторінки 1-56 (зміст 1-2, теми 3-56)
-            // Частина 2: сторінки 57-110 (словник по темах)
-            // Частина 3: сторінки 111-146 (граматика B1)
-            // Частина 4: сторінки 147-164 (шаблони листів)
-            if (pageNumber <= 56)
-                return 1;
-            else if (pageNumber <= 110)
-                return 2;
-            else if (pageNumber <= 146)
-                return 3;
-            else
-                return 4;
+            return BookNavigationMap.GetPartNumber(pageNumber);
         }
         
         /// <summary>
@@ -551,13 +503,8 @@ namespace German_B1._Step_Further
         /// </summary>
         private void ForwardButton_Click(object? sender, RoutedEventArgs e)
         {
-            // Максимальна сторінка:
-            // Частина 1 (теми): 3-56
-            // Частина 2 (словник): 57-110
-            // Частина 3 (граматика): 111-146
-            // Частина 4 (листи): 147-164
-            int maxPage = 164;
-            
+            int maxPage = BookNavigationMap.MaxPage;
+
             if (_currentLeftPage + 2 <= maxPage)
             {
                 LoadBookPages(_currentLeftPage + 2);

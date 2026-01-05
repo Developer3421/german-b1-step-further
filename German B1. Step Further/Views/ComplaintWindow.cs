@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Layout;
 using Avalonia.Media;
 using Avalonia.Platform.Storage;
+using Avalonia.Styling;
 using System;
 using System.IO;
 
@@ -11,6 +12,14 @@ namespace German_B1._Step_Further.Views
     public class ComplaintWindow : Window
     {
         private TextBox _complaintTextBox;
+
+        // Define brush constants for TextBox styling
+        private static readonly IBrush DialogInputBackground = new SolidColorBrush(Color.Parse("#2D2D3D"));
+        private static readonly IBrush DialogInputBorder = new SolidColorBrush(Color.Parse("#4A4A5A"));
+        private static readonly IBrush DialogInputCaret = Brushes.White;
+        private static readonly IBrush DialogInputSelection = new SolidColorBrush(Color.Parse("#A78BFA"));
+        private static readonly IBrush DialogInputSelectionForeground = Brushes.White;
+
 
         public ComplaintWindow()
         {
@@ -24,6 +33,16 @@ namespace German_B1._Step_Further.Views
             ExtendClientAreaChromeHints = Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome;
             ExtendClientAreaTitleBarHeightHint = -1;
             Background = new SolidColorBrush(Color.Parse("#1E1E2E"));
+
+            // Override theme resources to ensure consistent colors in all states (Focus, PointerOver)
+            Resources["TextControlBackground"] = DialogInputBackground;
+            Resources["TextControlBackgroundPointerOver"] = DialogInputBackground;
+            Resources["TextControlBackgroundFocused"] = DialogInputBackground;
+            
+            Resources["TextControlForeground"] = Brushes.White;
+            Resources["TextControlForegroundPointerOver"] = Brushes.White;
+            Resources["TextControlForegroundFocused"] = Brushes.White;
+
 
             _complaintTextBox = new TextBox();
             BuildUI();
@@ -194,9 +213,18 @@ namespace German_B1._Step_Further.Views
                 TextWrapping = TextWrapping.Wrap,
                 Height = 120,
                 FontSize = 14,
-                Background = new SolidColorBrush(Color.Parse("#2D2D3D")),
+
+                // Improve contrast vs container background
+                Background = DialogInputBackground,
                 Foreground = Brushes.White,
-                BorderBrush = new SolidColorBrush(Color.Parse("#3D3D4D")),
+                BorderBrush = DialogInputBorder,
+                BorderThickness = new Thickness(1.5),
+
+                // Ensure editing visuals are visible
+                CaretBrush = DialogInputCaret,
+                SelectionBrush = DialogInputSelection,
+                SelectionForegroundBrush = DialogInputSelectionForeground,
+
                 Padding = new Thickness(12, 10),
                 CornerRadius = new CornerRadius(6)
             };

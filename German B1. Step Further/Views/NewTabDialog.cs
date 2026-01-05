@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Layout;
 using Avalonia.Media;
+using German_B1._Step_Further.Services;
 
 namespace German_B1._Step_Further.Views
 {
@@ -10,6 +11,9 @@ namespace German_B1._Step_Further.Views
     {
         private TextBox _pageNumberTextBox;
         public int ResultPage { get; private set; } = -1;
+
+        private readonly int _minPage = BookNavigationMap.MinPage;
+        private readonly int _maxPage = BookNavigationMap.MaxPage;
 
         public NewTabDialog()
         {
@@ -23,6 +27,18 @@ namespace German_B1._Step_Further.Views
             ExtendClientAreaChromeHints = Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome;
             ExtendClientAreaTitleBarHeightHint = -1;
             Background = new SolidColorBrush(Color.Parse("#1E1E2E"));
+
+            var inputBackground = new SolidColorBrush(Color.Parse("#252536"));
+
+            // Override theme resources to ensure consistent colors in all states (Focus, PointerOver)
+            Resources["TextControlBackground"] = inputBackground;
+            Resources["TextControlBackgroundPointerOver"] = inputBackground;
+            Resources["TextControlBackgroundFocused"] = inputBackground;
+
+            Resources["TextControlForeground"] = Brushes.Black;
+            Resources["TextControlForegroundPointerOver"] = Brushes.White;
+            Resources["TextControlForegroundFocused"] = Brushes.White;
+
 
             _pageNumberTextBox = new TextBox();
             BuildUI();
@@ -108,7 +124,7 @@ namespace German_B1._Step_Further.Views
 
             var label = new TextBlock
             {
-                Text = "Введіть номер сторінки (1-164):",
+                Text = $"Введіть номер сторінки ({_minPage}-{_maxPage}):",
                 Foreground = new SolidColorBrush(Color.Parse("#CBD5E1")),
                 FontSize = 14
             };
@@ -117,9 +133,18 @@ namespace German_B1._Step_Further.Views
             {
                 Watermark = "Номер сторінки",
                 FontSize = 14,
-                Background = new SolidColorBrush(Color.Parse("#2D2D3D")),
+                
+                // Dark background with white text
+                Background = new SolidColorBrush(Color.Parse("#252536")),
                 Foreground = Brushes.White,
-                BorderBrush = new SolidColorBrush(Color.Parse("#3D3D4D")),
+                BorderBrush = new SolidColorBrush(Color.Parse("#A78BFA")),
+                BorderThickness = new Thickness(1.5),
+                
+                // Purple caret, dark purple selection with white text
+                CaretBrush = new SolidColorBrush(Color.Parse("#A78BFA")),
+                SelectionBrush = new SolidColorBrush(Color.Parse("#4A3F6B")),
+                SelectionForegroundBrush = Brushes.White,
+
                 Padding = new Thickness(12, 10),
                 CornerRadius = new CornerRadius(6)
             };
@@ -176,12 +201,11 @@ namespace German_B1._Step_Further.Views
 
         private void OkButton_Click(object? sender, RoutedEventArgs e)
         {
-            if (int.TryParse(_pageNumberTextBox.Text, out int page) && page >= 1 && page <= 164)
+            if (int.TryParse(_pageNumberTextBox.Text, out int page) && page >= _minPage && page <= _maxPage)
             {
-                ResultPage = page;
+                ResultPage = BookNavigationMap.ClampToValidLeftPage(page);
                 Close();
             }
         }
     }
 }
-

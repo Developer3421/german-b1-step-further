@@ -43,6 +43,13 @@ namespace German_B1._Step_Further.Services
             }
         }
 
+        // Prevent concurrent open/write to the same LiteDB file from different UI events/threads.
+        private static readonly object ActiveDbLock = new();
+        private static readonly object ClosedDbLock = new();
+
+        // Keep backups small and bounded.
+        private const int MaxCorruptedBackupsPerDb = 5;
+
         private static void HandleCorruptedDatabase(string dbPath, Exception ex)
         {
             try
@@ -51,17 +58,60 @@ namespace German_B1._Step_Further.Services
 
                 EnsureAppDataFolder();
 
-                // If the file exists, keep a backup for diagnostics.
                 if (File.Exists(dbPath))
                 {
                     var backup = dbPath + ".corrupted." + DateTime.UtcNow.ToString("yyyyMMdd_HHmmss") + ".bak";
-                    File.Move(dbPath, backup);
+
+                    // Move can fail if the file is locked; fall back to copy+delete, or delete as last resort.
+                    try
+                    {
+                        File.Move(dbPath, backup);
+                    }
+                    catch
+                    {
+                        try
+                        {
+                            File.Copy(dbPath, backup, overwrite: true);
+                            try { File.Delete(dbPath); } catch { /* ignore */ }
+                        }
+                        catch
+                        {
+                            // As a last resort, try to delete the broken db to allow a clean recreate.
+                            try { File.Delete(dbPath); } catch { /* ignore */ }
+                        }
+                    }
+
+                    CleanupOldCorruptedBackups(dbPath);
                 }
             }
             catch (Exception inner)
             {
-                // In the worst case, just log and continue.
                 System.Diagnostics.Debug.WriteLine($"Failed to backup corrupted db '{dbPath}': {inner.Message}");
+            }
+        }
+
+        private static void CleanupOldCorruptedBackups(string dbPath)
+        {
+            try
+            {
+                var dir = Path.GetDirectoryName(dbPath);
+                if (string.IsNullOrWhiteSpace(dir) || !Directory.Exists(dir))
+                    return;
+
+                var fileName = Path.GetFileName(dbPath);
+                var backups = Directory.GetFiles(dir, fileName + ".corrupted.*.bak")
+                    .Select(p => new FileInfo(p))
+                    .OrderByDescending(f => f.CreationTimeUtc)
+                    .ToList();
+
+                foreach (var extra in backups.Skip(MaxCorruptedBackupsPerDb))
+                {
+                    try { extra.Delete(); } catch { /* ignore */ }
+                }
+            }
+            catch
+            {
+                // ignore cleanup errors
             }
         }
 
@@ -77,26 +127,29 @@ namespace German_B1._Step_Further.Services
             try
             {
                 EnsureAppDataFolder();
-                using var db = new LiteDatabase(ActiveSessionsDbPath);
-                var collection = db.GetCollection<WindowSession>("windows");
-
-                // Single-window: clear any previously saved active windows
-                collection.DeleteAll();
-
-                var session = new WindowSession
+                lock (ActiveDbLock)
                 {
-                    WindowId = windowId,
-                    TabPages = new List<int>(tabPages),
-                    ActiveTabIndex = activeTabIndex,
-                    PositionX = posX,
-                    PositionY = posY,
-                    Width = width,
-                    Height = height,
-                    IsMaximized = isMaximized,
-                    LastSaved = DateTime.Now
-                };
+                    using var db = new LiteDatabase(ActiveSessionsDbPath);
+                    var collection = db.GetCollection<WindowSession>("windows");
 
-                collection.Insert(session);
+                    // Single-window: clear any previously saved active windows
+                    collection.DeleteAll();
+
+                    var session = new WindowSession
+                    {
+                        WindowId = windowId,
+                        TabPages = new List<int>(tabPages),
+                        ActiveTabIndex = activeTabIndex,
+                        PositionX = posX,
+                        PositionY = posY,
+                        Width = width,
+                        Height = height,
+                        IsMaximized = isMaximized,
+                        LastSaved = DateTime.Now
+                    };
+
+                    collection.Insert(session);
+                }
             }
             catch (Exception ex)
             {
@@ -112,9 +165,12 @@ namespace German_B1._Step_Further.Services
             try
             {
                 EnsureAppDataFolder();
-                using var db = new LiteDatabase(ActiveSessionsDbPath);
-                var collection = db.GetCollection<WindowSession>("windows");
-                collection.DeleteAll();
+                lock (ActiveDbLock)
+                {
+                    using var db = new LiteDatabase(ActiveSessionsDbPath);
+                    var collection = db.GetCollection<WindowSession>("windows");
+                    collection.DeleteAll();
+                }
             }
             catch (Exception ex)
             {
@@ -131,9 +187,12 @@ namespace German_B1._Step_Further.Services
             try
             {
                 EnsureAppDataFolder();
-                using var db = new LiteDatabase(ActiveSessionsDbPath);
-                var collection = db.GetCollection<WindowSession>("windows");
-                return collection.FindAll().Take(1).ToList();
+                lock (ActiveDbLock)
+                {
+                    using var db = new LiteDatabase(ActiveSessionsDbPath);
+                    var collection = db.GetCollection<WindowSession>("windows");
+                    return collection.FindAll().Take(1).ToList();
+                }
             }
             catch (Exception ex)
             {
@@ -155,16 +214,19 @@ namespace German_B1._Step_Further.Services
             try
             {
                 EnsureAppDataFolder();
-                using var db = new LiteDatabase(ClosedSessionsDbPath);
-                var collection = db.GetCollection<WindowSession>("sessions");
-
-                collection.DeleteAll();
-
-                var first = sessions.FirstOrDefault();
-                if (first != null)
+                lock (ClosedDbLock)
                 {
-                    first.LastSaved = DateTime.Now;
-                    collection.Insert(first);
+                    using var db = new LiteDatabase(ClosedSessionsDbPath);
+                    var collection = db.GetCollection<WindowSession>("sessions");
+
+                    collection.DeleteAll();
+
+                    var first = sessions.FirstOrDefault();
+                    if (first != null)
+                    {
+                        first.LastSaved = DateTime.Now;
+                        collection.Insert(first);
+                    }
                 }
             }
             catch (Exception ex)
@@ -182,13 +244,16 @@ namespace German_B1._Step_Further.Services
             try
             {
                 EnsureAppDataFolder();
-                using var db = new LiteDatabase(ClosedSessionsDbPath);
-                var collection = db.GetCollection<WindowSession>("sessions");
+                lock (ClosedDbLock)
+                {
+                    using var db = new LiteDatabase(ClosedSessionsDbPath);
+                    var collection = db.GetCollection<WindowSession>("sessions");
 
-                collection.DeleteAll();
+                    collection.DeleteAll();
 
-                session.LastSaved = DateTime.Now;
-                collection.Insert(session);
+                    session.LastSaved = DateTime.Now;
+                    collection.Insert(session);
+                }
             }
             catch (Exception ex)
             {
@@ -205,9 +270,12 @@ namespace German_B1._Step_Further.Services
             try
             {
                 EnsureAppDataFolder();
-                using var db = new LiteDatabase(ClosedSessionsDbPath);
-                var collection = db.GetCollection<WindowSession>("sessions");
-                return collection.FindAll().Take(1).ToList();
+                lock (ClosedDbLock)
+                {
+                    using var db = new LiteDatabase(ClosedSessionsDbPath);
+                    var collection = db.GetCollection<WindowSession>("sessions");
+                    return collection.FindAll().Take(1).ToList();
+                }
             }
             catch (Exception ex)
             {
@@ -224,9 +292,12 @@ namespace German_B1._Step_Further.Services
             try
             {
                 EnsureAppDataFolder();
-                using var db = new LiteDatabase(ClosedSessionsDbPath);
-                var collection = db.GetCollection<WindowSession>("sessions");
-                collection.DeleteAll();
+                lock (ClosedDbLock)
+                {
+                    using var db = new LiteDatabase(ClosedSessionsDbPath);
+                    var collection = db.GetCollection<WindowSession>("sessions");
+                    collection.DeleteAll();
+                }
             }
             catch (Exception ex)
             {
@@ -244,9 +315,12 @@ namespace German_B1._Step_Further.Services
                 EnsureAppDataFolder();
                 var cutoffDate = DateTime.Now.AddDays(-daysOld);
 
-                using var db = new LiteDatabase(ClosedSessionsDbPath);
-                var collection = db.GetCollection<WindowSession>("sessions");
-                collection.DeleteMany(s => s.LastSaved < cutoffDate);
+                lock (ClosedDbLock)
+                {
+                    using var db = new LiteDatabase(ClosedSessionsDbPath);
+                    var collection = db.GetCollection<WindowSession>("sessions");
+                    collection.DeleteMany(s => s.LastSaved < cutoffDate);
+                }
             }
             catch (Exception ex)
             {

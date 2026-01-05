@@ -10,58 +10,69 @@ namespace German_B1._Step_Further.Views
     public partial class Part3Window : Window
     {
         private int _currentHighlightedTopic = -1;
-        
+
         public Part3Window()
         {
             InitializeComponent();
-            
+
             // Connect window control buttons
             var closeButton = this.FindControl<Button>("CloseButton");
             var titleBarRow = this.FindControl<Grid>("TitleBarRow");
-            
+
             if (closeButton != null)
                 closeButton.Click += CloseButton_Click;
-            
+
             // Enable window dragging from title bar
             if (titleBarRow != null)
             {
                 titleBarRow.PointerPressed += TitleBar_PointerPressed;
             }
-            
+
             // Connect all topic buttons
             ConnectTopicButtons();
-            
+
+            // Ensure page labels show absolute book pages (111-146)
+            UpdatePageLabels();
+
             // Підписуємося на зміну сторінки для синхронізації
             NavigationService.PageChanged += OnPageChanged;
         }
-        
+
+        private void UpdatePageLabels()
+        {
+            // Each topic button contains a StackPanel with [title TextBlock, page-number TextBlock]
+            for (int topicNumber = 1; topicNumber <= 12; topicNumber++)
+            {
+                var button = this.FindControl<Button>($"Topic3_{topicNumber}Button");
+                if (button?.Content is StackPanel sp && sp.Children.Count >= 2 && sp.Children[1] is TextBlock pageTb)
+                {
+                    pageTb.Text = BookNavigationMap.GetTopicPageRangeLabel(3, topicNumber);
+                }
+            }
+        }
+
         private void OnPageChanged(object? sender, PageChangedEventArgs e)
         {
-            // Визначаємо яка тема відповідає поточним сторінкам
-            // Частина 3: сторінки 111-146
             int leftPage = e.LeftPage;
-            
-            if (leftPage >= 111 && leftPage <= 146)
+
+            int topicNumber = BookNavigationMap.GetTopicNumberForLeftPage(3, leftPage);
+            if (topicNumber > 0)
             {
-                // Тема = (сторінка - 111) / 3 + 1
-                int topicNumber = (leftPage - 111) / 3 + 1;
-                if (topicNumber > 12) topicNumber = 12;
                 HighlightTopic(topicNumber);
             }
             else
             {
-                // Сторінки не з частини 3 - прибираємо підсвічування
                 ClearHighlight();
             }
         }
-        
+
         private void HighlightTopic(int topicNumber)
         {
             if (_currentHighlightedTopic == topicNumber) return;
-            
+
             // Прибираємо попереднє підсвічування
             ClearHighlight();
-            
+
             // Підсвічуємо нову тему
             var button = this.FindControl<Button>($"Topic3_{topicNumber}Button");
             if (button != null)
@@ -70,7 +81,7 @@ namespace German_B1._Step_Further.Views
                 _currentHighlightedTopic = topicNumber;
             }
         }
-        
+
         private void ClearHighlight()
         {
             if (_currentHighlightedTopic > 0)
@@ -83,13 +94,13 @@ namespace German_B1._Step_Further.Views
                 _currentHighlightedTopic = -1;
             }
         }
-        
+
         protected override void OnClosed(EventArgs e)
         {
             NavigationService.PageChanged -= OnPageChanged;
             base.OnClosed(e);
         }
-        
+
         private void ConnectTopicButtons()
         {
             // Підключаємо обробники для всіх 12 тем Part 3
@@ -102,7 +113,7 @@ namespace German_B1._Step_Further.Views
                 }
             }
         }
-        
+
         private void TopicButton_Click(object? sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is string tagString)
@@ -130,4 +141,3 @@ namespace German_B1._Step_Further.Views
         }
     }
 }
-

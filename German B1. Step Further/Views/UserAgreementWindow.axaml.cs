@@ -11,7 +11,7 @@ namespace German_B1._Step_Further.Views
         public const string AgreementVersion = "1.0";
 
         private readonly bool _isInteractive;
-        private UserAgreementLanguage _currentLanguage = UserAgreementLanguage.English;
+        private UserAgreementLanguage _currentLanguage = UserAgreementLanguage.Ukrainian;
 
         public UserAgreementWindow(bool isInteractive = true)
         {
