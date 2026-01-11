@@ -34,7 +34,7 @@ namespace German_B1._Step_Further.Views
             // Ensure page labels show absolute book pages (147-164)
             UpdatePageLabels();
 
-            // Підписуємося на зміну сторінки для синхронізації
+            // Subscribe to page change for synchronization
             NavigationService.PageChanged += OnPageChanged;
         }
 
@@ -70,10 +70,10 @@ namespace German_B1._Step_Further.Views
         {
             if (_currentHighlightedTopic == topicNumber) return;
 
-            // Прибираємо попереднє підсвічування
+            // Clear previous highlighting
             ClearHighlight();
 
-            // Підсвічуємо нову тему
+            // Highlight new topic
             var button = this.FindControl<Button>($"Topic4_{topicNumber}Button");
             if (button != null)
             {
@@ -103,7 +103,7 @@ namespace German_B1._Step_Further.Views
 
         private void ConnectTopicButtons()
         {
-            // Підключаємо обробники для всіх 6 тем Part 4
+            // Connect handlers for all 6 topics Part 4
             for (int i = 1; i <= 6; i++)
             {
                 var button = this.FindControl<Button>($"Topic4_{i}Button");
@@ -120,8 +120,8 @@ namespace German_B1._Step_Further.Views
             {
                 if (int.TryParse(tagString, out int topicNumber))
                 {
-                    // Передаємо Part=4 і номер теми
-                    // MainWindow конвертує це в номер сторінки
+                    // Pass Part=4 and topic number
+                    // MainWindow converts this to page number
                     NavigationService.RequestNavigation(4, topicNumber);
                 }
             }

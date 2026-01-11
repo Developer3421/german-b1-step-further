@@ -4,21 +4,21 @@ using System.Collections.Generic;
 namespace German_B1._Step_Further.Services
 {
     /// <summary>
-    /// Сервіс для навігації між сторінками контенту з підтримкою кнопок "Назад" та "Вперед"
+    /// Service for navigation between content pages with support for "Back" and "Forward" buttons
     /// </summary>
     public static class PageNavigationService
     {
-        // Поточний індекс сторінки
+        // Current page index
         private static int _currentPageIndex = 0;
         
-        // Список сторінок для навігації (Part, SubPart, Page)
+        // List of pages for navigation (Part, SubPart, Page)
         private static readonly List<PageInfo> _pages = new();
         
-        // Події для сповіщення про зміну сторінки
+        // Events for notifying about page changes
         public static event EventHandler<PageNavigationEventArgs>? PageChanged;
         
         /// <summary>
-        /// Поточний індекс сторінки
+        /// Current page index
         /// </summary>
         public static int CurrentPageIndex
         {
@@ -34,29 +34,29 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Загальна кількість сторінок
+        /// Total number of pages
         /// </summary>
         public static int TotalPages => _pages.Count;
         
         /// <summary>
-        /// Чи можна перейти назад
+        /// Whether can go back
         /// </summary>
         public static bool CanGoBack => _currentPageIndex > 0;
         
         /// <summary>
-        /// Чи можна перейти вперед
+        /// Whether can go forward
         /// </summary>
         public static bool CanGoForward => _currentPageIndex < _pages.Count - 1;
         
         /// <summary>
-        /// Поточна сторінка
+        /// Current page
         /// </summary>
         public static PageInfo? CurrentPage => _pages.Count > 0 && _currentPageIndex >= 0 && _currentPageIndex < _pages.Count 
             ? _pages[_currentPageIndex] 
             : null;
         
         /// <summary>
-        /// Ініціалізація списку сторінок
+        /// Initialize list of pages
         /// </summary>
         public static void Initialize(List<PageInfo> pages)
         {
@@ -67,7 +67,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Додати сторінку
+        /// Add page
         /// </summary>
         public static void AddPage(PageInfo page)
         {
@@ -75,7 +75,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Перейти на попередню сторінку
+        /// Go to previous page
         /// </summary>
         public static void GoBack()
         {
@@ -86,7 +86,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Перейти на наступну сторінку
+        /// Go to next page
         /// </summary>
         public static void GoForward()
         {
@@ -97,7 +97,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Перейти на конкретну сторінку за індексом
+        /// Go to specific page by index
         /// </summary>
         public static void GoToPage(int index)
         {
@@ -108,7 +108,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Перейти на сторінку за частиною та номером підтеми
+        /// Go to page by part and topic number
         /// </summary>
         public static void GoToPage(int part, int topic, int subtopic)
         {
@@ -126,37 +126,37 @@ namespace German_B1._Step_Further.Services
     }
     
     /// <summary>
-    /// Інформація про сторінку
+    /// Page information
     /// </summary>
     public class PageInfo
     {
         /// <summary>
-        /// Номер частини (1-4)
+        /// Part number (1-4)
         /// </summary>
         public int Part { get; set; }
         
         /// <summary>
-        /// Номер теми
+        /// Topic number
         /// </summary>
         public int Topic { get; set; }
         
         /// <summary>
-        /// Номер підтеми
+        /// Subtopic number
         /// </summary>
         public int Subtopic { get; set; }
         
         /// <summary>
-        /// Заголовок сторінки
+        /// Page title
         /// </summary>
         public string Title { get; set; } = string.Empty;
         
         /// <summary>
-        /// Підзаголовок (назва підтеми)
+        /// Subtitle (subtopic name)
         /// </summary>
         public string Subtitle { get; set; } = string.Empty;
         
         /// <summary>
-        /// Ключ ресурсу для контенту
+        /// Resource key for content
         /// </summary>
         public string ContentResourceKey { get; set; } = string.Empty;
         
@@ -174,7 +174,7 @@ namespace German_B1._Step_Further.Services
     }
     
     /// <summary>
-    /// Аргументи події зміни сторінки для PageNavigationService
+    /// Page change event arguments for PageNavigationService
     /// </summary>
     public class PageNavigationEventArgs : EventArgs
     {

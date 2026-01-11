@@ -30,13 +30,13 @@ namespace German_B1._Step_Further.Views
             // Connect all topic buttons
             ConnectTopicButtons();
             
-            // Підписуємося на зміну сторінок у головному вікні
+            // Subscribe to page changes in main window
             NavigationService.PageChanged += OnPageChanged;
         }
         
         private void ConnectTopicButtons()
         {
-            // Підключаємо обробники для всіх 18 тем
+            // Connect handlers for all 18 topics
             for (int i = 1; i <= 18; i++)
             {
                 var button = this.FindControl<Button>($"Topic1_{i}Button");
@@ -48,12 +48,12 @@ namespace German_B1._Step_Further.Views
         }
         
         /// <summary>
-        /// Обробка зміни сторінок у головному вікні - підсвічуємо відповідну тему
+        /// Handle page changes in main window - highlight corresponding topic
         /// </summary>
         private void OnPageChanged(object? sender, PageChangedEventArgs e)
         {
-            // Визначаємо номер теми за номером сторінки
-            // Сторінки 3-5 = Тема 1, 6-8 = Тема 2, і т.д.
+            // Determine topic number by page number
+            // Pages 3-5 = Topic 1, 6-8 = Topic 2, etc.
             int topicNumber = -1;
             
             if (e.LeftPage >= 3)
@@ -61,7 +61,7 @@ namespace German_B1._Step_Further.Views
                 topicNumber = ((e.LeftPage - 3) / 3) + 1;
             }
             
-            // Якщо тема змінилася - оновлюємо підсвітку
+            // If topic changed - update highlighting
             if (topicNumber != _currentHighlightedTopic && topicNumber >= 1 && topicNumber <= 18)
             {
                 HighlightTopic(topicNumber);

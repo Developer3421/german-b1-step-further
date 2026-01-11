@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace German_B1._Step_Further.Models
 {
     /// <summary>
-    /// Модель для збереження стану вкладки в сесії
+    /// Model for saving tab state in session
     /// </summary>
     public class TabSession
     {
@@ -13,33 +13,33 @@ namespace German_B1._Step_Further.Models
         public ObjectId Id { get; set; } = ObjectId.NewObjectId();
         
         /// <summary>
-        /// Унікальний ідентифікатор вікна
+        /// Unique window identifier
         /// </summary>
         public string WindowId { get; set; } = string.Empty;
         
         /// <summary>
-        /// Індекс вкладки в вікні
+        /// Tab index in window
         /// </summary>
         public int TabIndex { get; set; }
         
         /// <summary>
-        /// Номер лівої сторінки для цієї вкладки
+        /// Left page number for this tab
         /// </summary>
         public int PageNumber { get; set; }
         
         /// <summary>
-        /// Чи є ця вкладка активною
+        /// Whether this tab is active
         /// </summary>
         public bool IsActive { get; set; }
         
         /// <summary>
-        /// Час останнього доступу
+        /// Last access time
         /// </summary>
         public DateTime LastAccess { get; set; } = DateTime.Now;
     }
     
     /// <summary>
-    /// Модель для збереження сесії всього вікна
+    /// Model for saving entire window session
     /// </summary>
     public class WindowSession
     {
@@ -47,47 +47,47 @@ namespace German_B1._Step_Further.Models
         public ObjectId Id { get; set; } = ObjectId.NewObjectId();
         
         /// <summary>
-        /// Унікальний ідентифікатор вікна
+        /// Unique window identifier
         /// </summary>
         public string WindowId { get; set; } = string.Empty;
         
         /// <summary>
-        /// Список номерів сторінок для кожної вкладки
+        /// List of page numbers for each tab
         /// </summary>
         public List<int> TabPages { get; set; } = new();
         
         /// <summary>
-        /// Індекс активної вкладки
+        /// Active tab index
         /// </summary>
         public int ActiveTabIndex { get; set; }
         
         /// <summary>
-        /// Позиція X вікна
+        /// Window X position
         /// </summary>
         public double PositionX { get; set; }
         
         /// <summary>
-        /// Позиція Y вікна
+        /// Window Y position
         /// </summary>
         public double PositionY { get; set; }
         
         /// <summary>
-        /// Ширина вікна
+        /// Window width
         /// </summary>
         public double Width { get; set; }
         
         /// <summary>
-        /// Висота вікна
+        /// Window height
         /// </summary>
         public double Height { get; set; }
         
         /// <summary>
-        /// Час останнього збереження
+        /// Last save time
         /// </summary>
         public DateTime LastSaved { get; set; } = DateTime.Now;
         
         /// <summary>
-        /// Чи було вікно розгорнуте
+        /// Whether window was maximized
         /// </summary>
         public bool IsMaximized { get; set; }
     }

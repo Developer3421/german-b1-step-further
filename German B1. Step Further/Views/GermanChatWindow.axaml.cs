@@ -17,18 +17,18 @@ namespace German_B1._Step_Further.Views
 {
     public partial class GermanChatWindow : Window
     {
-        // Статичний конструктор — виконується один раз до будь-яких інших викликів
+        // Static constructor — executed once before any other calls
         static GermanChatWindow()
         {
-            // Вибір AVX2 інструкцій для підвищення якості та швидкості
-            // AVX2 підтримується більшістю сучасних процесорів (Intel Haswell+, AMD Excavator+)
+            // Select AVX2 instructions for improved quality and speed
+            // AVX2 is supported by most modern processors (Intel Haswell+, AMD Excavator+)
             try
             {
                 LLama.Native.NativeLibraryConfig.All.WithAvx(LLama.Native.AvxLevel.Avx2);
             }
             catch
             {
-                // Якщо бібліотека вже завантажена — ігноруємо
+                // If library is already loaded — ignore
             }
         }
 
@@ -48,7 +48,7 @@ namespace German_B1._Step_Further.Views
 
         private const int MaxAiAnswerCharacters = 1024;
 
-        // Мінімальні system prompts: тільки мова відповіді.
+        // Minimal system prompts: only answer language.
         private const string SystemPromptUkrainian =
             "Ти — професійний викладач німецької мови рівня B1. Відповідай ВИКЛЮЧНО українською мовою. " +
             "Навіть якщо запит містить німецькі слова або речення — німецькі приклади/цитати залишай німецькою (без перекладу, якщо користувач не просив). " +
@@ -58,7 +58,7 @@ namespace German_B1._Step_Further.Views
 
         private const string SystemPromptGerman = "Antworte auf Deutsch.";
 
-        // Окремий, максимально стабільний системний промпт для команд по граматичних темах.
+        // Separate, maximally stable system prompt for grammar topic commands.
         private const string SystemPromptUkrainianGrammar =
             "Ти — професійний викладач німецької мови (B1). Відповідай ВИКЛЮЧНО українською. " +
             "Використовуй німецькі слова тільки всередині прикладів. " +
@@ -67,7 +67,7 @@ namespace German_B1._Step_Further.Views
             "4) Приклади (рівно 4, німецькою). 5) Типові помилки (2 пункти). " +
             "Без вступів, без висновків, без повторення питання.";
 
-        // Словник граматичних тем для спеціальних запитів
+        // Dictionary of grammar topics for special requests
         private static readonly System.Collections.Generic.Dictionary<int, string> GrammarTopics = new()
         {
             { 1, "Часи дієслів у німецькій мові (Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I, Futur II)" },
@@ -93,7 +93,7 @@ namespace German_B1._Step_Further.Views
             InitializeComponent();
             SetupEventHandlers();
             
-            // Завантажуємо модель при відкритті вікна
+            // Load model when opening window
             Opened += OnWindowOpened;
         }
 
@@ -136,12 +136,12 @@ namespace German_B1._Step_Further.Views
             {
                 UpdateStatus("Завантаження AI моделі Gemma 3...");
 
-                // Шлях до моделі
+                // Model path
                 var modelPath = Path.Combine(AppContext.BaseDirectory, "Ai model", "gemma-3-270m-it-UD-Q2_K_XL.gguf");
                 
                 if (!File.Exists(modelPath))
                 {
-                    // Спробуємо альтернативний шлях (для розробки)
+                    // Try alternative path (for development)
                     var projectDir = Path.GetDirectoryName(AppContext.BaseDirectory);
                     while (projectDir != null && !Directory.Exists(Path.Combine(projectDir, "Ai model")))
                     {
@@ -184,7 +184,7 @@ namespace German_B1._Step_Further.Views
                 if (_sendButton != null)
                     _sendButton.IsEnabled = true;
 
-                // Додаємо привітальне повідомлення
+                // Add welcome message
                 AddMessage("Hallo! Ich bin dein Gesprächspartner für Deutsch B1. Schreib mir auf Deutsch oder Ukrainisch, und ich werde dir helfen, dein Deutsch zu verbessern! 🇩🇪", isUser: false);
             }
             catch (Exception ex)
@@ -248,7 +248,7 @@ namespace German_B1._Step_Further.Views
                 messageBorder.Child = textBlock;
                 _chatMessagesPanel.Children.Add(messageBorder);
 
-                // Прокрутка вниз
+                // Scroll down
                 _chatScrollViewer?.ScrollToEnd();
             });
         }
@@ -326,7 +326,7 @@ namespace German_B1._Step_Further.Views
 
             AddMessage(userMessage, isUser: true);
 
-            // Перевіряємо чи це запит на граматичну тему
+            // Check if this is a grammar topic request
             var (isGrammarTopic, specialPrompt, specialSystem) = TryGetGrammarTopicPrompt(userMessage);
 
             string systemPrompt;
@@ -334,13 +334,13 @@ namespace German_B1._Step_Further.Views
 
             if (isGrammarTopic && specialPrompt != null && specialSystem != null)
             {
-                // Спеціальний режим для граматичних тем — професійна українська та стабільний формат.
+                // Special mode for grammar topics — professional Ukrainian and stable format.
                 systemPrompt = specialSystem;
                 actualUserMessage = specialPrompt;
             }
             else
             {
-                // Звичайний режим — залежить від вибору мови
+                // Normal mode — depends on language selection
                 var answerLanguage = GetSelectedAnswerLanguage();
                 systemPrompt = answerLanguage switch
                 {
@@ -351,7 +351,7 @@ namespace German_B1._Step_Further.Views
                 actualUserMessage = userMessage;
             }
 
-            // system+user prompt (або тільки user якщо без обмежень)
+            // system+user prompt (or just user if no restriction)
             var prompt = string.IsNullOrEmpty(systemPrompt) 
                 ? BuildUserOnlyPrompt(actualUserMessage) 
                 : BuildPrompt(systemPrompt, actualUserMessage);
@@ -363,12 +363,12 @@ namespace German_B1._Step_Further.Views
 
                 var inferenceParams = new InferenceParams
                 {
-                    // Для граматичних тем даємо трохи більше токенів, але тримаємо структуру.
+                    // For grammar topics give slightly more tokens, but keep structure.
                     MaxTokens = isGrammarTopic ? 650 : 512,
                     AntiPrompts = new[] { "<end_of_turn>", "</s>", "User:", "<start_of_turn>" }
                 };
 
-                // Для стабільності шаблонних відповідей зменшуємо температуру.
+                // For stability of template answers reduce temperature.
                 inferenceParams.SamplingPipeline = new LLama.Sampling.DefaultSamplingPipeline
                 {
                     Temperature = isGrammarTopic ? 0.25f : 0.60f,
@@ -378,8 +378,8 @@ namespace German_B1._Step_Further.Views
 
                 string finalResponse = await GenerateLimitedAnswerAsync(prompt, inferenceParams, _cancellationTokenSource);
 
-                // Якщо модель повторила/переклала запит замість відповіді — один раз перегенеруємо жорсткіше.
-                // Але не для граматичних тем (там вже спеціальний промпт)
+                // If model repeated/translated request instead of answering — regenerate once with stricter rules.
+                // But not for grammar topics (they already have special prompt)
                 if (!isGrammarTopic)
                 {
                     for (var retry = 0; retry < MaxBadAnswerRetries && LooksLikeEchoOrTranslation(finalResponse, actualUserMessage); retry++)
@@ -422,7 +422,7 @@ namespace German_B1._Step_Further.Views
                 _currentAiMessageBorder = null;
                 _currentAiMessageText = null;
 
-                // ПОВНИЙ РЕБУТ LLamaSharp після кожної відповіді
+                // FULL REBOOT of LLamaSharp after each response
                 await RebootModelContextAsync();
             }
         }
@@ -437,12 +437,12 @@ namespace German_B1._Step_Further.Views
             var a = Norm(answer);
             var u = Norm(userMessage);
 
-            // Якщо відповідь достатньо довга (>150 символів) — вважаємо її адекватною
-            // (модель щось згенерувала, а не просто повторила)
+            // If answer is long enough (>150 chars) — consider it adequate
+            // (model generated something, not just repeated)
             if (a.Length > 150)
                 return false;
 
-            // Якщо користувач явно просив переклад/пояснення — не блокуємо
+            // If user explicitly requested translation/explanation — don't block
             var isExplanationRequest = u.Contains("поясни") || u.Contains("explain") || u.Contains("erkläre") ||
                                        u.Contains("різниц") || u.Contains("unterschied") || u.Contains("difference") ||
                                        u.Contains("приклад") || u.Contains("beispiel") || u.Contains("example") ||
@@ -450,16 +450,16 @@ namespace German_B1._Step_Further.Views
             if (isExplanationRequest)
                 return false;
 
-            // 1) Явне ПОВНЕ повторення запиту (майже ідентичний текст)
+            // 1) Explicit FULL repetition of request (almost identical text)
             if (a.Length > 10 && a.Contains(u) && a.Length < u.Length * 1.5)
                 return true;
 
-            // 2) Початок відповіді ТОЧНО повторює початок запиту (явне ехо)
+            // 2) Answer start EXACTLY repeats request start (explicit echo)
             var prefixLen = Math.Min(50, Math.Min(a.Length, u.Length));
             if (prefixLen >= 30 && a.Substring(0, prefixLen) == u.Substring(0, prefixLen))
                 return true;
 
-            // 3) Надто великий словниковий перетин І коротка відповідь (ехо/перефразування)
+            // 3) Too large word overlap AND short answer (echo/paraphrase)
             var overlap = WordOverlapRatio(a, u);
             if (overlap >= 0.75 && a.Length < 100)
                 return true;
@@ -494,7 +494,7 @@ namespace German_B1._Step_Further.Views
                 if (uSet.Contains(t)) intersect++;
             }
 
-            // частка спільних слів від слів відповіді
+            // fraction of common words from answer words
             return intersect / (double)Math.Max(1, aSet.Count);
         }
 
@@ -524,18 +524,18 @@ namespace German_B1._Step_Further.Views
 
         private static string BuildUserOnlyPrompt(string user)
         {
-            // Без system turn: тільки user -> model
+            // Without system turn: just user -> model
             return $"<start_of_turn>user\n{user}<end_of_turn>\n<start_of_turn>model\n";
         }
 
         /// <summary>
-        /// Перевіряє чи запит є запитом на граматичну тему і повертає спеціальний промпт
+        /// Checks if request is a grammar topic request and returns special prompt
         /// </summary>
         private static (bool isGrammarTopic, string? specialPrompt, string? specialSystem) TryGetGrammarTopicPrompt(string userMessage)
         {
             var lower = userMessage.ToLowerInvariant().Trim();
 
-            // Патерни: "граматична тема 1", "тема 1", "grammar topic 1" тощо
+            // Patterns: "граматична тема 1", "тема 1", "grammar topic 1" etc.
             var patterns = new[] { "граматична тема", "тема", "grammar topic", "grammatik thema" };
 
             foreach (var pattern in patterns)
@@ -545,8 +545,8 @@ namespace German_B1._Step_Further.Views
                     var rest = lower.Substring(pattern.Length).Trim();
                     if (int.TryParse(rest, out var topicNum) && GrammarTopics.TryGetValue(topicNum, out var topicName))
                     {
-                        // Детермінований шаблон запиту під граматичну тему.
-                        // Це підвищує стабільність і зменшує "творчі" відхилення моделі.
+                        // Deterministic template request for grammar topic.
+                        // This increases stability and reduces "creative" deviations of model.
                         var prompt =
                             "ТЕМА: " + topicName + "\n" +
                             "ЗАВДАННЯ: Поясни тему для рівня B1 за заданою структурою.\n" +
@@ -564,8 +564,8 @@ namespace German_B1._Step_Further.Views
 
         private async Task RebootModelContextAsync()
         {
-            // Ребут: створюємо новий контекст/екзек'ютор на тих самих weights (без повторного LoadFromFile).
-            // Потрібен реальний ModelParams. Його зберігаємо під час LoadModelAsync.
+            // Reboot: create new context/executor on same weights (without re-LoadFromFile).
+            // Need real ModelParams. We save it during LoadModelAsync.
             try
             {
                 if (_model == null || _modelParams == null)
@@ -578,7 +578,7 @@ namespace German_B1._Step_Further.Views
                     _context?.Dispose();
                     _context = null;
 
-                    // Створюємо новий контекст з тими самими параметрами (ContextSize/GpuLayerCount тощо)
+                    // Create new context with same parameters (ContextSize/GpuLayerCount etc.)
                     _context = _model.CreateContext(_modelParams);
                     _executor = new InteractiveExecutor(_context);
                 });
@@ -616,7 +616,7 @@ namespace German_B1._Step_Further.Views
             }
             catch (OperationCanceledException)
             {
-                // Якщо ми самі зупинили генерацію по ліміту — це ок.
+                // If we stopped generation by limit ourselves — it's ok.
             }
 
             var finalText = CleanResponse(responseBuilder.ToString());
@@ -624,7 +624,7 @@ namespace German_B1._Step_Further.Views
         }
 
          /// <summary>
-         /// Очищення відповіді від повторень та нісенітниці
+         /// Cleaning response from repetitions and nonsense
          /// </summary>
          private static string CleanResponse(string response)
          {
@@ -635,7 +635,7 @@ namespace German_B1._Step_Further.Views
             {
                 var cleaned = response.Trim();
 
-                // Видаляємо теги моделі
+                // Remove model tags
                 cleaned = cleaned.Replace("<end_of_turn>", "")
                                  .Replace("</s>", "")
                                  .Replace("<start_of_turn>", "")
@@ -643,7 +643,7 @@ namespace German_B1._Step_Further.Views
                                  .Replace("model\n", "")
                                  .Trim();
 
-                // Видаляємо повторювані речення
+                // Remove repetitive sentences
                 cleaned = RemoveRepetitions(cleaned);
 
                 return cleaned.Trim();
@@ -651,7 +651,7 @@ namespace German_B1._Step_Further.Views
             catch (Exception ex)
             {
                 Console.WriteLine($"CleanResponse error: {ex.Message}");
-                // Повертаємо безпечний варіант без агресивного truncate — ліміт застосовується вище.
+                // Return safe variant without aggressive truncate — limit is applied above.
                 return response.Trim();
             }
         }
@@ -670,7 +670,7 @@ namespace German_B1._Step_Further.Views
         }
 
         /// <summary>
-        /// Видаляє повторювані речення та фрази
+        /// Removes repetitive sentences and phrases
         /// </summary>
         private static string RemoveRepetitions(string text)
         {
@@ -679,7 +679,7 @@ namespace German_B1._Step_Further.Views
 
             try
             {
-                // Розбиваємо на речення
+                // Split into sentences
                 var sentences = text.Split(new[] { ". ", "! ", "? " }, StringSplitOptions.RemoveEmptyEntries);
                 var uniqueSentences = new System.Collections.Generic.List<string>();
                 var seen = new System.Collections.Generic.HashSet<string>(StringComparer.OrdinalIgnoreCase);
@@ -697,10 +697,10 @@ namespace German_B1._Step_Further.Views
                 if (uniqueSentences.Count == 0)
                     return text;
 
-                // З'єднуємо унікальні речення
+                // Join unique sentences
                 var result = string.Join(". ", uniqueSentences);
                 
-                // Додаємо крапку в кінці якщо її немає
+                // Add period at end if missing
                 if (result.Length > 0 && !result.EndsWith(".") && !result.EndsWith("!") && !result.EndsWith("?"))
                     result += ".";
 
@@ -709,7 +709,7 @@ namespace German_B1._Step_Further.Views
             catch (Exception ex)
             {
                 Console.WriteLine($"RemoveRepetitions error: {ex.Message}");
-                return text; // Повертаємо оригінал якщо щось пішло не так
+                return text; // Return original if something went wrong
             }
         }
 
@@ -731,10 +731,10 @@ namespace German_B1._Step_Further.Views
         {
             base.OnClosed(e);
 
-            // Скасовуємо поточну генерацію
+            // Cancel current generation
             _cancellationTokenSource?.Cancel();
 
-            // Очищаємо ресурси LLama
+            // Clean up LLama resources
             try
             {
                 _executor = null;

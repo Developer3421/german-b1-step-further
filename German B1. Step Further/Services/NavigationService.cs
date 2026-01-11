@@ -3,28 +3,28 @@ using System;
 namespace German_B1._Step_Further.Services
 {
     /// <summary>
-    /// Сервіс для синхронізації навігації між вікнами розділів та головним вікном
+    /// Service for synchronizing navigation between part windows and main window
     /// </summary>
     public static class NavigationService
     {
-        // Події для навігації
+        // Events for navigation
         public static event EventHandler<NavigationEventArgs>? NavigateToPage;
         
-        // Подія для оновлення поточної сторінки у всіх слухачів
+        // Event for updating current page in all listeners
         public static event EventHandler<PageChangedEventArgs>? PageChanged;
         
         /// <summary>
-        /// Викликає подію навігації до конкретної сторінки
+        /// Invokes navigation event to specific page
         /// </summary>
-        /// <param name="part">Номер частини (1-4)</param>
-        /// <param name="pageNumber">Номер сторінки відносно частини</param>
+        /// <param name="part">Part number (1-4)</param>
+        /// <param name="pageNumber">Page number relative to the part</param>
         public static void RequestNavigation(int part, int pageNumber)
         {
             NavigateToPage?.Invoke(null, new NavigationEventArgs(part, pageNumber));
         }
         
         /// <summary>
-        /// Сповіщає всіх слухачів про зміну поточної сторінки
+        /// Notifies all listeners about current page change
         /// </summary>
         public static void NotifyPageChanged(int leftPage, int rightPage)
         {
