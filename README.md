@@ -18,7 +18,7 @@ An interactive desktop application for learning German at the B1 level. Built wi
 ## Installation
 
 ### Microsoft Store
-Download from [[Microsoft Store](https://www.microsoft.com/store](https://apps.microsoft.com/detail/9p6f8kjjwtj5?hl=uk-UA&gl=DE))
+Download from [[Microsoft Store]: https://apps.microsoft.com/detail/9PMDTL9PRP7J
 
 ### Build from Source
 ```powershell
