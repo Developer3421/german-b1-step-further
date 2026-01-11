@@ -121,10 +121,10 @@ namespace German_B1._Step_Further.Services
 
         /// <summary>
         /// Returns a user-friendly absolute page range label for a topic.
-        /// Example: "Стор. 111-113".
+        /// Example: "Pages 111-113".
         /// Uses <see cref="PagesPerTopic"/> and clamps to the part range.
         /// </summary>
-        public static string GetTopicPageRangeLabel(int part, int topicNumber, string prefix = "Стор.")
+        public static string GetTopicPageRangeLabel(int part, int topicNumber, string prefix = "Pages")
         {
             int left = GetAbsoluteLeftPageForTopic(part, topicNumber);
 

@@ -15,32 +15,32 @@ namespace German_B1._Step_Further
 {
     public partial class MainWindow : Window
     {
-        // Унікальний ідентифікатор вікна для збереження сесії
+        // Unique window identifier for saving session
         public string WindowId { get; } = Guid.NewGuid().ToString();
         
-        // Поточна ліва сторінка книжки (непарна: 1, 3, 5...)
+        // Current left page of book (odd: 1, 3, 5...)
         private int _currentLeftPage = 1;
         
-        // ContentPageView для лівої та правої панелі
+        // ContentPageView for left and right panels
         private ContentPageView? _leftPageView;
         private ContentPageView? _rightPageView;
         
-        // Максимальна кількість вкладок
+        // Maximum number of tabs
         private const int MAX_TABS = 3;
         
-        // Інформація про вкладки (індекс вкладки -> номер сторінки)
+        // Tab information (tab index -> page number)
         private readonly List<int> _tabPages = new() { 1 };
         
-        // Поточна активна вкладка
+        // Current active tab
         private int _activeTabIndex = 0;
         
-        // Для Drag and Drop
+        // For Drag and Drop
         private bool _isDraggingTab = false;
         private Border? _draggingTab = null;
         private Point _dragStartPoint;
         private int _draggingTabIndex = -1;
         
-        // Для відновлення сесії
+        // For session restore
         private WindowSession? _restoredSession;
 
         public MainWindow() : this(null)
@@ -51,7 +51,7 @@ namespace German_B1._Step_Further
         {
             _restoredSession = restoredSession;
             
-            // Якщо відновлюємо сесію, використовуємо збережені вкладки
+            // If restoring session, use saved tabs
             if (_restoredSession != null && _restoredSession.TabPages.Count > 0)
             {
                 _tabPages.Clear();
@@ -61,7 +61,7 @@ namespace German_B1._Step_Further
             
             InitializeComponent();
             
-            // Реєструємо вікно в WindowManagerService
+            // Register window in WindowManagerService
             WindowManagerService.RegisterWindow(this);
             WindowManagerService.TabTransferRequested += OnTabTransferRequested;
             
@@ -123,63 +123,63 @@ namespace German_B1._Step_Further
                 titleBarRow.PointerPressed += TitleBar_PointerPressed;
             }
             
-            // Підписуємося на події навігації від Part1Window тощо
+            // Subscribe to navigation events from Part1Window etc.
             NavigationService.NavigateToPage += OnNavigateToPage;
             
-            // Ініціалізація при завантаженні вікна
+            // Initialize when window opens
             this.Opened += MainWindow_Opened;
         }
         
         /// <summary>
-        /// Обробник відкриття вікна - ініціалізує вкладки після того як UI готовий
+        /// Window opening handler - initializes tabs after UI is ready
         /// </summary>
         private void MainWindow_Opened(object? sender, EventArgs e)
         {
-            // Відновлюємо вкладки з сесії
+            // Restore tabs from session
             if (_restoredSession != null && _restoredSession.TabPages.Count > 1)
             {
                 RestoreTabsFromSession();
             }
             else
             {
-                // Завантажуємо початкові сторінки (1-2 = зміст)
+                // Load initial pages (1-2 = contents)
                 LoadBookPages(_tabPages[0]);
             }
             
-            // Зберігаємо початкову сесію
+            // Save initial session
             SaveCurrentSession();
         }
         
         /// <summary>
-        /// Відновлює вкладки з сесії
+        /// Restores tabs from session
         /// </summary>
         private void RestoreTabsFromSession()
         {
             var tabsContainer = this.FindControl<StackPanel>("TabsContainer");
             if (tabsContainer == null) return;
             
-            // Видаляємо всі вкладки крім першої
+            // Remove all tabs except first
             while (tabsContainer.Children.Count > 1)
             {
                 tabsContainer.Children.RemoveAt(1);
             }
             
-            // Оновлюємо першу вкладку
+            // Update first tab
             UpdateTabTitle(0, _tabPages[0]);
             
-            // Додаємо інші вкладки
+            // Add other tabs
             for (int i = 1; i < _tabPages.Count; i++)
             {
                 var newTab = CreateTabBorder(i, _tabPages[i], true);
                 tabsContainer.Children.Add(newTab);
             }
             
-            // Активуємо збережену вкладку
+            // Activate saved tab
             SetActiveTab(_activeTabIndex);
         }
         
         /// <summary>
-        /// Знаходить вкладку за її індексом (по Tag)
+        /// Finds tab by its index (by Tag)
         /// </summary>
         private Border? FindTabByIndex(int tabIndex)
         {
@@ -197,7 +197,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Оновлює заголовок вкладки за індексом
+        /// Updates tab title by index
         /// </summary>
         private void UpdateTabTitle(int tabIndex, int pageNumber)
         {
@@ -220,11 +220,11 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Обробник переміщення вкладки між вікнами
+        /// Tab transfer between windows handler
         /// </summary>
         private void OnTabTransferRequested(object? sender, TabTransferEventArgs e)
         {
-            // Якщо це цільове вікно - приймаємо вкладку
+            // If this is target window - accept tab
             if (e.TargetWindow == this && e.SourceWindow != this)
             {
                 AcceptTabFromOtherWindow(e.PageNumber);
@@ -232,7 +232,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Обробка навігації від Part1Window/Part2Window/Part3Window/Part4Window
+        /// Navigation handling from Part1Window/Part2Window/Part3Window/Part4Window
         /// </summary>
         private void OnNavigateToPage(object? sender, NavigationEventArgs e)
         {
@@ -244,11 +244,11 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Завантажує пару сторінок книжки (ліва непарна, права парна)
+        /// Loads a pair of book pages (left odd, right even)
         /// </summary>
         private void LoadBookPages(int leftPageNumber)
         {
-            // Ліва сторінка завжди непарна
+            // Left page is always odd
             if (leftPageNumber % 2 == 0)
                 leftPageNumber--;
             if (leftPageNumber < 1)
@@ -265,21 +265,21 @@ namespace German_B1._Step_Further
             leftPanel.Children.Clear();
             rightPanel.Children.Clear();
             
-            // Сторінки 1-2 = Зміст
+            // Pages 1-2 = Contents
             if (leftPageNumber == 1)
             {
-                // Ліва панель - ContentsPage1
+                // Left panel - ContentsPage1
                 leftPanel.Children.Add(new ContentsPage1());
-                // Права панель - ContentsPage2
+                // Right panel - ContentsPage2
                 rightPanel.Children.Add(new ContentsPage2());
             }
             else
             {
-                // Створюємо ContentPageView для обох панелей
+                // Create ContentPageView for both panels
                 _leftPageView = new ContentPageView();
                 _rightPageView = new ContentPageView();
                 
-                // Завантажуємо контент сторінок
+                // Load page content
                 LoadPageContent(_leftPageView, leftPageNumber);
                 LoadPageContent(_rightPageView, rightPageNumber);
                 
@@ -287,26 +287,26 @@ namespace German_B1._Step_Further
                 rightPanel.Children.Add(_rightPageView);
             }
             
-            // Оновлюємо текст активної вкладки з номером частини та сторінок
+            // Update active tab text with part number and pages
             UpdateActiveTabTitle(leftPageNumber, rightPageNumber);
             
-            // Оновлюємо список сторінок для активної вкладки
+            // Update page list for active tab
             if (_activeTabIndex < _tabPages.Count)
                 _tabPages[_activeTabIndex] = leftPageNumber;
             
-            // Сповіщаємо всіх слухачів про зміну сторінки
+            // Notify all listeners about page change
             NavigationService.NotifyPageChanged(leftPageNumber, rightPageNumber);
         }
         
         /// <summary>
-        /// Оновлює заголовок активної вкладки з поточними номерами частини та сторінок
+        /// Updates active tab title with current part number and pages
         /// </summary>
         private void UpdateActiveTabTitle(int leftPage, int rightPage)
         {
             var activeTab = FindTabByIndex(_activeTabIndex);
             if (activeTab == null) return;
             
-            // Знаходимо TextBlock всередині вкладки
+            // Find TextBlock inside tab
             var grid = activeTab.Child as Grid;
             if (grid == null) return;
             
@@ -322,15 +322,15 @@ namespace German_B1._Step_Further
             
             if (tabTitle == null) return;
             
-            // Визначаємо номер частини за номером сторінки
+            // Determine part number by page number
             int partNumber = GetPartNumber(leftPage);
             
-            // Формуємо текст вкладки
+            // Form tab text
             tabTitle.Text = $"Ч{partNumber} СТ{leftPage}-{rightPage}";
         }
         
         /// <summary>
-        /// Визначає номер частини за номером сторінки
+        /// Determines part number by page number
         /// </summary>
         private int GetPartNumber(int pageNumber)
         {
@@ -338,16 +338,16 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Завантажує контент для конкретної сторінки
+        /// Loads content for specific page
         /// </summary>
         private void LoadPageContent(ContentPageView pageView, int pageNumber)
         {
-            // Спробуємо отримати дані зі словника ресурсів
+            // Try to get data from resource dictionary
             string titleKey = $"Page{pageNumber}_Title";
             string subtitleKey = $"Page{pageNumber}_Subtitle";
             string contentKey = $"Page{pageNumber}_Content";
             
-            // Перевіряємо чи існують ресурси для цієї сторінки
+            // Check if resources exist for this page
             if (App.Current?.Resources.TryGetResource(titleKey, null, out var titleObj) == true &&
                 App.Current?.Resources.TryGetResource(subtitleKey, null, out var subtitleObj) == true)
             {
@@ -358,17 +358,17 @@ namespace German_B1._Step_Further
             }
             else
             {
-                // Порожня сторінка для майбутнього контенту
+                // Empty page for future content
                 pageView.SetEmptyPage(pageNumber);
             }
         }
         
         protected override void OnClosed(EventArgs e)
         {
-            // Зберігаємо сесію для відновлення при наступному запуску
+            // Save session for restore on next launch
             SaveSessionForRestore();
             
-            // Відписуємося від подій
+            // Unsubscribe from events
             WindowManagerService.TabTransferRequested -= OnTabTransferRequested;
             WindowManagerService.UnregisterWindow(this);
             NavigationService.NavigateToPage -= OnNavigateToPage;
@@ -377,7 +377,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Зберігає поточну сесію вікна в базу даних
+        /// Saves current window session to database
         /// </summary>
         private void SaveCurrentSession()
         {
@@ -401,7 +401,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Зберігає сесію для відновлення при наступному запуску
+        /// Saves session for restore on next launch
         /// </summary>
         private void SaveSessionForRestore()
         {
@@ -429,25 +429,25 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Приймає вкладку з іншого вікна
+        /// Accepts tab from another window
         /// </summary>
         public void AcceptTabFromOtherWindow(int pageNumber)
         {
-            // Перевіряємо ліміт вкладок
+            // Check tab limit
             if (_tabPages.Count >= MAX_TABS)
             {
-                // Показуємо повідомлення що досягнуто ліміту
+                // Show message that limit reached
                 return;
             }
             
-            // Робимо сторінку непарною
+            // Make page odd
             if (pageNumber % 2 == 0)
                 pageNumber--;
             
-            // Додаємо нову вкладку
+            // Add new tab
             AddNewTab(pageNumber);
             
-            // Зберігаємо сесію
+            // Save session
             SaveCurrentSession();
         }
         
@@ -488,7 +488,7 @@ namespace German_B1._Step_Further
         }
 
         /// <summary>
-        /// Кнопка "Назад" - переходить на попередню пару сторінок
+        /// "Back" button - goes to previous pair of pages
         /// </summary>
         private void BackButton_Click(object? sender, RoutedEventArgs e)
         {
@@ -499,7 +499,7 @@ namespace German_B1._Step_Further
         }
 
         /// <summary>
-        /// Кнопка "Вперед" - переходить на наступну пару сторінок
+        /// "Forward" button - goes to next pair of pages
         /// </summary>
         private void ForwardButton_Click(object? sender, RoutedEventArgs e)
         {
@@ -539,24 +539,24 @@ namespace German_B1._Step_Further
         #region Tab Management
         
         /// <summary>
-        /// Обробник кнопки додавання вкладки - показує діалог введення номера сторінки
+        /// Add tab button handler - shows dialog for entering page number
         /// </summary>
         private async void AddTabButton_Click(object? sender, RoutedEventArgs e)
         {
             if (_tabPages.Count >= MAX_TABS)
             {
-                // Показуємо повідомлення про максимальну кількість вкладок
+                // Show message about maximum tab count
                 return;
             }
             
-            // Створюємо стилізоване діалогове вікно
+            // Create styled dialog window
             var dialog = new NewTabDialog();
             await dialog.ShowDialog(this);
             
             if (dialog.ResultPage > 0)
             {
                 int resultPage = dialog.ResultPage;
-                // Робимо сторінку непарною
+                // Make page odd
                 if (resultPage % 2 == 0)
                     resultPage--;
                 
@@ -565,7 +565,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Додає нову вкладку з вказаною сторінкою
+        /// Adds new tab with specified page
         /// </summary>
         private void AddNewTab(int pageNumber)
         {
@@ -577,16 +577,16 @@ namespace German_B1._Step_Further
             int newTabIndex = _tabPages.Count;
             _tabPages.Add(pageNumber);
             
-            // Створюємо нову вкладку з таким же стилем
+            // Create new tab with same style
             var newTab = CreateTabBorder(newTabIndex, pageNumber, true);
             tabsContainer.Children.Add(newTab);
             
-            // Активуємо нову вкладку
+            // Activate new tab
             SetActiveTab(newTabIndex);
         }
         
         /// <summary>
-        /// Створює Border для вкладки
+        /// Creates Border for tab
         /// </summary>
         private Border CreateTabBorder(int tabIndex, int pageNumber, bool isClosable)
         {
@@ -628,7 +628,7 @@ namespace German_B1._Step_Further
             viewbox.Child = canvas;
             iconBorder.Child = viewbox;
             
-            // Текст вкладки
+            // Tab text
             var textBlock = new TextBlock
             {
                 Text = $"Ч{partNumber} СТ{pageNumber}-{rightPage}",
@@ -642,7 +642,7 @@ namespace German_B1._Step_Further
             
             if (isClosable)
             {
-                // Кнопка закриття
+                // Close button
                 var closeButton = new Button
                 {
                     Width = 24,
@@ -672,7 +672,7 @@ namespace German_B1._Step_Further
             }
             else
             {
-                // Пустий Border для вирівнювання
+                // Empty Border for alignment
                 var spacer = new Border { Width = 12 };
                 Grid.SetColumn(spacer, 2);
                 grid.Children.Add(spacer);
@@ -680,7 +680,7 @@ namespace German_B1._Step_Further
             
             border.Child = grid;
             
-            // Обробники подій для drag-and-drop та активації
+            // Event handlers for drag-and-drop and activation
             border.PointerPressed += Tab_PointerPressed;
             border.PointerMoved += Tab_PointerMoved;
             border.PointerReleased += Tab_PointerReleased;
@@ -689,18 +689,18 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Закриття вкладки
+        /// Close tab
         /// </summary>
         private void CloseTab_Click(object? sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is int tabIndex)
             {
-                if (tabIndex == 0) return; // Першу вкладку не можна закрити
+                if (tabIndex == 0) return; // First tab cannot be closed
                 
                 var tabsContainer = this.FindControl<StackPanel>("TabsContainer");
                 if (tabsContainer == null) return;
                 
-                // Знаходимо вкладку по Tag
+                // Find tab by Tag
                 Border? tabToRemove = null;
                 foreach (var child in tabsContainer.Children)
                 {
@@ -718,10 +718,10 @@ namespace German_B1._Step_Further
                 
                 _tabPages.RemoveAt(tabIndex);
                 
-                // Перенумеровуємо вкладки (тільки Tag, не Name)
+                // Renumber tabs (only Tag, not Name)
                 RenumberTabs();
                 
-                // Якщо закрита активна вкладка, переключаємось на попередню
+                // If active tab closed, switch to previous
                 if (_activeTabIndex >= _tabPages.Count)
                 {
                     _activeTabIndex = _tabPages.Count - 1;
@@ -732,7 +732,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Перенумеровує вкладки після видалення (оновлює тільки Tag, не Name)
+        /// Renumbers tabs after deletion (updates only Tag, not Name)
         /// </summary>
         private void RenumberTabs()
         {
@@ -743,10 +743,10 @@ namespace German_B1._Step_Further
             {
                 if (tabsContainer.Children[i] is Border tab)
                 {
-                    // Оновлюємо тільки Tag (Name не можна змінювати в Avalonia після стилізації)
+                    // Update only Tag (Name cannot be changed in Avalonia after styling)
                     tab.Tag = i;
                     
-                    // Оновлюємо Tag кнопки закриття
+                    // Update close button Tag
                     if (tab.Child is Grid grid)
                     {
                         foreach (var child in grid.Children)
@@ -762,7 +762,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Встановлює активну вкладку
+        /// Sets active tab
         /// </summary>
         private void SetActiveTab(int tabIndex)
         {
@@ -771,7 +771,7 @@ namespace German_B1._Step_Further
             var tabsContainer = this.FindControl<StackPanel>("TabsContainer");
             if (tabsContainer == null) return;
             
-            // Прибираємо клас active з усіх вкладок
+            // Remove active class from all tabs
             foreach (var child in tabsContainer.Children)
             {
                 if (child is Border tab)
@@ -780,7 +780,7 @@ namespace German_B1._Step_Further
                 }
             }
             
-            // Додаємо клас active до вибраної вкладки
+            // Add active class to selected tab
             var activeTab = FindTabByIndex(tabIndex);
             if (activeTab != null)
             {
@@ -789,10 +789,10 @@ namespace German_B1._Step_Further
             
             _activeTabIndex = tabIndex;
             
-            // Завантажуємо сторінки для цієї вкладки
+            // Load pages for this tab
             LoadBookPages(_tabPages[tabIndex]);
             
-            // Зберігаємо сесію після зміни активної вкладки
+            // Save session after changing active tab
             SaveCurrentSession();
         }
         
@@ -806,7 +806,7 @@ namespace German_B1._Step_Further
             {
                 var point = e.GetCurrentPoint(tab);
                 
-                // Ліва кнопка - активуємо вкладку та починаємо drag
+                // Left button - activate tab and start drag
                 if (point.Properties.IsLeftButtonPressed)
                 {
                     SetActiveTab(tabIndex);
@@ -817,7 +817,7 @@ namespace German_B1._Step_Further
                     _dragStartPoint = e.GetPosition(this);
                     e.Handled = true;
                 }
-                // Права кнопка - показуємо контекстне меню для перенесення в інше вікно
+                // Right button - show context menu for moving to another window
                 else if (point.Properties.IsRightButtonPressed)
                 {
                     ShowTabContextMenu(tab, tabIndex, e);
@@ -827,21 +827,21 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Показує контекстне меню для вкладки (права кнопка миші)
+        /// Shows context menu for tab (right mouse button)
         /// </summary>
         private void ShowTabContextMenu(Border tab, int tabIndex, PointerPressedEventArgs e)
         {
             var contextMenu = new ContextMenu();
             
-            // Пункт меню "Перемістити в нове вікно"
-            var moveToNewWindowItem = new MenuItem { Header = "Перемістити в нове вікно" };
+            // Menu item "Move to new window"
+            var moveToNewWindowItem = new MenuItem { Header = "Move to new window" };
             moveToNewWindowItem.Click += (s, args) =>
             {
                 MoveTabToNewWindow(tabIndex);
             };
             contextMenu.Items.Add(moveToNewWindowItem);
             
-            // Отримуємо список інших відкритих вікон
+            // Get list of other open windows
             var otherWindows = WindowManagerService.GetOpenWindows()
                 .Where(w => w != this && w.CanAcceptTab())
                 .ToList();
@@ -854,7 +854,7 @@ namespace German_B1._Step_Further
                 {
                     var windowItem = new MenuItem 
                     { 
-                        Header = $"Перемістити у вікно: Ч{window.GetCurrentPartNumber()} СТ{window.GetCurrentPages()}"
+                        Header = $"Move to window: P{window.GetCurrentPartNumber()} PG{window.GetCurrentPages()}"
                     };
                     var targetWindow = window;
                     windowItem.Click += (s, args) =>
@@ -865,11 +865,11 @@ namespace German_B1._Step_Further
                 }
             }
             
-            // Separator та пункт закриття вкладки (якщо це не перша вкладка)
+            // Separator and close tab item (if not first tab)
             if (tabIndex > 0)
             {
                 contextMenu.Items.Add(new Separator());
-                var closeTabItem = new MenuItem { Header = "Закрити вкладку" };
+                var closeTabItem = new MenuItem { Header = "Close tab" };
                 closeTabItem.Click += (s, args) =>
                 {
                     CloseTabByIndex(tabIndex);
@@ -881,7 +881,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Перевіряє чи вікно може прийняти нову вкладку
+        /// Checks if window can accept new tab
         /// </summary>
         public bool CanAcceptTab()
         {
@@ -889,7 +889,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Отримує номер поточної частини для відображення
+        /// Gets current part number for display
         /// </summary>
         public int GetCurrentPartNumber()
         {
@@ -897,7 +897,7 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Отримує рядок з поточними сторінками для відображення
+        /// Gets string with current pages for display
         /// </summary>
         public string GetCurrentPages()
         {
@@ -905,16 +905,16 @@ namespace German_B1._Step_Further
         }
         
         /// <summary>
-        /// Переміщує вкладку в нове вікно
+        /// Moves tab to new window
         /// </summary>
         private void MoveTabToNewWindow(int tabIndex)
         {
             if (tabIndex <= 0 || tabIndex >= _tabPages.Count) return;
-            if (_tabPages.Count <= 1) return; // Не можна перемістити останню вкладку
+            if (_tabPages.Count <= 1) return; // Cannot move last tab
             
             int pageNumber = _tabPages[tabIndex];
             
-            // Створюємо нове вікно з цією сторінкою
+            // Create new window with this page
             var newSession = new WindowSession
             {
                 TabPages = new List<int> { pageNumber },
@@ -924,30 +924,30 @@ namespace German_B1._Step_Further
             var newWindow = new MainWindow(newSession);
             newWindow.Show();
             
-            // Закриваємо вкладку в поточному вікні
+            // Close tab in current window
             CloseTabByIndex(tabIndex);
         }
         
         /// <summary>
-        /// Переміщує вкладку в інше існуюче вікно
+        /// Moves tab to another existing window
         /// </summary>
         private void MoveTabToOtherWindow(int tabIndex, MainWindow targetWindow)
         {
             if (tabIndex <= 0 || tabIndex >= _tabPages.Count) return;
-            if (_tabPages.Count <= 1) return; // Не можна перемістити останню вкладку
+            if (_tabPages.Count <= 1) return; // Cannot move last tab
             if (!targetWindow.CanAcceptTab()) return;
             
             int pageNumber = _tabPages[tabIndex];
             
-            // Сповіщаємо цільове вікно про переміщення вкладки
+            // Notify target window about tab transfer
             WindowManagerService.RequestTabTransfer(this, tabIndex, pageNumber, targetWindow, 0, 0);
             
-            // Закриваємо вкладку в поточному вікні
+            // Close tab in current window
             CloseTabByIndex(tabIndex);
         }
         
         /// <summary>
-        /// Закриває вкладку за індексом
+        /// Closes tab by index
         /// </summary>
         private void CloseTabByIndex(int tabIndex)
         {
@@ -956,7 +956,7 @@ namespace German_B1._Step_Further
             var tabsContainer = this.FindControl<StackPanel>("TabsContainer");
             if (tabsContainer == null) return;
             
-            // Знаходимо вкладку по Tag
+            // Find tab by Tag
             var tabToRemove = FindTabByIndex(tabIndex);
             if (tabToRemove != null)
             {
@@ -965,10 +965,10 @@ namespace German_B1._Step_Further
             
             _tabPages.RemoveAt(tabIndex);
             
-            // Перенумеровуємо вкладки
+            // Renumber tabs
             RenumberTabs();
             
-            // Якщо закрита активна вкладка, переключаємось на попередню
+            // If active tab closed, switch to previous
             if (_activeTabIndex >= _tabPages.Count)
             {
                 _activeTabIndex = _tabPages.Count - 1;
@@ -986,18 +986,18 @@ namespace German_B1._Step_Further
                 var distance = Math.Sqrt(Math.Pow(currentPoint.X - _dragStartPoint.X, 2) + 
                                          Math.Pow(currentPoint.Y - _dragStartPoint.Y, 2));
                 
-                // Якщо перетягування вийшло за межі вікна
+                // If dragging went outside window bounds
                 if (distance > 50)
                 {
                     Cursor = new Cursor(StandardCursorType.DragMove);
                     
-                    // Перевіряємо чи курсор над іншим вікном
+                    // Check if cursor is over another window
                     var screenPos = this.PointToScreen(currentPoint);
                     var targetWindow = WindowManagerService.GetWindowAtPosition(screenPos.X, screenPos.Y, this);
                     
                     if (targetWindow != null && targetWindow.CanAcceptTab())
                     {
-                        // Підсвічуємо цільове вікно
+                        // Highlight target window
                         Cursor = new Cursor(StandardCursorType.DragCopy);
                     }
                 }
@@ -1012,7 +1012,7 @@ namespace German_B1._Step_Further
                 var distance = Math.Sqrt(Math.Pow(currentPoint.X - _dragStartPoint.X, 2) + 
                                          Math.Pow(currentPoint.Y - _dragStartPoint.Y, 2));
                 
-                // Якщо було значне перетягування - перевіряємо цільове вікно
+                // If significant dragging occurred - check target window
                 if (distance > 50)
                 {
                     var screenPos = this.PointToScreen(currentPoint);
@@ -1020,12 +1020,12 @@ namespace German_B1._Step_Further
                     
                     if (targetWindow != null && targetWindow.CanAcceptTab() && _tabPages.Count > 1)
                     {
-                        // Переміщуємо вкладку в інше вікно
+                        // Move tab to another window
                         MoveTabToOtherWindow(_draggingTabIndex, targetWindow);
                     }
                     else if (targetWindow == null && _tabPages.Count > 1)
                     {
-                        // Якщо вкладку кинули поза всіма вікнами - створюємо нове вікно
+                        // If tab dropped outside all windows - create new window
                         MoveTabToNewWindow(_draggingTabIndex);
                     }
                 }

@@ -6,33 +6,33 @@ using German_B1._Step_Further;
 namespace German_B1._Step_Further.Services
 {
     /// <summary>
-    /// Сервіс для управління вікнами та drag-and-drop вкладок між вікнами
+    /// Service for managing windows and drag-and-drop tabs between windows
     /// </summary>
     public static class WindowManagerService
     {
         /// <summary>
-        /// Список всіх відкритих головних вікон
+        /// List of all open main windows
         /// </summary>
         private static readonly List<WeakReference<MainWindow>> _openWindows = new();
         
         /// <summary>
-        /// Подія для сповіщення про переміщення вкладки в інше вікно
+        /// Event for notifying about tab transfer to another window
         /// </summary>
         public static event EventHandler<TabTransferEventArgs>? TabTransferRequested;
         
         /// <summary>
-        /// Реєструє нове відкрите вікно
+        /// Registers a new open window
         /// </summary>
         public static void RegisterWindow(MainWindow window)
         {
-            // Очищаємо мертві посилання
+            // Clean up dead references
             CleanDeadReferences();
             
             _openWindows.Add(new WeakReference<MainWindow>(window));
         }
         
         /// <summary>
-        /// Видаляє вікно з реєстру
+        /// Removes window from registry
         /// </summary>
         public static void UnregisterWindow(MainWindow window)
         {
@@ -40,12 +40,12 @@ namespace German_B1._Step_Further.Services
             {
                 if (wr.TryGetTarget(out var w))
                     return w == window;
-                return true; // Видаляємо мертві посилання
+                return true; // Remove dead references
             });
         }
         
         /// <summary>
-        /// Отримує список всіх відкритих вікон
+        /// Gets list of all open windows
         /// </summary>
         public static List<MainWindow> GetOpenWindows()
         {
@@ -61,7 +61,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Кількість відкритих вікон
+        /// Number of open windows
         /// </summary>
         public static int WindowCount
         {
@@ -73,7 +73,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Знаходить вікно за його унікальним ідентифікатором
+        /// Finds window by its unique identifier
         /// </summary>
         public static MainWindow? GetWindowById(string windowId)
         {
@@ -81,7 +81,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Знаходить вікно за позицією курсора (для drag-and-drop)
+        /// Finds window at cursor position (for drag-and-drop)
         /// </summary>
         public static MainWindow? GetWindowAtPosition(double screenX, double screenY, MainWindow? excludeWindow = null)
         {
@@ -89,7 +89,7 @@ namespace German_B1._Step_Further.Services
             {
                 if (window == excludeWindow) continue;
                 
-                // Перевіряємо чи курсор знаходиться над вікном
+                // Check if cursor is over the window
                 var bounds = window.Bounds;
                 var pos = window.Position;
                 
@@ -103,7 +103,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Сповіщає про запит на переміщення вкладки
+        /// Notifies about tab transfer request
         /// </summary>
         public static void RequestTabTransfer(MainWindow sourceWindow, int tabIndex, int pageNumber, 
             MainWindow? targetWindow, double screenX, double screenY)
@@ -120,7 +120,7 @@ namespace German_B1._Step_Further.Services
         }
         
         /// <summary>
-        /// Очищає мертві посилання на закриті вікна
+        /// Cleans up dead references to closed windows
         /// </summary>
         private static void CleanDeadReferences()
         {
@@ -129,7 +129,7 @@ namespace German_B1._Step_Further.Services
     }
     
     /// <summary>
-    /// Аргументи події переміщення вкладки
+    /// Tab transfer event arguments
     /// </summary>
     public class TabTransferEventArgs : EventArgs
     {

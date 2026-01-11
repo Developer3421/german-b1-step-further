@@ -8,7 +8,7 @@ using German_B1._Step_Further.Models;
 namespace German_B1._Step_Further.Services
 {
     /// <summary>
-    /// Сервіс для роботи з базами даних сесій LiteDB
+    /// Service for working with LiteDB session databases
     /// </summary>
     public static class SessionDatabaseService
     {
@@ -18,7 +18,7 @@ namespace German_B1._Step_Further.Services
 
         static SessionDatabaseService()
         {
-            // Отримуємо шлях до AppData\Local (для Microsoft Store)
+            // Get path to AppData\Local (for Microsoft Store)
             AppDataFolder = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                 "German B1 Step Further"
@@ -31,7 +31,7 @@ namespace German_B1._Step_Further.Services
         }
 
         /// <summary>
-        /// Отримує шлях до папки AppData додатку
+        /// Gets the application AppData folder path
         /// </summary>
         public static string GetAppDataPath() => AppDataFolder;
 
@@ -115,10 +115,10 @@ namespace German_B1._Step_Further.Services
             }
         }
 
-        #region Active Sessions (для відкритих вікон)
+        #region Active Sessions (for open windows)
 
         /// <summary>
-        /// Зберігає сесію активного вікна
+        /// Saves active window session
         /// NOTE: The app is single-window on restore. We keep only one active window session.
         /// </summary>
         public static void SaveActiveWindowSession(string windowId, List<int> tabPages, int activeTabIndex,
@@ -158,7 +158,7 @@ namespace German_B1._Step_Further.Services
         }
 
         /// <summary>
-        /// Видаляє сесію активного вікна (коли воно закривається)
+        /// Removes active window session (when it closes)
         /// </summary>
         public static void RemoveActiveWindowSession(string windowId)
         {
@@ -179,7 +179,7 @@ namespace German_B1._Step_Further.Services
         }
 
         /// <summary>
-        /// Отримує всі активні сесії вікон
+        /// Gets all active window sessions
         /// NOTE: should return 0..1 items.
         /// </summary>
         public static List<WindowSession> GetAllActiveWindowSessions()
@@ -203,10 +203,10 @@ namespace German_B1._Step_Further.Services
 
         #endregion
 
-        #region Closed Sessions (для відновлення після перезапуску)
+        #region Closed Sessions (for restore after restart)
 
         /// <summary>
-        /// Зберігає сесію при закритті програми для відновлення
+        /// Saves session on program close for restore
         /// Single-window: stores only the first session.
         /// </summary>
         public static void SaveSessionForRestore(List<WindowSession> sessions)
@@ -236,7 +236,7 @@ namespace German_B1._Step_Further.Services
         }
 
         /// <summary>
-        /// Зберігає одну сесію вікна при закритті для відновлення
+        /// Saves one window session on close for restore
         /// Single-window: overwrites the stored session.
         /// </summary>
         public static void SaveWindowSessionForRestore(WindowSession session)
@@ -262,7 +262,7 @@ namespace German_B1._Step_Further.Services
         }
 
         /// <summary>
-        /// Завантажує сесії для відновлення при запуску
+        /// Loads sessions for restore on startup
         /// NOTE: returns 0..1 items.
         /// </summary>
         public static List<WindowSession> LoadSessionsForRestore()
@@ -285,7 +285,7 @@ namespace German_B1._Step_Further.Services
         }
 
         /// <summary>
-        /// Очищає збережені сесії після відновлення
+        /// Clears saved sessions after restore
         /// </summary>
         public static void ClearRestoredSessions()
         {
@@ -306,7 +306,7 @@ namespace German_B1._Step_Further.Services
         }
 
         /// <summary>
-        /// Видаляє сесії старші за вказану кількість днів
+        /// Deletes sessions older than specified number of days
         /// </summary>
         public static void CleanOldSessions(int daysOld = 30)
         {
