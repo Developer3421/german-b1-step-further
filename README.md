@@ -38,5 +38,23 @@ dotnet run
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+This project uses a **dual-license** approach:
+
+- **Source Code**: Free to use under the MIT License
+- **Graphical Style & Resources**: All rights reserved
+
+### What This Means:
+
+✅ **You CAN:**
+- Use, modify, and distribute the source code
+- Learn from the code structure
+- Create derivative works based on the code
+
+❌ **You CANNOT:**
+- Use, copy, or distribute icons from the `Icons/` directory
+- Use, copy, or distribute resources from the `Resources/` directory
+- Replicate the graphical design or visual style
+- Use the educational content without permission
+
+See [LICENSE](LICENSE) for full details and [LICENSE-TEST.md](LICENSE-TEST.md) for usage examples.
 

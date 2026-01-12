@@ -1,0 +1,71 @@
+# Custom License
+
+## Source Code License (MIT)
+
+Copyright (c) 2026 German B1. Step Further
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the source code of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including without
+limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Graphical Style and Resources License (All Rights Reserved)
+
+All graphical assets, design elements, visual resources, and content located in
+the following directories are subject to copyright and may NOT be used,
+reproduced, distributed, or modified without explicit written permission from
+the copyright holder:
+
+- Icons/ (including but not limited to: AddTab.png, CloseButton.png, 
+  ForwardButton.png, InstrumensButton.png, MaxButton.png, MinButton.png, 
+  app5 icon.png, and any other image files)
+- Resources/ (including but not limited to all .axaml content files: 
+  Part1Topic*.axaml, Part2Topic*.axaml, Part3Topic*.axaml, Part4Topic*.axaml,
+  and any other resource files)
+
+This includes but is not limited to:
+- Images, icons, and graphics
+- UI/UX design elements and layouts
+- Educational content and materials
+- Visual styles, themes, and branding elements
+- Any other visual or content resources
+
+**Copyright © 2026 German B1. Step Further. All rights reserved.**
+
+### Restrictions:
+
+1. You MAY NOT use, copy, modify, or distribute any graphical assets or
+   resources from this repository for any purpose.
+2. You MAY NOT create derivative works based on the graphical style or design
+   elements.
+3. You MAY NOT extract, reuse, or repurpose the educational content or
+   materials.
+4. Any use of these restricted materials requires explicit written permission.
+
+### Permitted Use:
+
+The source code (excluding graphical assets and resources) may be used freely
+under the MIT License terms stated above.
+
+---
+
+## Summary
+
+**Source Code**: Free to use, modify, and distribute under MIT License.
+**Graphical Style & Resources**: All rights reserved, no use without permission.
+
+For questions or permission requests regarding graphical assets and resources,
+please contact the repository owner.
